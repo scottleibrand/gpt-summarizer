@@ -1,7 +1,20 @@
 #!/usr/bin/python
 
 """
-This script contains functions for extracting text from a PDF file, splitting the text into sections, and splitting sections into subsections. The extract_text_from_pdf() function takes in a file path to a PDF and returns a string of the extracted text. The split_into_sections() function takes in a string of text and uses a regular expression to split it into a list of tuples, where each tuple contains a section header and the corresponding text. The split_section_into_subsections() function takes in a section header, the corresponding text, and an encoder object and splits the section into smaller parts, each of which is returned as a tuple containing a subsection header and the corresponding text. The split_subsection_into_paragraphs() function takes in a subsection header, the corresponding text, the encoder object, and a maximum number of tokens and splits the subsection into smaller parts, each of which is returned as a tuple containing a paragraph header and the corresponding text.
+This script contains functions for extracting text from a PDF file, splitting
+the text into sections, and splitting sections into subsections. The
+extract_text_from_pdf() function takes in a file path to a PDF and returns a
+string of the extracted text. The split_into_sections() function takes in a
+string of text and uses a regular expression to split it into a list of tuples,
+where each tuple contains a section header and the corresponding text. The
+split_section_into_subsections() function takes in a section header, the
+corresponding text, and an encoder object and splits the section into smaller
+parts, each of which is returned as a tuple containing a subsection header and
+the corresponding text. The split_subsection_into_paragraphs() function takes
+in a subsection header, the corresponding text, the encoder object, and a
+maximum number of tokens and splits the subsection into smaller parts, each of
+which is returned as a tuple containing a paragraph header and the
+corresponding text.
 """
 
 import sys
@@ -95,7 +108,8 @@ def split_into_sections(text):
     return sections
 
 def split_section_into_subsections(section_header, section_content, enc, max_tokens=3000):
-    """Splits a section of text into smaller parts, each of which is returned as a tuple containing a subsection header and the corresponding text.
+    """Splits a section of text into smaller parts, each of which is returned
+    as a tuple containing a subsection header and the corresponding text.
 
     Parameters:
     section_header (str): The header for the section to be split.
