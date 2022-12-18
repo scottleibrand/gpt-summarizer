@@ -317,10 +317,10 @@ if __name__ == '__main__':
     base_name, _ = os.path.splitext(pdf_path)
 
     # Write the extracted text to the output file
-    with open(base_name + ".txt", 'w') as f:
+    with open(base_name + ".full.txt", 'w') as f:
         f.write(text)
 
-    print(f"Text extracted from {pdf_path} and written to {base_name}.txt")
+    print(f"Text extracted from {pdf_path} and written to {base_name}.full.txt")
 
 
     print(f"Total token count: {len(tokens)}")
@@ -353,7 +353,7 @@ if __name__ == '__main__':
             section_name = subheader.replace(' ', '').replace('/','-')
             
             #print("Section name: ",section_name)
-            output_path = f"{base_name}.{section_name}.txt"
+            output_path = f"{base_name}.{section_name}.full.txt"
 
             if (len(subcontent) == 0):
                 subheader_count = subheader_count - 1            
@@ -402,11 +402,29 @@ if __name__ == '__main__':
             summaries = []
             
             summary_pattern = f"{base_name}.*{section_number}.summary.txt"
+            print(f"Reading summary from {summary_pattern}")
             for summary_path in glob.glob(summary_pattern):
+                print(f"Reading summary from {summary_path}")
                 with open(summary_path, 'r') as f:
                     summaries.append(f.read())
             # Concatenate the summaries into a single string
             subcontent = "\n\n".join(summaries)
+            # Tokenize the concatenated summaries
+            subcontent_tokens = enc.encode(subcontent)
+            print(f"Concatenated {len(summaries)} summaries into a single summary with {len(subcontent)} characters and {len(subcontent_tokens)} tokens")
+            if len(subcontent_tokens) == 0:
+                summary_pattern = f"{base_name}.*.summary.txt"
+                print(f"Reading summary from {summary_pattern}")
+                for summary_path in glob.glob(summary_pattern):
+                    print(f"Reading summary from {summary_path}")
+                    with open(summary_path, 'r') as f:
+                        summaries.append(f.read())
+                # Concatenate the summaries into a single string
+                subcontent = "\n\n".join(summaries)
+                # Tokenize the concatenated summaries
+                subcontent_tokens = enc.encode(subcontent)
+                print(f"Concatenated {len(summaries)} summaries into a single summary with {len(subcontent)} characters and {len(subcontent_tokens)} tokens")
+
             # Set the prompt for the overall section summary
             prompt = f"Please provide a detailed summary of the following sections:\n{subcontent}\nPlease provide a detailed summary of the sections above."
             # Get the path of the overall section summary file
@@ -431,7 +449,8 @@ if __name__ == '__main__':
         print(f"Overall summary already exists at {overall_summary_path}")
     else:
         # Read in the abstract
-        with open(f"{base_name}.Title-Abstract.txt", 'r') as f:
+        abstract_filename=glob.glob(f"{base_name}.Title-Abstract*.full.txt")[0]
+        with open(f"{abstract_filename}", 'r') as f:
             abstract = f.read()
         # Read in the section summaries
         summaries = []
