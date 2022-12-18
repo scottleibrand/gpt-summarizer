@@ -23,3 +23,4 @@ If the content of the subsection is not empty, it writes the content to the outp
 It creates the name of the summary file for the subsection.
 If the summary file already exists, it prints a message.
 If the summary file does not exist, it generates a summary for the subsection using the generate_summary function, writes the summary to the summary file, and prints a message.
+![image](https://user-images.githubusercontent.com/6982790/208316572-9435cd5b-dc1e-433b-8443-b3c73e4d40f3.png)
