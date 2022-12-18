@@ -8,4 +8,8 @@ The script expects a PDF file path to be passed as a command line argument. It u
 
 It processes each section by first using the split_section_into_subsections function to split the section into subsections. It then uses the combine_subsections function to combine adjacent tuples with less than 1000 tokens until they exceed 1000 tokens. It processes each combined subsection by using the generate_summary function to generate a summary, and writing the summary to a summary file. If there are multiple summary files for a section, it generates a combined section summary by concatenating the summaries of the individual subsections.
 
-Usage: `python extract_text.py paper.pdf`
+Usage:
+```
+export OPENAI_API_KEY=<your OpenAI API key>
+python summarize-paper.py paper.pdf
+```
