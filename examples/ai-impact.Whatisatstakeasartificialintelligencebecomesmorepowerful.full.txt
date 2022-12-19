@@ -1,0 +1,81 @@
+#### What is at stake as artificial intelligence becomes more powerful?
+All major technological innovations lead to a range of positive and negative
+consequences. For AI, the spectrum of possible outcomes – from the most
+negative to the most positive – is extraordinarily wide.
+
+That the use of AI technology can cause harm is clear, because it is already
+happening.
+
+AI systems can cause harm when people use them maliciously. For example, when
+they are used in politically-motivated disinformation campaigns or to enable
+mass surveillance.12
+
+But AI systems can also cause unintended harm, when they act differently than
+intended or fail. For example, in the Netherlands the authorities used an AI
+system which falsely claimed that an estimated 26,000 parents made fraudulent
+claims for child care benefits. The false allegations led to hardship for many
+poor families, and also resulted in the resignation of the Dutch government in
+2021.13
+
+As AI becomes more powerful, the possible negative impacts could become much
+larger. Many of these risks have rightfully received public attention: more
+powerful AI could lead to mass labor displacement, or extreme concentrations
+of power and wealth. In the hands of autocrats, it could empower
+totalitarianism through its suitability for mass surveillance and control.
+
+The so-called _alignment problem_ of AI is another extreme risk. This is the
+concern that _nobody_ would be able to control a powerful AI system, even if
+the AI takes actions that harm us humans, or humanity as a whole. This risk is
+unfortunately receiving little attention from the wider public, but it is seen
+as an extremely large risk by many leading AI researchers.14
+
+How could an AI possibly escape human control and end up harming humans?
+
+The risk is not that an AI becomes self-aware, develops bad intentions, and
+“chooses” to do this. The risk is that we try to instruct the AI to pursue
+some specific goal – even a very worthwhile one – and in the pursuit of that
+goal it ends up harming humans. It is about unintended consequences. The AI
+does what we told it to do, but not what we wanted it to do.
+
+Can’t we just tell the AI to not do those things? It is definitely possible to
+build an AI that avoids any particular problem we foresee, but it is hard to
+foresee _all_ the possible harmful unintended consequences. The alignment
+problem arises because of “the impossibility of defining true human purposes
+correctly and completely,” as AI researcher Stuart Russell puts it.15
+
+Can’t we then just switch off the AI? This might also not be possible. That is
+because a powerful AI would know two things: it faces a risk that humans could
+turn it off, and it can’t achieve its goals once it has been turned off. As a
+consequence, the AI will pursue a very fundamental goal of ensuring that it
+won’t be switched off. This is why, once we realize that an extremely
+intelligent AI is causing unintended harm in the pursuit of some specific
+goal, it might not be possible to turn it off or change what the system
+does.16
+
+This risk – that humanity might not be able to stay in control once AI becomes
+very powerful, and that this might lead to an extreme catastrophe – has been
+recognized right from the early days of AI research more than 70 years ago.17
+The very rapid development of AI in recent years has made a solution to this
+problem much more urgent.
+
+I have tried to summarize some of the risks of AI, but a short article is not
+enough space to address all possible questions. Especially on the very worst
+risks of AI systems, and what we can do now to reduce them, I recommend
+reading the book [The Alignment Problem](https://brianchristian.org/the-
+alignment-problem/) by Brian Christian and Benjamin Hilton’s article
+[‘Preventing an AI-related catastrophe’](https://80000hours.org/problem-
+profiles/artificial-intelligence).
+
+If we manage to avoid these risks, transformative AI could also lead to very
+positive consequences. Advances in science and technology were crucial to [the
+many positive developments](https://ourworldindata.org/a-history-of-global-
+living-conditions-in-5-charts) in humanity’s history. If artificial ingenuity
+can augment our own, it could help us make progress on the many large problems
+we face: from cleaner energy, to the replacement of unpleasant work, to much
+better healthcare.
+
+This extremely large contrast between the possible positives and negatives
+makes clear that the stakes are unusually high with this technology. Reducing
+the negative risks and solving the alignment problem could mean the difference
+between a healthy, flourishing, and wealthy future for humanity – and the
+destruction of the same.

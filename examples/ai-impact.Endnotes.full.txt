@@ -1,0 +1,76 @@
+### Endnotes
+  1. This problem becomes even larger when we try to imagine how a future with a human-level AI might play out. Any _particular_ scenario will not only involve the idea that this powerful AI exists, but a whole range of additional assumptions about the future context in which this happens. It is therefore hard to communicate a scenario of a world with human-level AI that does not sound contrived, bizarre or even silly.
+
+  2. Both of these concepts are widely used in the scientific literature on artificial intelligence. For example, questions about the timelines for the development of future AI are often framed using these terms. See [my article on this topic](https://ourworldindata.org/ai-timelines).
+
+  3. The fact that humans are capable of a _range_ of intellectual tasks means that you arrive at different definitions of intelligence depending on which aspect within that range you focus on (the [Wikipedia entry on intelligence](https://en.wikipedia.org/wiki/Intelligence), for example, lists a number of definitions from various researchers and different disciplines). As a consequence there are also various definitions of ‘human-level AI’. 
+
+There are also several closely related terms: Artificial General Intelligence,
+High-Level Machine Intelligence, Strong AI, or Full AI are sometimes
+synonymously used, and sometimes defined in similar, yet different ways. In
+specific discussions, it is necessary to define this concept more narrowly;
+for example, in [studies on AI timelines](https://ourworldindata.org/ai-
+timelines) researchers offer more precise definitions of what human-level AI
+refers to in their particular study.
+
+  4. Peter Norvig and Stuart Russell (2021) — Artificial Intelligence: A Modern Approach. Fourth edition. Published by Pearson.
+
+  5. The AI system [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo), and its various successors, won against Go masters. The AI system [Pluribus](https://en.wikipedia.org/wiki/Pluribus_\(poker_bot\)) beat humans at no-limit Texas hold ’em poker. The AI system Cicero can strategize and use human language to win the strategy game Diplomacy. See: Meta Fundamental AI Research Diplomacy Team (FAIR), Anton Bakhtin, Noam Brown, Emily Dinan, Gabriele Farina, Colin Flaherty, Daniel Fried, et al. (2022) – ‘Human-Level Play in the Game of Diplomacy by Combining Language Models with Strategic Reasoning’. In _Science_ 0, no. 0 (22 November 2022): eade9097.[ https://doi.org/10.1126/science.ade9097](https://doi.org/10.1126/science.ade9097).
+
+  6. This also poses a problem when we evaluate how the intelligence of a machine compares with the intelligence of humans. If intelligence was a general ability, a single capacity, then we could easily compare and evaluate it, but the fact that it is a range of skills makes it much more difficult to compare across machine and human intelligence. Tests for AI systems are therefore comprising a wide range of tasks. See for example Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song, Jacob Steinhardt (2020) – [Measuring Massive Multitask Language Understanding](https://arxiv.org/abs/2009.03300) or the definition of what would qualify as artificial general intelligence in [this Metaculus prediction](https://www.metaculus.com/questions/5121/date-of-artificial-general-intelligence/).
+
+  7. An overview of how AI systems can fail can be found in [Charles Choi – 7 Revealing Ways AIs Fail](https://spectrum.ieee.org/ai-failures). It is also worth reading through the [AIAAIC Repository](https://www.aiaaic.org/aiaaic-repository/ai-and-algorithmic-incidents-and-controversies) which “details recent incidents and controversies driven by or relating to AI, algorithms, and automation.”
+
+  8. I have taken this example from [AI researcher François Chollet](https://fchollet.com/), who published it [here](https://twitter.com/fchollet/status/1573752180720312320?s=46&t=qPwLwDgLdJrLlXxa878BDQ).
+
+  9. Via [François Chollet](https://fchollet.com/), who published it [here](https://twitter.com/fchollet/status/1573752180720312320?s=46&t=qPwLwDgLdJrLlXxa878BDQ). Based on Chollet’s comments it seems that this image was created by the AI system ‘Stable Diffusion’.
+
+  10. This quote is from Holden Karnofsky (2021) – [AI Timelines: Where the Arguments, and the “Experts,” Stand](https://www.cold-takes.com/where-ai-forecasting-stands-today/). For Holden Karnofsky’s earlier thinking on this conceptualization of AI see his 2016 article [‘Some Background on Our Views Regarding Advanced Artificial Intelligence’](https://www.openphilanthropy.org/research/some-background-on-our-views-regarding-advanced-artificial-intelligence/#Sec1).
+
+Ajeya Cotra, whose research on AI timelines I discuss in other articles of
+this series, attempts to give a quantitative definition of what would qualify
+as transformative AI. in her widely cited [report on AI
+timelines](https://www.alignmentforum.org/posts/KrJfoZzpSDpnrv9va/draft-
+report-on-ai-timelines) she defines it as a change in software technology that
+brings the growth rate of gross world product “to 20%-30% per year”. Several
+other researchers define TAI in similar terms.
+
+  11. Human-level AI is typically defined as a software system that can carry out at least 90% or 99% of all economically relevant tasks that humans carry out. A lower-bar definition would be an AI system that can carry out all those tasks that can currently be done by another human who is working remotely on a computer.
+
+  12. On the use of AI in politically-motivated disinformation campaigns see for example John Villasenor (November 2020) – [How to deal with AI-enabled disinformation](https://web.archive.org/web/20220907044354/https://www.brookings.edu/research/how-to-deal-with-ai-enabled-disinformation/). More generally on this topic see Brundage and Avin et al. (2018) – The Malicious Use of Artificial Intelligence: Forecasting, Prevention, and Mitigation, published at [maliciousaireport.com](https://maliciousaireport.com/). A starting point for literature and reporting on mass surveillance by governments is [the relevant Wikipedia entry](https://en.wikipedia.org/wiki/List_of_government_mass_surveillance_projects).
+
+  13. See for example the [Wikipedia entry](https://en.wikipedia.org/wiki/Dutch_childcare_benefits_scandal) on the ‘Dutch childcare benefits scandal’ and Melissa Heikkilä (2022) – [‘Dutch scandal serves as a warning for Europe over risks of using algorithms’](https://web.archive.org/web/20221117053636/https://www.politico.eu/article/dutch-scandal-serves-as-a-warning-for-europe-over-risks-of-using-algorithms/), in Politico. The technology can also reinforce discrimination in terms of race and gender. See Brian Christian’s book The Alignment Problem and the [reports of the AI Now Institute](https://ainowinstitute.org/reports.html).
+
+  14. Overviews are provided in Stuart Russell (2019) – Human Compatible (especially chapter 5) and Brian Christian’s 2020 book [The Alignment Problem](https://en.wikipedia.org/wiki/The_Alignment_Problem). Christian presents the thinking of many leading AI researchers from the earliest days up to now and presents an excellent overview of this problem. It is also seen as a large risk by some of the leading private firms who work towards powerful AI – see OpenAI’s article “[Our approach to alignment research](https://openai.com/blog/our-approach-to-alignment-research/)” from August 2022.
+
+  15. Stuart Russell (2019) – Human Compatible
+
+  16. A question that follows from this is, why build such a powerful AI in the first place? 
+
+The incentives are very high. As I emphasize below, this innovation has the
+potential to lead to very positive developments. In addition to the large
+social benefits there are also large incentives for those who develop it – the
+governments that can use it for their goals, the individuals who can use it to
+become more powerful and wealthy. Additionally, it is of scientific interest
+and might help us to understand our own mind and intelligence better. And
+lastly, even if we wanted to stop building powerful AIs, it is likely very
+hard to actually achieve it. It is very hard to coordinate across the whole
+world and agree to stop building more advanced AI – countries around the world
+would have to agree and then find ways to actually implement it.
+
+  17. In 1950 the computer science pioneer Alan Turing put it like this: _“If a machine can think, it might think more intelligently than we do, and then where should we be? … [T]his new danger is much closer. If it comes at all it will almost certainly be within the next millennium. It is remote but not astronomically remote, and is certainly something which can give us anxiety. It is customary, in a talk or article on this subject, to offer a grain of comfort, in the form of a statement that some particularly human characteristic could never be imitated by a machine. … I cannot offer any such comfort, for I believe that no such bounds can be set.”_ Alan. M. Turing (1950) – [Computing Machinery and Intelligence](https://doi.org/10.1093/mind/LIX.236.433), In Mind, Volume LIX, Issue 236, October 1950, Pages 433–460.
+
+Norbert Wiener is another pioneer who saw the alignment problem very early.
+One way he put it was “If we use, to achieve our purposes, a mechanical agency
+with whose operation we cannot interfere effectively … we had better be quite
+sure that the purpose put into the machine is the purpose which we really
+desire.” quoted from Norbert Wiener (1960) – Some Moral and Technical
+Consequences of Automation: As machines learn they may develop unforeseen
+strategies at rates that baffle their programmers. In Science.
+
+In 1950 – the same year in which Turing published the cited article – Wiener
+published his book The Human Use of Human Beings, whose front-cover blurb
+reads: “The ‘mechanical brain’ and similar machines can destroy human values
+or enable us to realize them as never before.”
+
+  18. Toby Ord – [The Precipice](https://theprecipice.com/). He makes this projection in footnote 55 of chapter 2. It is based on the 2017 estimate by Farquhar.

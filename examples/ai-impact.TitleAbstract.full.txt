@@ -1,0 +1,208 @@
+Title-Abstract
+[Our World  
+in Data](/)
+
+[Articles  
+**by topic**](/#entries)
+
+  * [Latest](/blog)
+  * [About](/about)
+  * [Donate](/donate)
+
+  * [All charts](/charts)
+  * [Sustainable Development Goals Tracker](https://sdg-tracker.org)
+
+[![Oxford Martin School logo](https://ourworldindata.org/oms-
+logo.svg)](https://www.oxfordmartin.ox.ac.uk/global-development)[![Global
+Change Data Lab logo](https://ourworldindata.org/gcdl-
+logo.svg)](https://global-change-data-lab.org/)
+
+ **COVID-19 vaccinations, cases, excess mortality, and much more**
+
+[Explore our COVID-19 data](/coronavirus#explore-the-global-situation)
+
+# Artificial intelligence is transforming our world — it is on all of us to
+make sure that it goes well
+
+How AI gets built is currently decided by a small group of technologists. As
+this technology is transforming our lives, it should be in all of our interest
+to become informed and engaged.
+
+[by Max Roser](/team)
+
+December 15, 2022
+
+Why should you care about the development of artificial intelligence?
+
+Think about what the alternative would look like. If you and the wider public
+do not get informed and engaged, then we leave it to a few entrepreneurs and
+engineers to decide how this technology will transform our world.
+
+That is the status quo. This small number of people at a few tech firms
+directly working on artificial intelligence (AI) do understand how
+extraordinarily powerful this technology is
+[becoming](https://ourworldindata.org/brief-history-of-AI). If the rest of
+society does not become engaged, then it will be this small elite who decides
+how this technology will change our lives.
+
+To change this status quo, I want to answer three questions in this article:
+Why is it hard to take the prospect of a world transformed by AI seriously?
+How can we imagine such a world? And what is at stake as this technology
+becomes more powerful?
+
+#### Why is it hard to take the prospect of a world transformed by artificial
+intelligence seriously?
+
+In some way, it should be obvious how technology can fundamentally transform
+the world. We just have to look at how much the world has already changed. If
+you could invite a family of hunter-gatherers from 20,000 years ago on your
+next flight, they would be pretty surprised. Technology has changed our world
+already, so we should expect that it can happen again.
+
+But while we have seen the world transform before, we have seen these
+transformations play out over the course of generations. What is different now
+is how very rapid these technological changes have become. In the past, the
+technologies that our ancestors used in their childhood were still central to
+their lives in their old age. This has not been the case anymore for recent
+generations. Instead, it has [become
+common](https://ourworldindata.org/technology-long-run) that technologies
+unimaginable in one’s youth become ordinary in later life.
+
+This is the first reason we might not take the prospect seriously: it is easy
+to underestimate the speed at which technology can change the world.
+
+The second reason why it is difficult to take the possibility of
+transformative AI – potentially even AI as intelligent as humans – seriously
+is that it is an idea that we first heard in the cinema. It is not surprising
+that for many of us, the first reaction to a scenario in which machines have
+human-like capabilities is the same as if you had asked us to take seriously a
+future in which vampires, werewolves, or zombies roam the planet.1
+
+But, it is plausible that it is both the stuff of sci-fi fantasy _and_ the
+central invention that could arrive in our, or our children’s, lifetimes.
+
+The third reason why it is difficult to take this prospect seriously is by
+failing to see that powerful AI could lead to very large changes. This is also
+understandable. It is difficult to form an idea of a future that is very
+different from our own time. There are two concepts that I find helpful in
+imagining a very different future with artificial intelligence. Let’s look at
+both of them.
+
+#### How to develop an idea of what the future of artificial intelligence
+might look like?
+
+When thinking about the future of artificial intelligence, I find it helpful
+to consider two different concepts in particular: human-level AI, and
+transformative AI.2 The first concept highlights the AI’s capabilities and
+anchors them to a familiar benchmark, while transformative AI emphasizes the
+impact that this technology would have on the world.
+
+From where we are today, much of this may sound like science fiction. It is
+therefore worth keeping in mind that the majority of surveyed AI experts
+[believe](https://ourworldindata.org/ai-timelines) there is a real chance that
+human-level artificial intelligence will be developed within the next decades,
+and some believe that it will exist much sooner.
+
+##### The advantages and disadvantages of comparing machine and human
+intelligence
+
+One way to think about human-level artificial intelligence is to contrast it
+with the current state of AI technology. While today’s AI systems often have
+capabilities similar to a particular, limited part of the human mind, a human-
+level AI would be a machine that is capable of carrying out the same _range_
+of intellectual tasks that we humans are capable of.3 It is a machine that
+would be “able to learn to do anything that a human can do,” as Norvig and
+Russell put it in their textbook on AI.4
+
+Taken together, the range of abilities that characterize intelligence gives
+humans the ability to solve problems and achieve a wide variety of goals. A
+human-level AI would therefore be a system that could solve all those problems
+that we humans can solve, and do the tasks that humans do today. Such a
+machine, or collective of machines, would be able to do the work of a
+translator, an accountant, an illustrator, a teacher, a therapist, a truck
+driver, or the work of a trader on the world’s financial markets. Like us, it
+would also be able to do research and science, and to develop new technologies
+based on that.
+
+The concept of human-level AI has some clear advantages. Using the familiarity
+of our own intelligence as a reference provides us with some clear guidance on
+how to imagine the capabilities of this technology.
+
+However, it also has clear disadvantages. Anchoring the imagination of future
+AI systems to the familiar reality of human intelligence carries the risk that
+it obscures the very real differences between them.
+
+Some of these differences are obvious. For example, AI systems will have the
+immense memory of computer systems, against which our own capacity to store
+information pales. Another obvious difference is the speed at which a machine
+can absorb and process information. But information storage and processing
+speed are not the only differences. The domains in which machines already
+outperform humans is steadily increasing: in chess, after matching the level
+of the best human players in the late 90s, AI systems
+[reached](https://ourworldindata.org/grapher/computer-chess-ability)
+superhuman levels more than a decade ago. In other games like Go or complex
+strategy games, this has happened more recently.5
+
+These differences mean that an AI that is at least as good as humans in every
+domain would overall be much more powerful than the human mind. Even the first
+“human-level AI” would therefore be quite superhuman in many ways.6
+
+Human intelligence is also a bad metaphor for machine intelligence in other
+ways. The way we think is often very different from machines, and as a
+consequence the output of thinking machines can be very alien to us.
+
+Most perplexing and most concerning are the strange and unexpected ways in
+which machine intelligence can fail. The AI-generated image of the horse below
+provides an example: on the one hand, AIs can do what no human can do –
+produce an image of anything, in any style (here photorealistic), in mere
+seconds – but on the other hand it can fail in ways that no human would fail.7
+No human would make the mistake of drawing a horse with five legs.8
+
+Imagining a powerful future AI as just another human would therefore likely be
+a mistake. The differences might be so large that it will be a misnomer to
+call such systems “human-level.”
+
+**AI-generated image of a horse** 9
+
+![Image](https://pbs.twimg.com/media/FddjoyqaAAAS1yO?format=png&name=small)
+
+##### Transformative artificial intelligence is defined by the impact this
+technology would have on the world
+
+In contrast, the concept of transformative AI is not based on a comparison
+with human intelligence. This has the advantage of sidestepping the problems
+that the comparisons with our own mind bring. But it has the disadvantage that
+it is harder to imagine what such a system would look like and be capable of.
+It requires more from us. It requires us to imagine a world with intelligent
+actors that are potentially very different from ourselves.
+
+Transformative AI is not defined by any specific capabilities, but by the
+real-world impact that the AI would have. To qualify as transformative,
+researchers think of it as AI that is “powerful enough to bring us into a new,
+qualitatively different future.”10
+
+In humanity’s history, there have been two cases of such major
+transformations, the agricultural and the industrial revolutions.
+
+Transformative AI becoming a reality would be an event on that scale. Like the
+arrival of agriculture 10,000 years ago, or the transition from hand- to
+machine-manufacturing, it would be an event that would change the world for
+billions of people around the globe and for the entire trajectory of
+[humanity’s future](https://ourworldindata.org/longtermism).
+
+Technologies that fundamentally change how a wide range of goods or services
+are produced are called ‘general-purpose technologies’. The two previous
+transformative events were caused by the discovery of two particularly
+significant general-purpose technologies: the change in food production as
+humanity transitioned from hunting and gathering to farming, and the rise of
+machine manufacturing in the industrial revolution. Based on the evidence and
+arguments presented in [this series](https://ourworldindata.org/artificial-
+intelligence#research-writing) on AI development, I believe it is plausible
+that powerful AI could represent the introduction of a similarly significant
+general-purpose technology.
+
+**Timeline of the three transformative events in world history**
+
+![Timeline of transformative
+events](https://ourworldindata.org/uploads/2022/12/Timeline-of-Transformative-
+Events.png)

@@ -1,0 +1,66 @@
+### Reuse this work freely
+All visualizations, data, and code produced by Our World in Data are
+completely open access under the [Creative Commons BY
+license](https://creativecommons.org/licenses/by/4.0/). You have the
+permission to use, distribute, and reproduce these in any medium, provided the
+source and authors are credited.
+
+The data produced by third parties and made available by Our World in Data is
+subject to the license terms from the original third-party authors. We will
+always indicate the original source of the data in our documentation, so you
+should always check the license of any such third-party data before use and
+redistribution.
+
+All of [our charts can be embedded](/how-to-use-our-world-in-data#how-to-
+embed-interactive-charts-in-your-article) in any site.
+
+  * [Wordpress](https://owid.cloud/wp/wp-admin)
+  * [Edit Page](https://owid.cloud/wp/wp-admin/post.php?post=54759&action=edit)
+
+Our World in Data is free and accessible for everyone.
+
+Help us do this work by making a donation.
+
+[Donate now](/donate)
+
+  * [About](/about)
+  * [Contact](/about#contact)
+  * [Feedback](/feedback)
+  * [Jobs](/jobs)
+  * [Funding](/funding)
+  * [How to use](/about/how-to-use-our-world-in-data)
+  * [Donate](/donate)
+  * [Privacy policy](/privacy-policy)
+
+  * [Latest work](/blog)
+  * [All charts](/charts)
+
+  * [Twitter](https://twitter.com/OurWorldInData)
+  * [Facebook](https://www.facebook.com/OurWorldinData)
+  * [Instagram](https://www.instagram.com/ourworldindata/)
+  * [GitHub](https://github.com/owid)
+  * [RSS Feed](/feed)
+
+[![Oxford Martin School logo](https://ourworldindata.org/oms-
+logo.svg)](https://www.oxfordmartin.ox.ac.uk/global-development)[![Y
+Combinator logo](https://ourworldindata.org/yc-logo.png)](/owid-at-
+ycombinator)
+
+Licenses: All visualizations, data, and articles produced by Our World in Data
+are open access under the [Creative Commons BY
+license](https://creativecommons.org/licenses/by/4.0/). You have permission to
+use, distribute, and reproduce these in any medium, provided the source and
+authors are credited. All the software and code that we write is open source
+and made available via GitHub under the permissive [MIT
+license](https://github.com/owid/owid-grapher/blob/master/LICENSE.md ). All
+other material, including data produced by third parties and made available by
+Our World in Data, is subject to the license terms from the original third-
+party authors.
+
+Please consult our full [legal disclaimer](/about#legal).
+
+[![Global Change Data Lab logo](https://ourworldindata.org/gcdl-
+logo.svg)](https://global-change-data-lab.org/)Our World In Data is a project
+of the [Global Change Data Lab](https://global-change-data-lab.org/), a
+registered charity in England and Wales (Charity Number 1186433).
+

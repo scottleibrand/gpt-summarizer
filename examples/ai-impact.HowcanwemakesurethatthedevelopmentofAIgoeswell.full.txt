@@ -1,0 +1,62 @@
+#### How can we make sure that the development of AI goes well?
+Making sure that the development of artificial intelligence goes well is not
+just one of the most crucial questions of our time, but likely one of the most
+crucial questions in human history. This needs public resources – public
+funding, public attention, and public engagement.
+
+Currently, almost all resources that are dedicated to AI aim to speed up the
+development of this technology. Efforts that aim to increase the safety of AI
+systems, on the other hand, do not receive the resources they need. Researcher
+Toby Ord estimated that in 2020 between $10 to $50 million was spent on work
+to address the alignment problem.18 Corporate AI investment in the same year
+was more than 2000-times larger, it [summed
+up](https://ourworldindata.org/grapher/corporate-investment-in-artificial-
+intelligence-total?country=~OWID_WRL) to $125 billion.
+
+This is not only the case for the AI alignment problem. The work on the entire
+range of negative social consequences from AI is under-resourced compared to
+the large investments to increase the power and use of AI systems.
+
+It is frustrating and concerning for society as a whole that AI safety work is
+extremely neglected and that little public funding is dedicated to this
+crucial field of research. On the other hand, for each _individual_ person
+this neglect means that they have a good chance to actually make a positive
+difference, if they dedicate themselves to this problem now. And while the
+field of AI safety is small, it does provide [good
+resources](https://80000hours.org/problem-profiles/artificial-
+intelligence/#what-can-you-do-concretely-to-help) on what you can do
+concretely if you want to work on this problem.
+
+I hope that more people dedicate their individual careers to this cause, but
+it needs more than individual efforts. A technology that is transforming our
+society needs to be a central interest of all of us. As a society we have to
+think more about the societal impact of AI, become knowledgeable about the
+technology, and understand what is at stake.
+
+When our children look back at today, I imagine that they will find it
+difficult to understand how little attention and resources we dedicated to the
+development of safe AI. I hope that this changes in the coming years, and that
+we begin to dedicate more resources to making sure that powerful AI gets
+developed in a way that benefits us and the next generations.
+
+If we fail to develop this broad-based understanding, then it will remain the
+small elite that finances and builds this technology that will determine how
+one of the – or plausibly _the_ – most powerful technology in human history
+will transform our world.
+
+* * *
+
+With our work at Our World in Data we want to do our small part to enable a
+better informed public conversation on AI and the future we want to live in.
+You can find these resources on [OurWorldinData.org/artificial-
+intelligence](https://ourworldindata.org/artificial-intelligence)
+
+ **Acknowledgements:** I would like to thank my colleagues Daniel Bachler,
+Charlie Giattino, and Edouard Mathieu for their helpful comments to drafts of
+this essay.
+
+Our World in Data presents the data and research to make progress against the
+world’s largest problems.  
+This article draws on data and research discussed in our entry on
+**[Artificial Intelligence](https://ourworldindata.org/artificial-
+intelligence)**.

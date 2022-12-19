@@ -1,0 +1,19 @@
+##### A future of human-level or transformative AI?
+The two concepts are closely related, but they are not the same. The creation
+of a human-level AI would certainly have a transformative impact on our world.
+If the work of most humans could be carried out by an AI, the lives of
+millions of people would change.11
+
+The opposite, however, is not true: we might see transformative AI without
+developing human-level AI. Since the human mind is in many ways a poor
+metaphor for the intelligence of machines, we might plausibly develop
+transformative AI before we develop human-level AI. Depending on how this
+goes, this might mean that we will never see any machine intelligence for
+which human intelligence is a helpful comparison.
+
+When and if AI systems might reach either of these levels is of course
+difficult to predict. In my [companion article](https://ourworldindata.org/ai-
+timelines) on this question, I give an overview of what researchers in this
+field currently believe. Many AI experts believe there is a real chance that
+such systems will be developed within the next decades, and some believe that
+they will exist much sooner.

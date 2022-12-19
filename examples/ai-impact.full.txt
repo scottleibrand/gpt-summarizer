@@ -1,0 +1,521 @@
+[Our World  
+in Data](/)
+
+[Articles  
+**by topic**](/#entries)
+
+  * [Latest](/blog)
+  * [About](/about)
+  * [Donate](/donate)
+
+  * [All charts](/charts)
+  * [Sustainable Development Goals Tracker](https://sdg-tracker.org)
+
+[![Oxford Martin School logo](https://ourworldindata.org/oms-
+logo.svg)](https://www.oxfordmartin.ox.ac.uk/global-development)[![Global
+Change Data Lab logo](https://ourworldindata.org/gcdl-
+logo.svg)](https://global-change-data-lab.org/)
+
+ **COVID-19 vaccinations, cases, excess mortality, and much more**
+
+[Explore our COVID-19 data](/coronavirus#explore-the-global-situation)
+
+# Artificial intelligence is transforming our world — it is on all of us to
+make sure that it goes well
+
+How AI gets built is currently decided by a small group of technologists. As
+this technology is transforming our lives, it should be in all of our interest
+to become informed and engaged.
+
+[by Max Roser](/team)
+
+December 15, 2022
+
+Why should you care about the development of artificial intelligence?
+
+Think about what the alternative would look like. If you and the wider public
+do not get informed and engaged, then we leave it to a few entrepreneurs and
+engineers to decide how this technology will transform our world.
+
+That is the status quo. This small number of people at a few tech firms
+directly working on artificial intelligence (AI) do understand how
+extraordinarily powerful this technology is
+[becoming](https://ourworldindata.org/brief-history-of-AI). If the rest of
+society does not become engaged, then it will be this small elite who decides
+how this technology will change our lives.
+
+To change this status quo, I want to answer three questions in this article:
+Why is it hard to take the prospect of a world transformed by AI seriously?
+How can we imagine such a world? And what is at stake as this technology
+becomes more powerful?
+
+#### Why is it hard to take the prospect of a world transformed by artificial
+intelligence seriously?
+
+In some way, it should be obvious how technology can fundamentally transform
+the world. We just have to look at how much the world has already changed. If
+you could invite a family of hunter-gatherers from 20,000 years ago on your
+next flight, they would be pretty surprised. Technology has changed our world
+already, so we should expect that it can happen again.
+
+But while we have seen the world transform before, we have seen these
+transformations play out over the course of generations. What is different now
+is how very rapid these technological changes have become. In the past, the
+technologies that our ancestors used in their childhood were still central to
+their lives in their old age. This has not been the case anymore for recent
+generations. Instead, it has [become
+common](https://ourworldindata.org/technology-long-run) that technologies
+unimaginable in one’s youth become ordinary in later life.
+
+This is the first reason we might not take the prospect seriously: it is easy
+to underestimate the speed at which technology can change the world.
+
+The second reason why it is difficult to take the possibility of
+transformative AI – potentially even AI as intelligent as humans – seriously
+is that it is an idea that we first heard in the cinema. It is not surprising
+that for many of us, the first reaction to a scenario in which machines have
+human-like capabilities is the same as if you had asked us to take seriously a
+future in which vampires, werewolves, or zombies roam the planet.1
+
+But, it is plausible that it is both the stuff of sci-fi fantasy _and_ the
+central invention that could arrive in our, or our children’s, lifetimes.
+
+The third reason why it is difficult to take this prospect seriously is by
+failing to see that powerful AI could lead to very large changes. This is also
+understandable. It is difficult to form an idea of a future that is very
+different from our own time. There are two concepts that I find helpful in
+imagining a very different future with artificial intelligence. Let’s look at
+both of them.
+
+#### How to develop an idea of what the future of artificial intelligence
+might look like?
+
+When thinking about the future of artificial intelligence, I find it helpful
+to consider two different concepts in particular: human-level AI, and
+transformative AI.2 The first concept highlights the AI’s capabilities and
+anchors them to a familiar benchmark, while transformative AI emphasizes the
+impact that this technology would have on the world.
+
+From where we are today, much of this may sound like science fiction. It is
+therefore worth keeping in mind that the majority of surveyed AI experts
+[believe](https://ourworldindata.org/ai-timelines) there is a real chance that
+human-level artificial intelligence will be developed within the next decades,
+and some believe that it will exist much sooner.
+
+##### The advantages and disadvantages of comparing machine and human
+intelligence
+
+One way to think about human-level artificial intelligence is to contrast it
+with the current state of AI technology. While today’s AI systems often have
+capabilities similar to a particular, limited part of the human mind, a human-
+level AI would be a machine that is capable of carrying out the same _range_
+of intellectual tasks that we humans are capable of.3 It is a machine that
+would be “able to learn to do anything that a human can do,” as Norvig and
+Russell put it in their textbook on AI.4
+
+Taken together, the range of abilities that characterize intelligence gives
+humans the ability to solve problems and achieve a wide variety of goals. A
+human-level AI would therefore be a system that could solve all those problems
+that we humans can solve, and do the tasks that humans do today. Such a
+machine, or collective of machines, would be able to do the work of a
+translator, an accountant, an illustrator, a teacher, a therapist, a truck
+driver, or the work of a trader on the world’s financial markets. Like us, it
+would also be able to do research and science, and to develop new technologies
+based on that.
+
+The concept of human-level AI has some clear advantages. Using the familiarity
+of our own intelligence as a reference provides us with some clear guidance on
+how to imagine the capabilities of this technology.
+
+However, it also has clear disadvantages. Anchoring the imagination of future
+AI systems to the familiar reality of human intelligence carries the risk that
+it obscures the very real differences between them.
+
+Some of these differences are obvious. For example, AI systems will have the
+immense memory of computer systems, against which our own capacity to store
+information pales. Another obvious difference is the speed at which a machine
+can absorb and process information. But information storage and processing
+speed are not the only differences. The domains in which machines already
+outperform humans is steadily increasing: in chess, after matching the level
+of the best human players in the late 90s, AI systems
+[reached](https://ourworldindata.org/grapher/computer-chess-ability)
+superhuman levels more than a decade ago. In other games like Go or complex
+strategy games, this has happened more recently.5
+
+These differences mean that an AI that is at least as good as humans in every
+domain would overall be much more powerful than the human mind. Even the first
+“human-level AI” would therefore be quite superhuman in many ways.6
+
+Human intelligence is also a bad metaphor for machine intelligence in other
+ways. The way we think is often very different from machines, and as a
+consequence the output of thinking machines can be very alien to us.
+
+Most perplexing and most concerning are the strange and unexpected ways in
+which machine intelligence can fail. The AI-generated image of the horse below
+provides an example: on the one hand, AIs can do what no human can do –
+produce an image of anything, in any style (here photorealistic), in mere
+seconds – but on the other hand it can fail in ways that no human would fail.7
+No human would make the mistake of drawing a horse with five legs.8
+
+Imagining a powerful future AI as just another human would therefore likely be
+a mistake. The differences might be so large that it will be a misnomer to
+call such systems “human-level.”
+
+**AI-generated image of a horse** 9
+
+![Image](https://pbs.twimg.com/media/FddjoyqaAAAS1yO?format=png&name=small)
+
+##### Transformative artificial intelligence is defined by the impact this
+technology would have on the world
+
+In contrast, the concept of transformative AI is not based on a comparison
+with human intelligence. This has the advantage of sidestepping the problems
+that the comparisons with our own mind bring. But it has the disadvantage that
+it is harder to imagine what such a system would look like and be capable of.
+It requires more from us. It requires us to imagine a world with intelligent
+actors that are potentially very different from ourselves.
+
+Transformative AI is not defined by any specific capabilities, but by the
+real-world impact that the AI would have. To qualify as transformative,
+researchers think of it as AI that is “powerful enough to bring us into a new,
+qualitatively different future.”10
+
+In humanity’s history, there have been two cases of such major
+transformations, the agricultural and the industrial revolutions.
+
+Transformative AI becoming a reality would be an event on that scale. Like the
+arrival of agriculture 10,000 years ago, or the transition from hand- to
+machine-manufacturing, it would be an event that would change the world for
+billions of people around the globe and for the entire trajectory of
+[humanity’s future](https://ourworldindata.org/longtermism).
+
+Technologies that fundamentally change how a wide range of goods or services
+are produced are called ‘general-purpose technologies’. The two previous
+transformative events were caused by the discovery of two particularly
+significant general-purpose technologies: the change in food production as
+humanity transitioned from hunting and gathering to farming, and the rise of
+machine manufacturing in the industrial revolution. Based on the evidence and
+arguments presented in [this series](https://ourworldindata.org/artificial-
+intelligence#research-writing) on AI development, I believe it is plausible
+that powerful AI could represent the introduction of a similarly significant
+general-purpose technology.
+
+**Timeline of the three transformative events in world history**
+
+![Timeline of transformative
+events](https://ourworldindata.org/uploads/2022/12/Timeline-of-Transformative-
+Events.png)
+
+##### A future of human-level or transformative AI?
+
+The two concepts are closely related, but they are not the same. The creation
+of a human-level AI would certainly have a transformative impact on our world.
+If the work of most humans could be carried out by an AI, the lives of
+millions of people would change.11
+
+The opposite, however, is not true: we might see transformative AI without
+developing human-level AI. Since the human mind is in many ways a poor
+metaphor for the intelligence of machines, we might plausibly develop
+transformative AI before we develop human-level AI. Depending on how this
+goes, this might mean that we will never see any machine intelligence for
+which human intelligence is a helpful comparison.
+
+When and if AI systems might reach either of these levels is of course
+difficult to predict. In my [companion article](https://ourworldindata.org/ai-
+timelines) on this question, I give an overview of what researchers in this
+field currently believe. Many AI experts believe there is a real chance that
+such systems will be developed within the next decades, and some believe that
+they will exist much sooner.
+
+#### What is at stake as artificial intelligence becomes more powerful?
+
+All major technological innovations lead to a range of positive and negative
+consequences. For AI, the spectrum of possible outcomes – from the most
+negative to the most positive – is extraordinarily wide.
+
+That the use of AI technology can cause harm is clear, because it is already
+happening.
+
+AI systems can cause harm when people use them maliciously. For example, when
+they are used in politically-motivated disinformation campaigns or to enable
+mass surveillance.12
+
+But AI systems can also cause unintended harm, when they act differently than
+intended or fail. For example, in the Netherlands the authorities used an AI
+system which falsely claimed that an estimated 26,000 parents made fraudulent
+claims for child care benefits. The false allegations led to hardship for many
+poor families, and also resulted in the resignation of the Dutch government in
+2021.13
+
+As AI becomes more powerful, the possible negative impacts could become much
+larger. Many of these risks have rightfully received public attention: more
+powerful AI could lead to mass labor displacement, or extreme concentrations
+of power and wealth. In the hands of autocrats, it could empower
+totalitarianism through its suitability for mass surveillance and control.
+
+The so-called _alignment problem_ of AI is another extreme risk. This is the
+concern that _nobody_ would be able to control a powerful AI system, even if
+the AI takes actions that harm us humans, or humanity as a whole. This risk is
+unfortunately receiving little attention from the wider public, but it is seen
+as an extremely large risk by many leading AI researchers.14
+
+How could an AI possibly escape human control and end up harming humans?
+
+The risk is not that an AI becomes self-aware, develops bad intentions, and
+“chooses” to do this. The risk is that we try to instruct the AI to pursue
+some specific goal – even a very worthwhile one – and in the pursuit of that
+goal it ends up harming humans. It is about unintended consequences. The AI
+does what we told it to do, but not what we wanted it to do.
+
+Can’t we just tell the AI to not do those things? It is definitely possible to
+build an AI that avoids any particular problem we foresee, but it is hard to
+foresee _all_ the possible harmful unintended consequences. The alignment
+problem arises because of “the impossibility of defining true human purposes
+correctly and completely,” as AI researcher Stuart Russell puts it.15
+
+Can’t we then just switch off the AI? This might also not be possible. That is
+because a powerful AI would know two things: it faces a risk that humans could
+turn it off, and it can’t achieve its goals once it has been turned off. As a
+consequence, the AI will pursue a very fundamental goal of ensuring that it
+won’t be switched off. This is why, once we realize that an extremely
+intelligent AI is causing unintended harm in the pursuit of some specific
+goal, it might not be possible to turn it off or change what the system
+does.16
+
+This risk – that humanity might not be able to stay in control once AI becomes
+very powerful, and that this might lead to an extreme catastrophe – has been
+recognized right from the early days of AI research more than 70 years ago.17
+The very rapid development of AI in recent years has made a solution to this
+problem much more urgent.
+
+I have tried to summarize some of the risks of AI, but a short article is not
+enough space to address all possible questions. Especially on the very worst
+risks of AI systems, and what we can do now to reduce them, I recommend
+reading the book [The Alignment Problem](https://brianchristian.org/the-
+alignment-problem/) by Brian Christian and Benjamin Hilton’s article
+[‘Preventing an AI-related catastrophe’](https://80000hours.org/problem-
+profiles/artificial-intelligence).
+
+If we manage to avoid these risks, transformative AI could also lead to very
+positive consequences. Advances in science and technology were crucial to [the
+many positive developments](https://ourworldindata.org/a-history-of-global-
+living-conditions-in-5-charts) in humanity’s history. If artificial ingenuity
+can augment our own, it could help us make progress on the many large problems
+we face: from cleaner energy, to the replacement of unpleasant work, to much
+better healthcare.
+
+This extremely large contrast between the possible positives and negatives
+makes clear that the stakes are unusually high with this technology. Reducing
+the negative risks and solving the alignment problem could mean the difference
+between a healthy, flourishing, and wealthy future for humanity – and the
+destruction of the same.
+
+#### How can we make sure that the development of AI goes well?
+
+Making sure that the development of artificial intelligence goes well is not
+just one of the most crucial questions of our time, but likely one of the most
+crucial questions in human history. This needs public resources – public
+funding, public attention, and public engagement.
+
+Currently, almost all resources that are dedicated to AI aim to speed up the
+development of this technology. Efforts that aim to increase the safety of AI
+systems, on the other hand, do not receive the resources they need. Researcher
+Toby Ord estimated that in 2020 between $10 to $50 million was spent on work
+to address the alignment problem.18 Corporate AI investment in the same year
+was more than 2000-times larger, it [summed
+up](https://ourworldindata.org/grapher/corporate-investment-in-artificial-
+intelligence-total?country=~OWID_WRL) to $125 billion.
+
+This is not only the case for the AI alignment problem. The work on the entire
+range of negative social consequences from AI is under-resourced compared to
+the large investments to increase the power and use of AI systems.
+
+It is frustrating and concerning for society as a whole that AI safety work is
+extremely neglected and that little public funding is dedicated to this
+crucial field of research. On the other hand, for each _individual_ person
+this neglect means that they have a good chance to actually make a positive
+difference, if they dedicate themselves to this problem now. And while the
+field of AI safety is small, it does provide [good
+resources](https://80000hours.org/problem-profiles/artificial-
+intelligence/#what-can-you-do-concretely-to-help) on what you can do
+concretely if you want to work on this problem.
+
+I hope that more people dedicate their individual careers to this cause, but
+it needs more than individual efforts. A technology that is transforming our
+society needs to be a central interest of all of us. As a society we have to
+think more about the societal impact of AI, become knowledgeable about the
+technology, and understand what is at stake.
+
+When our children look back at today, I imagine that they will find it
+difficult to understand how little attention and resources we dedicated to the
+development of safe AI. I hope that this changes in the coming years, and that
+we begin to dedicate more resources to making sure that powerful AI gets
+developed in a way that benefits us and the next generations.
+
+If we fail to develop this broad-based understanding, then it will remain the
+small elite that finances and builds this technology that will determine how
+one of the – or plausibly _the_ – most powerful technology in human history
+will transform our world.
+
+* * *
+
+With our work at Our World in Data we want to do our small part to enable a
+better informed public conversation on AI and the future we want to live in.
+You can find these resources on [OurWorldinData.org/artificial-
+intelligence](https://ourworldindata.org/artificial-intelligence)
+
+ **Acknowledgements:** I would like to thank my colleagues Daniel Bachler,
+Charlie Giattino, and Edouard Mathieu for their helpful comments to drafts of
+this essay.
+
+Our World in Data presents the data and research to make progress against the
+world’s largest problems.  
+This article draws on data and research discussed in our entry on
+**[Artificial Intelligence](https://ourworldindata.org/artificial-
+intelligence)**.
+
+### Endnotes
+
+  1. This problem becomes even larger when we try to imagine how a future with a human-level AI might play out. Any _particular_ scenario will not only involve the idea that this powerful AI exists, but a whole range of additional assumptions about the future context in which this happens. It is therefore hard to communicate a scenario of a world with human-level AI that does not sound contrived, bizarre or even silly.
+
+  2. Both of these concepts are widely used in the scientific literature on artificial intelligence. For example, questions about the timelines for the development of future AI are often framed using these terms. See [my article on this topic](https://ourworldindata.org/ai-timelines).
+
+  3. The fact that humans are capable of a _range_ of intellectual tasks means that you arrive at different definitions of intelligence depending on which aspect within that range you focus on (the [Wikipedia entry on intelligence](https://en.wikipedia.org/wiki/Intelligence), for example, lists a number of definitions from various researchers and different disciplines). As a consequence there are also various definitions of ‘human-level AI’. 
+
+There are also several closely related terms: Artificial General Intelligence,
+High-Level Machine Intelligence, Strong AI, or Full AI are sometimes
+synonymously used, and sometimes defined in similar, yet different ways. In
+specific discussions, it is necessary to define this concept more narrowly;
+for example, in [studies on AI timelines](https://ourworldindata.org/ai-
+timelines) researchers offer more precise definitions of what human-level AI
+refers to in their particular study.
+
+  4. Peter Norvig and Stuart Russell (2021) — Artificial Intelligence: A Modern Approach. Fourth edition. Published by Pearson.
+
+  5. The AI system [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo), and its various successors, won against Go masters. The AI system [Pluribus](https://en.wikipedia.org/wiki/Pluribus_\(poker_bot\)) beat humans at no-limit Texas hold ’em poker. The AI system Cicero can strategize and use human language to win the strategy game Diplomacy. See: Meta Fundamental AI Research Diplomacy Team (FAIR), Anton Bakhtin, Noam Brown, Emily Dinan, Gabriele Farina, Colin Flaherty, Daniel Fried, et al. (2022) – ‘Human-Level Play in the Game of Diplomacy by Combining Language Models with Strategic Reasoning’. In _Science_ 0, no. 0 (22 November 2022): eade9097.[ https://doi.org/10.1126/science.ade9097](https://doi.org/10.1126/science.ade9097).
+
+  6. This also poses a problem when we evaluate how the intelligence of a machine compares with the intelligence of humans. If intelligence was a general ability, a single capacity, then we could easily compare and evaluate it, but the fact that it is a range of skills makes it much more difficult to compare across machine and human intelligence. Tests for AI systems are therefore comprising a wide range of tasks. See for example Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song, Jacob Steinhardt (2020) – [Measuring Massive Multitask Language Understanding](https://arxiv.org/abs/2009.03300) or the definition of what would qualify as artificial general intelligence in [this Metaculus prediction](https://www.metaculus.com/questions/5121/date-of-artificial-general-intelligence/).
+
+  7. An overview of how AI systems can fail can be found in [Charles Choi – 7 Revealing Ways AIs Fail](https://spectrum.ieee.org/ai-failures). It is also worth reading through the [AIAAIC Repository](https://www.aiaaic.org/aiaaic-repository/ai-and-algorithmic-incidents-and-controversies) which “details recent incidents and controversies driven by or relating to AI, algorithms, and automation.”
+
+  8. I have taken this example from [AI researcher François Chollet](https://fchollet.com/), who published it [here](https://twitter.com/fchollet/status/1573752180720312320?s=46&t=qPwLwDgLdJrLlXxa878BDQ).
+
+  9. Via [François Chollet](https://fchollet.com/), who published it [here](https://twitter.com/fchollet/status/1573752180720312320?s=46&t=qPwLwDgLdJrLlXxa878BDQ). Based on Chollet’s comments it seems that this image was created by the AI system ‘Stable Diffusion’.
+
+  10. This quote is from Holden Karnofsky (2021) – [AI Timelines: Where the Arguments, and the “Experts,” Stand](https://www.cold-takes.com/where-ai-forecasting-stands-today/). For Holden Karnofsky’s earlier thinking on this conceptualization of AI see his 2016 article [‘Some Background on Our Views Regarding Advanced Artificial Intelligence’](https://www.openphilanthropy.org/research/some-background-on-our-views-regarding-advanced-artificial-intelligence/#Sec1).
+
+Ajeya Cotra, whose research on AI timelines I discuss in other articles of
+this series, attempts to give a quantitative definition of what would qualify
+as transformative AI. in her widely cited [report on AI
+timelines](https://www.alignmentforum.org/posts/KrJfoZzpSDpnrv9va/draft-
+report-on-ai-timelines) she defines it as a change in software technology that
+brings the growth rate of gross world product “to 20%-30% per year”. Several
+other researchers define TAI in similar terms.
+
+  11. Human-level AI is typically defined as a software system that can carry out at least 90% or 99% of all economically relevant tasks that humans carry out. A lower-bar definition would be an AI system that can carry out all those tasks that can currently be done by another human who is working remotely on a computer.
+
+  12. On the use of AI in politically-motivated disinformation campaigns see for example John Villasenor (November 2020) – [How to deal with AI-enabled disinformation](https://web.archive.org/web/20220907044354/https://www.brookings.edu/research/how-to-deal-with-ai-enabled-disinformation/). More generally on this topic see Brundage and Avin et al. (2018) – The Malicious Use of Artificial Intelligence: Forecasting, Prevention, and Mitigation, published at [maliciousaireport.com](https://maliciousaireport.com/). A starting point for literature and reporting on mass surveillance by governments is [the relevant Wikipedia entry](https://en.wikipedia.org/wiki/List_of_government_mass_surveillance_projects).
+
+  13. See for example the [Wikipedia entry](https://en.wikipedia.org/wiki/Dutch_childcare_benefits_scandal) on the ‘Dutch childcare benefits scandal’ and Melissa Heikkilä (2022) – [‘Dutch scandal serves as a warning for Europe over risks of using algorithms’](https://web.archive.org/web/20221117053636/https://www.politico.eu/article/dutch-scandal-serves-as-a-warning-for-europe-over-risks-of-using-algorithms/), in Politico. The technology can also reinforce discrimination in terms of race and gender. See Brian Christian’s book The Alignment Problem and the [reports of the AI Now Institute](https://ainowinstitute.org/reports.html).
+
+  14. Overviews are provided in Stuart Russell (2019) – Human Compatible (especially chapter 5) and Brian Christian’s 2020 book [The Alignment Problem](https://en.wikipedia.org/wiki/The_Alignment_Problem). Christian presents the thinking of many leading AI researchers from the earliest days up to now and presents an excellent overview of this problem. It is also seen as a large risk by some of the leading private firms who work towards powerful AI – see OpenAI’s article “[Our approach to alignment research](https://openai.com/blog/our-approach-to-alignment-research/)” from August 2022.
+
+  15. Stuart Russell (2019) – Human Compatible
+
+  16. A question that follows from this is, why build such a powerful AI in the first place? 
+
+The incentives are very high. As I emphasize below, this innovation has the
+potential to lead to very positive developments. In addition to the large
+social benefits there are also large incentives for those who develop it – the
+governments that can use it for their goals, the individuals who can use it to
+become more powerful and wealthy. Additionally, it is of scientific interest
+and might help us to understand our own mind and intelligence better. And
+lastly, even if we wanted to stop building powerful AIs, it is likely very
+hard to actually achieve it. It is very hard to coordinate across the whole
+world and agree to stop building more advanced AI – countries around the world
+would have to agree and then find ways to actually implement it.
+
+  17. In 1950 the computer science pioneer Alan Turing put it like this: _“If a machine can think, it might think more intelligently than we do, and then where should we be? … [T]his new danger is much closer. If it comes at all it will almost certainly be within the next millennium. It is remote but not astronomically remote, and is certainly something which can give us anxiety. It is customary, in a talk or article on this subject, to offer a grain of comfort, in the form of a statement that some particularly human characteristic could never be imitated by a machine. … I cannot offer any such comfort, for I believe that no such bounds can be set.”_ Alan. M. Turing (1950) – [Computing Machinery and Intelligence](https://doi.org/10.1093/mind/LIX.236.433), In Mind, Volume LIX, Issue 236, October 1950, Pages 433–460.
+
+Norbert Wiener is another pioneer who saw the alignment problem very early.
+One way he put it was “If we use, to achieve our purposes, a mechanical agency
+with whose operation we cannot interfere effectively … we had better be quite
+sure that the purpose put into the machine is the purpose which we really
+desire.” quoted from Norbert Wiener (1960) – Some Moral and Technical
+Consequences of Automation: As machines learn they may develop unforeseen
+strategies at rates that baffle their programmers. In Science.
+
+In 1950 – the same year in which Turing published the cited article – Wiener
+published his book The Human Use of Human Beings, whose front-cover blurb
+reads: “The ‘mechanical brain’ and similar machines can destroy human values
+or enable us to realize them as never before.”
+
+  18. Toby Ord – [The Precipice](https://theprecipice.com/). He makes this projection in footnote 55 of chapter 2. It is based on the 2017 estimate by Farquhar.
+
+### Reuse this work freely
+
+All visualizations, data, and code produced by Our World in Data are
+completely open access under the [Creative Commons BY
+license](https://creativecommons.org/licenses/by/4.0/). You have the
+permission to use, distribute, and reproduce these in any medium, provided the
+source and authors are credited.
+
+The data produced by third parties and made available by Our World in Data is
+subject to the license terms from the original third-party authors. We will
+always indicate the original source of the data in our documentation, so you
+should always check the license of any such third-party data before use and
+redistribution.
+
+All of [our charts can be embedded](/how-to-use-our-world-in-data#how-to-
+embed-interactive-charts-in-your-article) in any site.
+
+  * [Wordpress](https://owid.cloud/wp/wp-admin)
+  * [Edit Page](https://owid.cloud/wp/wp-admin/post.php?post=54759&action=edit)
+
+Our World in Data is free and accessible for everyone.
+
+Help us do this work by making a donation.
+
+[Donate now](/donate)
+
+  * [About](/about)
+  * [Contact](/about#contact)
+  * [Feedback](/feedback)
+  * [Jobs](/jobs)
+  * [Funding](/funding)
+  * [How to use](/about/how-to-use-our-world-in-data)
+  * [Donate](/donate)
+  * [Privacy policy](/privacy-policy)
+
+  * [Latest work](/blog)
+  * [All charts](/charts)
+
+  * [Twitter](https://twitter.com/OurWorldInData)
+  * [Facebook](https://www.facebook.com/OurWorldinData)
+  * [Instagram](https://www.instagram.com/ourworldindata/)
+  * [GitHub](https://github.com/owid)
+  * [RSS Feed](/feed)
+
+[![Oxford Martin School logo](https://ourworldindata.org/oms-
+logo.svg)](https://www.oxfordmartin.ox.ac.uk/global-development)[![Y
+Combinator logo](https://ourworldindata.org/yc-logo.png)](/owid-at-
+ycombinator)
+
+Licenses: All visualizations, data, and articles produced by Our World in Data
+are open access under the [Creative Commons BY
+license](https://creativecommons.org/licenses/by/4.0/). You have permission to
+use, distribute, and reproduce these in any medium, provided the source and
+authors are credited. All the software and code that we write is open source
+and made available via GitHub under the permissive [MIT
+license](https://github.com/owid/owid-grapher/blob/master/LICENSE.md ). All
+other material, including data produced by third parties and made available by
+Our World in Data, is subject to the license terms from the original third-
+party authors.
+
+Please consult our full [legal disclaimer](/about#legal).
+
+[![Global Change Data Lab logo](https://ourworldindata.org/gcdl-
+logo.svg)](https://global-change-data-lab.org/)Our World In Data is a project
+of the [Global Change Data Lab](https://global-change-data-lab.org/), a
+registered charity in England and Wales (Charity Number 1186433).
+

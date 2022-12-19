@@ -1,0 +1,3 @@
+
+
+This section provides information about the licenses and permissions associated with Our World in Data's visualizations, data, code, and articles. All of Our World in Data's work is open access under the Creative Commons BY license, and all software and code is open source under the MIT license. Data produced by third parties is subject to the license terms from the original third-party authors. Additionally, Our World in Data's charts can be embedded in any site, and the project is a part of the Global Change Data Lab, a registered charity in England and Wales. A full legal disclaimer is also provided.
