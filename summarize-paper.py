@@ -273,19 +273,23 @@ def combine_subsections(subsections):
 import openai
 import os
 
-def generate_summary(content, prompt):
+def generate_summary(content, prompt, model_engine="text-davinci-003", max_tokens=3000):
     # Get the API key from the environment variable
     api_key = os.environ["OPENAI_API_KEY"]
     openai.api_key = api_key
 
-    # Set the model to use
-    model_engine = "text-davinci-003"
+    # Set the model to use, if not specified
+    if model_engine is None:
+        model_engine = "text-davinci-003"
 
     # Set the temperature for sampling
     temperature = 0
 
     # Set the max token count for the summary
-    max_tokens = 1000
+    if model_engine == "text-davinci-003":
+        max_tokens = 1000
+    else:
+        max_tokens = 500
 
     # Generate completions
     completions = openai.Completion.create(
@@ -314,11 +318,49 @@ def extract_text_from_html(html_path):
     
     return text
 
+def download_html(url):
+    # Strip any trailing /'s from the end of the URL
+    stripped_url = url.rstrip("/")
+
+    # Get the base name of the URL
+    base_name = stripped_url.split("/")[-1]
+
+    # Download the HTML file
+    html_path = "/tmp/" + base_name + ".html"
+    print("HTML path: " + html_path)
+    print("URL: " + url)
+    os.system("curl -s -o " + html_path + " " + url)
+
+    return html_path
+
 if __name__ == '__main__':
     
+    model_engine = "text-davinci-003"
+    max_tokens = 3000
     doctype=""
+    # get the base filename of the first argument without the extension
+    base_name = os.path.splitext(sys.argv[1])[0]
+    
+    # If the command line argument starts with http, use curl to download it to an HTML file
+    if sys.argv[1].startswith("http"):
+        # Get the URL from the command line arguments
+        url = sys.argv[1]
+        doctype="article"
+
+        # Download the HTML file
+        html_path = download_html(url)
+        print(html_path)
+
+        # Strip any trailing /'s from the end of the URL
+        url = url.rstrip("/")
+        # Set the base_name to a /tmp file containing the last part of the URL between /'s
+        base_name = "/tmp/" + url.split("/")[-1]
+        print(base_name)
+
+        # Extract the text from the HTML file
+        text = extract_text_from_html(html_path)
     # If the command line argument references a pdf file
-    if sys.argv[1].endswith(".pdf"):
+    elif sys.argv[1].endswith(".pdf"):
         # Get the PDF file path from the command line arguments
         pdf_path = sys.argv[1]
         doctype="paper"
@@ -341,8 +383,6 @@ if __name__ == '__main__':
         with open(text_path, "r") as text_file:
             text = text_file.read()
 
-    # get the base filename of the first argument without the extension
-    base_name = os.path.splitext(sys.argv[1])[0]
         
 
     # Split the text into sections
@@ -408,9 +448,9 @@ if __name__ == '__main__':
                     print(f"Summary already exists at {summary_path}")
                 else:
                     # Set the prompt for the summary
-                    prompt = f"Please provide a detailed summary of the following section:\n{subcontent}\nPlease provide a detailed summary of the section above."
+                    prompt = f"Please provide a detailed summary of the following section, but if the section content is mostly website context/description, just return 'Section has no content':\n{subcontent}\nPlease provide a detailed summary of the section above. If the section content is mostly website context/description, just return 'Section has no content'."
                     # Generate a summary for the subsection
-                    summary = generate_summary(subcontent, prompt)
+                    summary = generate_summary(subcontent, prompt, model_engine, max_tokens)
                     # Write the summary to a summary file
                     with open(summary_path, 'w') as f:
                         f.write(summary)
@@ -466,7 +506,7 @@ if __name__ == '__main__':
                     with open(summary_path, 'r') as f:
                         summary = f.read()
                     summary_tokens = enc.encode(summary)
-                    if len(subcontent_tokens) + len(summary_tokens) > 3000:
+                    if len(subcontent_tokens) + len(summary_tokens) > max_tokens:
                         break
                     summaries.append(summary)
                     subcontent_tokens += summary_tokens
@@ -485,7 +525,7 @@ if __name__ == '__main__':
                 print(f"Overall section summary already exists at {section_summary_path}")
             else:
                 # Generate the overall section summary
-                section_summary = generate_summary(content, prompt)
+                section_summary = generate_summary(content, prompt, model_engine, max_tokens)
                 # Write the overall section summary to a file
                 with open(section_summary_path, 'w') as f:
                     f.write(section_summary)
@@ -519,8 +559,8 @@ if __name__ == '__main__':
         subcontent_tokens = enc.encode(subcontent)
         for summary in summaries:
             summary_tokens = enc.encode(summary)
-            if len(subcontent_tokens) + len(summary_tokens) > 3000:
-                print(f"Exceeded 3000 tokens, stopping concatenation of summaries")
+            if len(subcontent_tokens) + len(summary_tokens) > max_tokens:
+                print(f"Exceeded {max_tokens} tokens, stopping concatenation of summaries")
                 break
             subcontent += summary + "\n\n"
             subcontent_tokens += summary_tokens
@@ -533,8 +573,8 @@ if __name__ == '__main__':
                     summaries.append(f.read())
             for summary in summaries:
                 summary_tokens = enc.encode(summary)
-                if len(subcontent_tokens) + len(summary_tokens) > 3000:
-                    print(f"Exceeded 3000 tokens, stopping concatenation of summaries")
+                if len(subcontent_tokens) + len(summary_tokens) > max_tokens:
+                    print(f"Exceeded {max_tokens} tokens, stopping concatenation of summaries")
                     break
                 subcontent += summary + "\n\n"
                 subcontent_tokens += summary_tokens
@@ -543,7 +583,7 @@ if __name__ == '__main__':
         # Set the prompt for the overall summary
         prompt = f"Please provide a detailed summary of the following {doctype}, based on its abstract and summaries of each section:\n{subcontent}\nPlease provide a detailed summary of the {doctype} described above, based on the provided abstract/introduction and summaries of each section."
         # Generate the overall summary
-        overall_summary = generate_summary(subcontent, prompt)
+        overall_summary = generate_summary(subcontent, prompt, model_engine, max_tokens)
         # Append a newline to the overall summary
         overall_summary += "\n"
         # Write the overall summary to a file
