@@ -89,8 +89,10 @@ def split_into_sections(text):
         text = text[:match.start()]
 
     # Use a regular expression to split the text into sections
-    #pattern = r'\n\n((?:\d+[\.:]|(?:Introduction|Methods|Materials and Methods|Results|Discussion|References))\s+[^\n]+)\n\n'
-    pattern = r'\n\n(\d+[\.:]\s+[^\n]+)\n\n'
+    #pattern = r'\n\n(\d+[\.:]\s+[^\n]+)\n\n'
+    # Match section headers that start with a number followed by a period or colon,
+    # or markdown-style headers that start with one to six hash marks followed by a space
+    pattern = r'\n\n(#+\s+[^\n]+|\d+[\.:]\s+[^\n]+)\n\n'
     sections = re.split(pattern, text)
 
     # Extract the section headers and their corresponding text
@@ -298,13 +300,50 @@ def generate_summary(content, prompt):
 
     return summary
 
+import html2text
+
+
+
+def extract_text_from_html(html_path):
+    # Read the HTML file
+    with open(html_path, "r") as html_file:
+        html = html_file.read()
+    
+    # Extract the text from the HTML
+    text = html2text.html2text(html)
+    
+    return text
 
 if __name__ == '__main__':
-    # Get the PDF file path from the command line arguments
-    pdf_path = sys.argv[1]
+    
+    doctype=""
+    # If the command line argument references a pdf file
+    if sys.argv[1].endswith(".pdf"):
+        # Get the PDF file path from the command line arguments
+        pdf_path = sys.argv[1]
+        doctype="paper"
 
-    # Extract the text from the PDF file
-    text = extract_text_from_pdf(pdf_path)
+        # Extract the text from the PDF file
+        text = extract_text_from_pdf(pdf_path)
+    elif sys.argv[1].endswith(".html") or sys.argv[1].endswith(".htm"):
+
+        # Get the HTML file path from the command line arguments
+        html_path = sys.argv[1]
+        doctype="article"
+
+        # Extract the text from the HTML file
+        text = extract_text_from_html(html_path)
+    else:
+        # Get the text file path from the command line arguments
+        text_path = sys.argv[1]
+
+        # Read the text file
+        with open(text_path, "r") as text_file:
+            text = text_file.read()
+
+    # get the base filename of the first argument without the extension
+    base_name = os.path.splitext(sys.argv[1])[0]
+        
 
     # Split the text into sections
     sections = split_into_sections(text)
@@ -314,13 +353,13 @@ if __name__ == '__main__':
     tokens = enc.encode(text)
 
     # Get the base name of the output file
-    base_name, _ = os.path.splitext(pdf_path)
+    #base_name, _ = os.path.splitext(pdf_path)
 
     # Write the extracted text to the output file
     with open(base_name + ".full.txt", 'w') as f:
         f.write(text)
 
-    print(f"Text extracted from {pdf_path} and written to {base_name}.full.txt")
+    print(f"Text extracted from {sys.argv[1]} and written to {base_name}.full.txt")
 
 
     print(f"Total token count: {len(tokens)}")
@@ -350,7 +389,7 @@ if __name__ == '__main__':
 
             # Get the name of the output file
             #print("Subheader: ",subheader)
-            section_name = subheader.replace(' ', '').replace('/','-')
+            section_name = re.sub(r'[^a-zA-Z0-9]', '', subheader.replace('/','-'))
             
             #print("Section name: ",section_name)
             output_path = f"{base_name}.{section_name}.full.txt"
@@ -369,7 +408,7 @@ if __name__ == '__main__':
                     print(f"Summary already exists at {summary_path}")
                 else:
                     # Set the prompt for the summary
-                    prompt = f"Please provide a detailed summary of the following paper section:\n{subcontent}\nPlease provide a detailed summary of the paper section above."
+                    prompt = f"Please provide a detailed summary of the following section:\n{subcontent}\nPlease provide a detailed summary of the section above."
                     # Generate a summary for the subsection
                     summary = generate_summary(subcontent, prompt)
                     # Write the summary to a summary file
@@ -460,10 +499,14 @@ if __name__ == '__main__':
     if os.path.exists(overall_summary_path):
         print(f"Overall summary already exists at {overall_summary_path}")
     else:
-        # Read in the abstract
-        abstract_filename=glob.glob(f"{base_name}.Title-Abstract*.full.txt")[0]
-        with open(f"{abstract_filename}", 'r') as f:
-            abstract = f.read()
+        # Read in the abstract, if it exists
+        try:
+            abstract_filename=glob.glob(f"{base_name}.Title-Abstract*.full.txt")[0]
+            with open(f"{abstract_filename}", 'r') as f:
+                abstract = f.read()
+        except IndexError:
+            print(f"No abstract found for {base_name}")
+            abstract = ""
         # Read in the section summaries
         summaries = []
         summary_pattern = f"{base_name}.*.section_summary.txt"
@@ -482,11 +525,27 @@ if __name__ == '__main__':
             subcontent += summary + "\n\n"
             subcontent_tokens += summary_tokens
         print(f"Concatenated {len(summaries)} summaries into a single summary with {len(subcontent)} characters and {len(subcontent_tokens)} tokens")
+        if len(subcontent_tokens) < 500:
+            print(f"Concatenated subsection summaries have less than 500 tokens, reading in all summaries")
+            summary_pattern = f"{base_name}.*.summary.txt"
+            for summary_path in glob.glob(summary_pattern):
+                with open(summary_path, 'r') as f:
+                    summaries.append(f.read())
+            for summary in summaries:
+                summary_tokens = enc.encode(summary)
+                if len(subcontent_tokens) + len(summary_tokens) > 3000:
+                    print(f"Exceeded 3000 tokens, stopping concatenation of summaries")
+                    break
+                subcontent += summary + "\n\n"
+                subcontent_tokens += summary_tokens
+
 
         # Set the prompt for the overall summary
-        prompt = f"Please provide a detailed summary of the following paper, based on its abstract and summaries of each section:\n{subcontent}\nPlease provide a detailed summary of the paper described above, based on the provided abstract and summaries of each section."
+        prompt = f"Please provide a detailed summary of the following {doctype}, based on its abstract and summaries of each section:\n{subcontent}\nPlease provide a detailed summary of the {doctype} described above, based on the provided abstract/introduction and summaries of each section."
         # Generate the overall summary
         overall_summary = generate_summary(subcontent, prompt)
+        # Append a newline to the overall summary
+        overall_summary += "\n"
         # Write the overall summary to a file
         with open(overall_summary_path, 'w') as f:
             f.write(overall_summary)
