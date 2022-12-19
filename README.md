@@ -40,6 +40,8 @@ For now, you also have to manually pip install pdfminer, html2text, tiktoken, an
 
 ## Examples
 
+https://github.com/scottleibrand/gpt-summarizer/tree/main/examples
+
 ### Summary of OurWorldInData AI Impact article
 https://ourworldindata.org/ai-impact
 
