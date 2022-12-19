@@ -1,7 +1,7 @@
 # gpt-summarizer
 ### Extract text, summarize each section w/ GPT, and provide a summarized outline of a paper/article
 
-This script extracts text from a given file or URL and splits it into sections. It then uses a tiktoken to encode the text as a sequence of tokens. It writes the extracted text to an output file and writes each section to a separate text file. It also generates a summary for each subsection and writes the summary to a summary file. If there are multiple summary files for a section, it generates a combined section summary.
+This script extracts text from a given file or URL and splits it into sections. It then uses OpenAI's tokenizer to encode the text as a sequence of tokens. It writes the extracted text to an output file and writes each section to a separate text file. It also generates a summary for each subsection and writes the summary to a summary file. If there are multiple summary files for a section, it generates a combined section summary.
 
 The script expects a PDF or HTML file path, or an HTML URL, to be passed as a command line argument. It extracts the text from the PDF file, splits the text into sections, and uses the tiktoken.get_encoding function to encode the text as a sequence of tokens using the "gpt2" encoding. It writes the extracted text to an output file using the base_name of the file and the .txt extension.
 
