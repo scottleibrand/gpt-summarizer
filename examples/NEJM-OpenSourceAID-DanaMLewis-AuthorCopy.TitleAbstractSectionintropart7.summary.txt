@@ -1,0 +1,3 @@
+
+
+This section discusses the findings of a trial that evaluated the effect of an artificial intelligence-based (AID) therapy on glycemic control. The results showed that the AID therapy improved glycemic control, with the greatest improvement seen overnight. Adults had a higher percentage of time in the target range than children, possibly due to differences in glycemic variability, likelihood of administration of an insulin bolus before a meal, activity level, and dietary factors. The absolute differences in the percentage of time in range between the trial groups were similar to between-group differences for commercially available AID systems. The results showed that patients with the lowest baseline time in the target range gained the most from the use of AID.

@@ -1,0 +1,132 @@
+Title-Abstract. Section intro
+ 
+AID systems. In addition, patients were instruct-
+ed to contact trial staff members to discuss any 
+clinical or technical issues.
+
+During  a  4-week  run-in  phase,  patients  be-
+came familiar with the trial devices functioning 
+as sensor-augmented insulin-pump therapy. Pa-
+
+870
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+
+Automated Insulin Delivery in Type 1 Diabetes
+
+tients were then randomly assigned in a 1:1 ratio 
+to the AID group or the control group with the 
+use of blocks of four, six, and eight stratified 
+according to age, trial site, and baseline glycated 
+hemoglobin level (≤8.0% or >8.0%). A 24-week 
+trial followed, with the primary end point mea-
+sured between days 155 and 168 (the last 2 weeks 
+of the trial) (Fig. S1). All the patients attended 
+three  in-person  visits  (at  weeks  0,  12,  and  24); 
+those in the AID group also had two additional 
+reviews by telephone at weeks 3 and 6. During 
+visits and telephone reviews, patients were asked 
+about adverse events and device issues, medica-
+tion use, and Dexcom alarm settings. In addition, 
+staff  members  reviewed  data  using  a  unique 
+URL  provided  by  Nightscout  (an  open-source 
+project  that  enables  access  to  data  regarding 
+continuous glucose monitoring) and advised pa-
+tients  on  changes  in  device  settings.  All  the 
+patients  (or  their  parents  or  guardians)  could 
+alter settings between contacts, but staff mem-
+bers  were  instructed  to  avoid  surveillance  out-
+side  of  scheduled  reviews  and  did  not  receive 
+automated alerts. This approach was designed to 
+negate  an  effect  on  outcomes  caused  by  addi-
+tional scheduled contact with the trial team in 
+the AID group.
+
+Open-Source AID
+The system was a modified version of AndroidAPS 
+2.810  (which  uses  the  standard  OpenAPS  0.7.0 
+algorithm11) paired with a preproduction DANA-i 
+insulin  pump  and  Dexcom  G6  CGM.  The  user 
+interface was an Android smartphone application 
+(AnyDANA-Loop).  Modifications  reduced  the 
+number of objectives and time required to enable 
+closed-loop therapy. Patients used the AnyDANA-
+Loop application for mealtime insulin adminis-
+tration  and  AnyDANA-Loop  automated  insulin 
+delivery in response to the glucose target. Any 
+changes  to  user-specific  settings  were  made 
+with the patients’ involvement, according to the 
+technical manual (Table S2). Written guidelines 
+and  “how  to”  video  demonstrations  of  key  as-
+pects of the applications were provided to all the 
+patients in the AID group.
+
+lin  doses.  The  sensor-augmented  insulin-pump 
+therapy was not designed to predict low-glucose 
+levels  or  to  suspend  insulin  administration.  A 
+smartphone  application,  called  Monitor,  trans-
+mitted data regarding continuous glucose moni-
+toring to Nightscout.
+
+Outcomes
+The  primary  outcome  was  percentage  of  time 
+in the target glucose range of 70 to 180 mg per 
+deciliter (3.9 to 10.0 mmol per liter) between day 
+155 and day 168. Secondary outcomes were met-
+rics for continuous glucose monitoring12 between 
+days  155  and  168,  which  were  categorized  as 
+occurring during a 24-hour period, during day-
+time  hours  (6  a.m.  to  midnight),  or  during 
+nighttime hours (midnight to 6 a.m.); the gly-
+cated  hemoglobin  level,  as  measured  by  cali-
+brated  point-of-care  instruments  (DCA  Vantage 
+Analyzer, Siemens Healthcare Diagnostics); and 
+the  performance  of  the  AID  system  (the  time 
+that the system was automating insulin delivery 
+and the incidence of device deficiencies). Sepa-
+rate  analyses  were  prespecified  to  evaluate  the 
+psychosocial effect of device use, the collective 
+learning of patients and staff members, and eat-
+ing behaviors (Table S3).
+
+Adverse  events  that  were  evaluated  included 
+adverse  device  effects,  serious  adverse  events, 
+and serious adverse device effects. Severe hypo-
+glycemia  or  hyperglycemia  and  diabetic  keto-
+acidosis were reported as serious adverse events 
+or serious adverse device effects.
+
+At approximately 3 months into theaf-
+ter the enrollment of approximately two thirds 
+of the patients), a battery problem in a prepro-
+duction DANA-i insulin pump was identified. A 
+device deficiency was recorded when the pump 
+battery  lasted  less  than  2  weeks,  and  a  device 
+deficiency with potential serious adverse device 
+effects was reported when the pump turned off 
+without warning. Patients in the control group 
+had the option of returning to theiru-
+ pump  (which  52  of  53  did),  and 
+those in the AID group used refurbished prepro-
+duction DANA-i insulin pumps.
+
+Sensor-Augmented Insulin-Pump Therapy
+Patients in the control group used the 
+GGM with high and low glucose alerts and 
+their  usual  insulin  pump  or  a  preproduction 
+DANA-i insulin pump to administer bolus insu-
+
+Statistical Analysis
+We  calculated  that  68  patients  (34  per  group) 
+would provide 90% power with a two-sided alpha  of 0.05 to reject the null hypothesis of no 
+between-group difference in the time in range, 
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+871
+
+
+T h e    e ngl a nd   jou r na l   o f  m e dicine
+
+assuming  a  population  standard  deviation 

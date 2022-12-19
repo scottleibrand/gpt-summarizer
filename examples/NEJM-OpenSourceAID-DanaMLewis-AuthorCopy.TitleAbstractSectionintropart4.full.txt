@@ -1,0 +1,154 @@
+Title-Abstract. Section intro
+
+12.5% and an absolute treatment effect of 10%.13 
+The sample size was increased to 50 adults and 
+50 children to allow for a differential treatment 
+effect according to age, improved safety assess-
+ment, and potential loss to follow-up.
+
+Data  capture  and  management  processes 
+have  been  described  previously.8  Data  cleaning 
+and analyses were performed with the use of 
+R  software,  version  4.1.1.  Data  regarding  con-
+tinuous glucose monitoring were extracted from 
+Nightscout  and  glucose  metrics  calculated  for 
+sequential  14-day  periods,  starting  14  days  be-
+fore the trial period began and finishing at day 
+168.  Data  were  aggregated  according  to  trial 
+group and time of day.
+
+The  primary  outcome  was  fitted  to  a  linear 
+regression model with independent variables in-
+cluding  stratification  variables,  dependent  vari-
+ables measured at baseline, trial group, and age 
+according  to  group  interaction.  We  compared 
+this model sequentially with simpler models (in 
+which the trial group or the interaction accord-
+ing to age was excluded) using analysis of vari-
+ance to calculate two-sided P values for an overall 
+treatment effect and differential treatment effect 
+according  to  age.  Between-group  differences 
+were  estimated  with  95%  confidence  intervals. 
+Secondary  outcomes  regarding  continuous  glu-
+cose monitoring and glycated hemoglobin were 
+handled  similarly  without  hypothesis  testing. 
+The widths of the confidence intervals were not 
+adjusted for multiplicity and may not be used in 
+place of hypothesis testing. Linear mixed-effects 
+regression models that incorporated all available 
+data were used to confirm the robustness of the 
+results (Table S4).
+
+R esults
+
+Patients and Follow-up
+A total of 100 patients were enrolled from Sep-
+tember 2020 through May 2021. Three patients 
+withdrew during the run-in period, and 97 pa-
+tients  (48  children  and  49  adults)  underwent 
+randomization to either the AID group (44 pa-
+tients)  or  the  control  group  (53  patients).  Un-
+balanced  group  size  was  exacerbated  by  the 
+number  of  strata  (16)  that  were  used  during 
+randomization.8
+
+The characteristics of the patients at baseline 
+were  similar  in  the  two  trial  groups  (Tables  1 
+
+and S5). Children were more likely than adults 
+to  have  used  continuous  glucose  monitoring; 
+previous  use  of  AID  systems  was  uncommon. 
+Table  S6  shows  the  representativeness  of  the 
+patients  among  the  population  of  those  with 
+type 1 diabetes.
+
+The final patient completed the trial in Novem-
+ber 2021. in the AID group (1 child 
+and 1 adult) withdrew from the trial because of 
+frustration with the trial devices; all 53 patients 
+in  the  control  group  completed  the  trial  (Fig. 
+S2).  During  days  155  to  168,  the  median  per-
+centage of expected readings that were recorded 
+by continuous glucose monitoring was 97% (inter-
+quartile range [IQR], 95 to 99) in the AID group 
+and 95% (IQR, 89 to 98) in the control group. 
+Eight patients (2 in the AID group and 6 in the 
+control  group)  provided  less  than  70%  of  ex-
+pected glucose readings.
+
+Efficacy Outcomes
+All Patients
+In the primary analysis, the mean (±SD) time in 
+the  target  range  increased  from  61.2±12.3%  at 
+baseline  to  71.2±12.1%  in  the  AID  group  and 
+decreased from 57.7±14.3% to 54.5±16.0% in the 
+control  group  (mean  adjusted  difference,  14.0 
+percentage points; 95% confidence interval [CI], 
+9.2 to 18.8; P<0.001); the between-group differ-
+ence per day was 3 hours 21 minutes. The per-
+centage of patients who had a time in range of 
+more than 70% and a time below range (<70 mg 
+per deciliter) of less than 4% was 52.0% in the 
+AID group and 11.0% in the control group (ad-
+justed  difference,  36.9  percentage  points;  95% 
+CI, 25.9 to 48.5). No treatment effect according 
+to  interaction  by  age  was  detected  (P = 0.56). 
+Primary  and  secondary  efficacy  glycemic  out-
+comes are provided separately for children and 
+adults  (Tables  2  and  S7).  Additional  subgroup 
+analyses of the percentage of time in the target 
+range are provided in Table S8.
+
+Children
+Among the children, the mean time in range 
+increased  from  57.4±10.6%  at  baseline  to 
+67.5±11.5%  in  the  AID  group  and  decreased 
+from  55.1±12.6%  to  52.5±17.5%  in  the  control 
+group  (mean  adjusted  difference,  12.6  percent-
+age  points;  95%  CI,  5.7  to  19);  the  between-
+group difference per day was 3 hours 1 minute. 
+The  percentage  of  patients  who  had  a  time  in 
+
+872
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+
+Automated Insulin Delivery in Type 1 Diabetes
+
+range of more than 70% and a time below range 
+of less than 4% was 40% in the AID group and 
+7%  in  the  control  group  (adjusted  difference, 
+32.2 percentage points; 95% CI, 16.2 to 49.7). The 
+intervention effect was apparent within 2 weeks 
+after the initiation of AID and was maintained 
+during the 24-week trial period (Fig. 1).
+
+During  a  24-hour  period,  the  percentage  of 
+time that patients had a glucose reading of less 
+than 70 mg per deciliter was 2.1% (30 minutes) 
+in the AID group and 2.7% (39 minutes) in the 
+control  group.  The  percentage  of  time  that 
+patients  had  a  glucose  reading  of  more  than 
+180 mg per deciliter was 39.1% (9 hours 24 min-
+utes) in the AID group and 44.8% (10 hours 48 
+minutes) in the control group.
+
+The  use  of  AID  was  most  effective  at  night 
+(Figs. 2 and S3), when the mean time in range 
+was 76.8±15.8%, as compared with 64.3±11.7% 
+during the day. In the control group, the mean 
+time  in  range  was  57.2±21.4%  at  night  and 
+50.9±17.4% during the day. Overnight, the per-
+centage of time that patients had a time in range 
+of less than 70 mg per deciliter was 1.2% in the 
+AID group and 3.1% in the control group. At the 
+end of the trial, the mean glycated hemoglobin 
+level was 7.0% (52.6 mmol per mole) in the AID 
+group  and  7.6%  (59.2  mmol  per  mole)  in  the 
+control group.
+
+Adults
+Among  the  adults,  the  mean  time  in  range 
+increased  from  64.7±12.9%  at  baseline  to 
+74.5±11.9%  in  AID  group  and 

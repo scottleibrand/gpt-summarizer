@@ -1,0 +1,7001 @@
+established in 1812 
+
+September 8, 2022 
+
+vol. 387  no. 10
+
+Open-Source Automated Insulin Delivery in Type 1 Diabetes
+Mercedes J. Burnside, M.B., Ch.B., Dana M. Lewis, B.A., Hamish R. Crocket, Ph.D., Renee A. Meier, Ph.D., 
+
+Jonathan A. Williman, Ph.D., Olivia J. Sanders, R.N., Craig A. Jefferies, M.D., Ann M. Faherty, R.N., 
+
+Ryan G. Paul, Ph.D., Claire S. Lever, M.N., Sarah K.J. Price, M.N., Carla M. Frewen, R.N., Shirley D. Jones, 
+Tim C. Gunn, B.I.T., Christina Lampey, B.Sc., Benjamin J. Wheeler, Ph.D., and Martin I. de Bock, Ph.D.  
+
+abs tr act
+
+BACKGROUND
+Open-source automated insulin delivery (AID) systems are used by many patients 
+with type 1 diabetes. Data are needed on the efficacy and safety of an open-source 
+AID system.
+
+METHODS
+In this multicenter, open-label, randomized, controlled trial, we assigned patients 
+with type 1 diabetes in a 1:1 ratio to use an open-source AID system or a sensor-
+augmented insulin pump (control). The patients included both children (defined 
+as 7 to 15 years of age) and adults (defined as 16 to 70 years of age). The AID 
+system was a modified version of AndroidAPS 2.8 (with a standard OpenAPS 0.7.0 
+algorithm)  paired  with  a  preproduction  DANA-i  insulin  pump  and  Dexcom  G6 
+CGM, which has an Android smartphone application as the user interface. The 
+primary outcome was the percentage of time in the target glucose range of 70 to 
+180 mg per deciliter (3.9 to 10.0 mmol per liter) between days 155 and 168 (the 
+final 2 weeks of the trial).
+
+RESULTS
+A total of 97 patients (48 children and 49 adults) underwent randomization (44 to 
+open-source AID and 53 to the control group). At 24 weeks, the mean (±SD) time 
+in the target range increased from 61.2±12.3% to 71.2±12.1% in the AID group 
+and decreased from 57.7±14.3% to 54.5±16.0% in the control group (adjusted dif-
+ference, 14 percentage points; 95% confidence interval, 9.2 to 18.8; P<0.001), with 
+no treatment effect according to age (P = 0.56). Patients in the AID group spent 
+3 hours 21 minutes more in the target range per day than those in the control group. 
+No  severe  hypoglycemia  or  diabetic  ketoacidosis  occurred  in  either  group.  Two 
+patients in the AID group withdrew from the trial owing to connectivity issues.
+
+CONCLUSIONS
+In children and adults with type 1 diabetes, the use of an open-source AID system 
+resulted in a significantly higher percentage of time in the target glucose range 
+than the use of a sensor-augmented insulin pump at 24 weeks. (Supported by the 
+Health Research Council of New Zealand; Australian New Zealand Clinical Trials 
+Registry number, ACTRN12620000034932.)
+
+From  the  Departments  of  Pediatrics 
+(M.J.B., R.A.M., O.J.S., M.I.B.) and Pop­
+ulation  Health  (J.A.W.),  University  of 
+Otago, and the Department of Pediatrics, 
+Canterbury District Health Board (M.J.B., 
+O.J.S., M.I.B.), Christchurch, Te Huataki 
+Waiora School of Health, Sport and Hu­
+man Performance, University of Waikato 
+(H.R.C.), and Waikato Regional Diabetes 
+Service,  Waikato  District  Health  Board 
+(R.G.P.,  C.S.L.,  S.K.J.P.),  Hamilton,  the 
+Department  of  Pediatric  Endocrinology, 
+Starship  Children’s  Health,  Auckland 
+District  Health  Board  (C.A.J.,  A.M.F., 
+C.L.), and the Liggins Institute, University 
+of  Auckland  (C.A.J.),  Auckland,  the  De­
+partment  of  Women’s  and  Children’s 
+Health,  Dunedin  School  of  Medicine, 
+University  of  Otago  (C.M.F.,  S.D.J., 
+B.J.W.),  and  the  Pediatric  Department, 
+Southern District Health Board (B.J.W.), 
+Dunedin, and Nightscout New Zealand, 
+Hamilton (T.C.G.) — all in New Zealand; 
+and OpenAPS, Seattle (D.M.L.). Dr. de Bock 
+can  be  contacted  at   martin . debock@ 
+ otago . ac . nz  or  at  the  Department  of 
+ Pediatrics, University of Otago, 4 Oxford 
+Terrace, Christchurch 8011, New Zealand.
+
+N Engl J Med 2022;387:869-81.
+DOI: 10.1056/NEJMoa2203913
+Copyright © 2022 Massachusetts Medical Society.
+
+CME
+
+at NEJM.org
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+869
+
+The new england  journal of medicine
+A Quick Take 
+is available at 
+NEJM.org
+
+T h e  ne w   e ngl a nd   jou r na l   o f  m e dicine
+
+The  use  of  automated  insulin  de-
+
+livery (AID) systems that encompass an 
+insulin-delivery algorithm, insulin pump, 
+and  continuous  glucose  monitoring  has  been 
+shown to improve glycemic control and reduce 
+the care burden for patients with type 1 diabetes.1 
+A  do-it-yourself  AID  system,  called  OpenAPS, 
+was developed by patients with diabetes and was 
+shared freely as an open-source system in Febru-
+ary 2015.2 Since that time, multiple open-source 
+AID systems have evolved, and despite a lack of 
+regulatory  approval,  such  systems  have  been 
+adopted  by  approximately  2500  patients  with 
+diabetes  globally.  Data  now  include  the  results 
+of  more  than  55  million  hours  of  real-world 
+open-source AID experience.3
+
+Two widely used open-source AID systems are 
+AndroidAPS (OpenAPS algorithm on an Android 
+device)  and  Loop  (a  different  algorithm  on  an 
+iOS  device).  In  a  single-group  study,  investiga-
+tors  found  that  patients  who  used  the  Loop 
+system had a higher percentage of time in range 
+for  target  glucose  control  (70  to  180  mg  per 
+deciliter [3.9 to 10.0 mmol per liter]), with an 
+increase in control from 67% at baseline to 73% 
+at 6 months.4 However, this study was limited by 
+a lack of comparative effectiveness and the en-
+rollment of patients who had a high percentage 
+of time in the target range at baseline.
+
+The uptake of open-source AID systems has a 
+number of barriers beyond a lack of regulatory 
+approval, including a lack of trial data regarding 
+safety  and  efficacy,  limited  expertise  with  the 
+system among health care professionals, and a 
+perception that the use of AID systems is techni-
+cally  challenging.5-7  In  the  randomized,  con-
+trolled trial called CREATE (Community Derived 
+Automated  Insulin  Delivery),  we  evaluated  the 
+efficacy and safety of an open-source AID system 
+as  compared  with  sensor-augmented  insulin-
+pump therapy in children and adults with type 1 
+diabetes.
+
+Methods
+
+Trial Conduct and Oversight
+The  trial  was  conducted  at  four  sites  in  New 
+Zealand in compliance with Good Clinical Prac-
+tice guidelines and was approved by the South-
+ern  Health  and  Disability  Ethics  Committee  of 
+New Zealand. The trial was funded by the Health 
+Research  Council  of  New  Zealand.  Hardware 
+
+support  was  provided  by  SOOIL  Development, 
+Dexcom, and Vodafone New Zealand. The trial 
+protocol (available with the full text of this article 
+at NEJM.org) has been published previously.8 An 
+independent  data  and  safety  monitoring  com-
+mittee and medical monitor provided trial over-
+sight. Written informed consent was provided by 
+all adult patients (16 to 70 years of age) or by the 
+parents or guardians of children (7 to 15 years); 
+assent was also sought from all the children.
+
+The trial was designed by representatives of 
+the sponsor, the University of Otago. Data were 
+collected by the investigators and site personnel, 
+analyzed by a statistician employed by the spon-
+sor, and interpreted by the authors. Experts on 
+open-source AID systems within the trial team 
+provided  training  to  clinical  staff  members.  A 
+Slack workspace (Slack Technologies) facilitated 
+ongoing learning by allowing clinical staff mem-
+bers to communicate with each other and with 
+experts in open-source AID on the trial team.9
+
+The authors were responsible for writing the 
+first draft of the manuscript or for contributing 
+to the review and editing of the manuscript. All 
+the  authors  made  the  decision  to  submit  the 
+manuscript  for  publication  and  vouch  for  the 
+completeness and accuracy of the data and for 
+the fidelity of the trial to the protocol.
+
+Patients and Trial Design
+Eligible patients were between the ages of 7 and 
+70 years, had received a diagnosis of type 1 dia-
+betes at least 1 year earlier, had at least 6 months 
+of  experience  with  insulin-pump  therapy,  and 
+had  a  mean  glycated  hemoglobin  level  of  less 
+than 10.5% (91 mmol per mole). Details regard-
+ing the inclusion and exclusion criteria are pro-
+vided in Table S1 in the Supplementary Appen-
+dix,  available  at  NEJM.org.  The  ages  of  the 
+patients reflected the age range in general clini-
+cal practice in New Zealand.
+
+Patients in the two trial groups (or their par-
+ents or guardians) were invited to join separate 
+closed online communities (Tribe Technologies) 
+that provided ongoing peer support to simulate 
+community  support  for  the  use  of  open-source 
+AID systems. In addition, patients were instruct-
+ed to contact trial staff members to discuss any 
+clinical or technical issues.
+
+During  a  4-week  run-in  phase,  patients  be-
+came familiar with the trial devices functioning 
+as sensor-augmented insulin-pump therapy. Pa-
+
+870
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+
+Automated Insulin Delivery in Type 1 Diabetes
+
+tients were then randomly assigned in a 1:1 ratio 
+to the AID group or the control group with the 
+use of blocks of four, six, and eight stratified 
+according to age, trial site, and baseline glycated 
+hemoglobin level (≤8.0% or >8.0%). A 24-week 
+trial followed, with the primary end point mea-
+sured between days 155 and 168 (the last 2 weeks 
+of the trial) (Fig. S1). All the patients attended 
+three  in-person  visits  (at  weeks  0,  12,  and  24); 
+those in the AID group also had two additional 
+reviews by telephone at weeks 3 and 6. During 
+visits and telephone reviews, patients were asked 
+about adverse events and device issues, medica-
+tion use, and Dexcom alarm settings. In addition, 
+staff  members  reviewed  data  using  a  unique 
+URL  provided  by  Nightscout  (an  open-source 
+project  that  enables  access  to  data  regarding 
+continuous glucose monitoring) and advised pa-
+tients  on  changes  in  device  settings.  All  the 
+patients  (or  their  parents  or  guardians)  could 
+alter settings between contacts, but staff mem-
+bers  were  instructed  to  avoid  surveillance  out-
+side  of  scheduled  reviews  and  did  not  receive 
+automated alerts. This approach was designed to 
+negate  an  effect  on  outcomes  caused  by  addi-
+tional scheduled contact with the trial team in 
+the AID group.
+
+Open-Source AID
+The system was a modified version of AndroidAPS 
+2.810  (which  uses  the  standard  OpenAPS  0.7.0 
+algorithm11) paired with a preproduction DANA-i 
+insulin  pump  and  Dexcom  G6  CGM.  The  user 
+interface was an Android smartphone application 
+(AnyDANA-Loop).  Modifications  reduced  the 
+number of objectives and time required to enable 
+closed-loop therapy. Patients used the AnyDANA-
+Loop application for mealtime insulin adminis-
+tration  and  AnyDANA-Loop  automated  insulin 
+delivery in response to the glucose target. Any 
+changes  to  user-specific  settings  were  made 
+with the patients’ involvement, according to the 
+technical manual (Table S2). Written guidelines 
+and  “how  to”  video  demonstrations  of  key  as-
+pects of the applications were provided to all the 
+patients in the AID group.
+
+lin  doses.  The  sensor-augmented  insulin-pump 
+therapy was not designed to predict low-glucose 
+levels  or  to  suspend  insulin  administration.  A 
+smartphone  application,  called  Monitor,  trans-
+mitted data regarding continuous glucose moni-
+toring to Nightscout.
+
+Outcomes
+The  primary  outcome  was  percentage  of  time 
+in the target glucose range of 70 to 180 mg per 
+deciliter (3.9 to 10.0 mmol per liter) between day 
+155 and day 168. Secondary outcomes were met-
+rics for continuous glucose monitoring12 between 
+days  155  and  168,  which  were  categorized  as 
+occurring during a 24-hour period, during day-
+time  hours  (6  a.m.  to  midnight),  or  during 
+nighttime hours (midnight to 6 a.m.); the gly-
+cated  hemoglobin  level,  as  measured  by  cali-
+brated  point-of-care  instruments  (DCA  Vantage 
+Analyzer, Siemens Healthcare Diagnostics); and 
+the  performance  of  the  AID  system  (the  time 
+that the system was automating insulin delivery 
+and the incidence of device deficiencies). Sepa-
+rate  analyses  were  prespecified  to  evaluate  the 
+psychosocial effect of device use, the collective 
+learning of patients and staff members, and eat-
+ing behaviors (Table S3).
+
+Adverse  events  that  were  evaluated  included 
+adverse  device  effects,  serious  adverse  events, 
+and serious adverse device effects. Severe hypo-
+glycemia  or  hyperglycemia  and  diabetic  keto-
+acidosis were reported as serious adverse events 
+or serious adverse device effects.
+
+At approximately 3 months into the trial (af-
+ter the enrollment of approximately two thirds 
+of the patients), a battery problem in a prepro-
+duction DANA-i insulin pump was identified. A 
+device deficiency was recorded when the pump 
+battery  lasted  less  than  2  weeks,  and  a  device 
+deficiency with potential serious adverse device 
+effects was reported when the pump turned off 
+without warning. Patients in the control group 
+had the option of returning to their usual insu-
+lin  pump  (which  52  of  53  patients  did),  and 
+those in the AID group used refurbished prepro-
+duction DANA-i insulin pumps.
+
+Sensor-Augmented Insulin-Pump Therapy
+Patients in the control group used the Dexcom 
+G6 CGM with high and low glucose alerts and 
+their  usual  insulin  pump  or  a  preproduction 
+DANA-i insulin pump to administer bolus insu-
+
+Statistical Analysis
+We  calculated  that  68  patients  (34  per  group) 
+would provide 90% power with a two-sided alpha 
+level of 0.05 to reject the null hypothesis of no 
+between-group difference in the time in range, 
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+871
+
+
+T h e  ne w   e ngl a nd   jou r na l   o f  m e dicine
+
+assuming  a  population  standard  deviation  of 
+12.5% and an absolute treatment effect of 10%.13 
+The sample size was increased to 50 adults and 
+50 children to allow for a differential treatment 
+effect according to age, improved safety assess-
+ment, and potential loss to follow-up.
+
+Data  capture  and  management  processes 
+have  been  described  previously.8  Data  cleaning 
+and analyses were performed with the use of 
+R  software,  version  4.1.1.  Data  regarding  con-
+tinuous glucose monitoring were extracted from 
+Nightscout  and  glucose  metrics  calculated  for 
+sequential  14-day  periods,  starting  14  days  be-
+fore the trial period began and finishing at day 
+168.  Data  were  aggregated  according  to  trial 
+group and time of day.
+
+The  primary  outcome  was  fitted  to  a  linear 
+regression model with independent variables in-
+cluding  stratification  variables,  dependent  vari-
+ables measured at baseline, trial group, and age 
+according  to  group  interaction.  We  compared 
+this model sequentially with simpler models (in 
+which the trial group or the interaction accord-
+ing to age was excluded) using analysis of vari-
+ance to calculate two-sided P values for an overall 
+treatment effect and differential treatment effect 
+according  to  age.  Between-group  differences 
+were  estimated  with  95%  confidence  intervals. 
+Secondary  outcomes  regarding  continuous  glu-
+cose monitoring and glycated hemoglobin were 
+handled  similarly  without  hypothesis  testing. 
+The widths of the confidence intervals were not 
+adjusted for multiplicity and may not be used in 
+place of hypothesis testing. Linear mixed-effects 
+regression models that incorporated all available 
+data were used to confirm the robustness of the 
+results (Table S4).
+
+R esults
+
+Patients and Follow-up
+A total of 100 patients were enrolled from Sep-
+tember 2020 through May 2021. Three patients 
+withdrew during the run-in period, and 97 pa-
+tients  (48  children  and  49  adults)  underwent 
+randomization to either the AID group (44 pa-
+tients)  or  the  control  group  (53  patients).  Un-
+balanced  group  size  was  exacerbated  by  the 
+number  of  strata  (16)  that  were  used  during 
+randomization.8
+
+The characteristics of the patients at baseline 
+were  similar  in  the  two  trial  groups  (Tables  1 
+
+and S5). Children were more likely than adults 
+to  have  used  continuous  glucose  monitoring; 
+previous  use  of  AID  systems  was  uncommon. 
+Table  S6  shows  the  representativeness  of  the 
+patients  among  the  population  of  those  with 
+type 1 diabetes.
+
+The final patient completed the trial in Novem-
+ber 2021. Two patients in the AID group (1 child 
+and 1 adult) withdrew from the trial because of 
+frustration with the trial devices; all 53 patients 
+in  the  control  group  completed  the  trial  (Fig. 
+S2).  During  days  155  to  168,  the  median  per-
+centage of expected readings that were recorded 
+by continuous glucose monitoring was 97% (inter-
+quartile range [IQR], 95 to 99) in the AID group 
+and 95% (IQR, 89 to 98) in the control group. 
+Eight patients (2 in the AID group and 6 in the 
+control  group)  provided  less  than  70%  of  ex-
+pected glucose readings.
+
+Efficacy Outcomes
+All Patients
+In the primary analysis, the mean (±SD) time in 
+the  target  range  increased  from  61.2±12.3%  at 
+baseline  to  71.2±12.1%  in  the  AID  group  and 
+decreased from 57.7±14.3% to 54.5±16.0% in the 
+control  group  (mean  adjusted  difference,  14.0 
+percentage points; 95% confidence interval [CI], 
+9.2 to 18.8; P<0.001); the between-group differ-
+ence per day was 3 hours 21 minutes. The per-
+centage of patients who had a time in range of 
+more than 70% and a time below range (<70 mg 
+per deciliter) of less than 4% was 52.0% in the 
+AID group and 11.0% in the control group (ad-
+justed  difference,  36.9  percentage  points;  95% 
+CI, 25.9 to 48.5). No treatment effect according 
+to  interaction  by  age  was  detected  (P = 0.56). 
+Primary  and  secondary  efficacy  glycemic  out-
+comes are provided separately for children and 
+adults  (Tables  2  and  S7).  Additional  subgroup 
+analyses of the percentage of time in the target 
+range are provided in Table S8.
+
+Children
+Among the children, the mean time in range 
+increased  from  57.4±10.6%  at  baseline  to 
+67.5±11.5%  in  the  AID  group  and  decreased 
+from  55.1±12.6%  to  52.5±17.5%  in  the  control 
+group  (mean  adjusted  difference,  12.6  percent-
+age  points;  95%  CI,  5.7  to  19.5);  the  between-
+group difference per day was 3 hours 1 minute. 
+The  percentage  of  patients  who  had  a  time  in 
+
+872
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+
+Automated Insulin Delivery in Type 1 Diabetes
+
+range of more than 70% and a time below range 
+of less than 4% was 40% in the AID group and 
+7%  in  the  control  group  (adjusted  difference, 
+32.2 percentage points; 95% CI, 16.2 to 49.7). The 
+intervention effect was apparent within 2 weeks 
+after the initiation of AID and was maintained 
+during the 24-week trial period (Fig. 1).
+
+During  a  24-hour  period,  the  percentage  of 
+time that patients had a glucose reading of less 
+than 70 mg per deciliter was 2.1% (30 minutes) 
+in the AID group and 2.7% (39 minutes) in the 
+control  group.  The  percentage  of  time  that 
+patients  had  a  glucose  reading  of  more  than 
+180 mg per deciliter was 39.1% (9 hours 24 min-
+utes) in the AID group and 44.8% (10 hours 48 
+minutes) in the control group.
+
+The  use  of  AID  was  most  effective  at  night 
+(Figs. 2 and S3), when the mean time in range 
+was 76.8±15.8%, as compared with 64.3±11.7% 
+during the day. In the control group, the mean 
+time  in  range  was  57.2±21.4%  at  night  and 
+50.9±17.4% during the day. Overnight, the per-
+centage of time that patients had a time in range 
+of less than 70 mg per deciliter was 1.2% in the 
+AID group and 3.1% in the control group. At the 
+end of the trial, the mean glycated hemoglobin 
+level was 7.0% (52.6 mmol per mole) in the AID 
+group  and  7.6%  (59.2  mmol  per  mole)  in  the 
+control group.
+
+Adults
+Among  the  adults,  the  mean  time  in  range 
+increased  from  64.7±12.9%  at  baseline  to 
+74.5±11.9%  in  the  AID  group  and  decreased 
+from  60.3±15.6%  to  56.5±14.2%  in  the  control 
+group  (mean  adjusted  difference,  15.4  percent-
+age  points;  95%  CI,  8.6  to  22.1);  the  between-
+group  difference  per  day  was  3  hours  41  min-
+utes. The mean percentage of patients who had 
+a time in range of more than 70% and a time 
+below range of less than 4% was 64% in the AID 
+group  and  15%  in  the  control  group  (adjusted 
+difference, 41.6 percentage points; 95% CI, 27.0 
+to 57.5).
+
+During a 24-hour period, the mean percent-
+age of time that the glucose value was less than 
+70 mg per deciliter was 1.6% (23 minutes) in the 
+AID group and 1.8% (26 minutes) in the control 
+group. The percentage of time that the glucose 
+value  was  more  than  180  mg  per  deciliter  was 
+23.9%  (5  hours  42  minutes)  in  the  AID  group 
+and 41.6% (10.0 hours) in the control group. As 
+
+with  the  children,  the  use  of  AID  was  most 
+effective in the adults at night, when the time 
+in  range  was  85.2±12.7%,  as  compared  with 
+70.9±12.7% during the day. In the control group, 
+the  mean  time  in  range  at  night  (53.5±20.1%) 
+was similar to that during the day (57.5±14.4%) 
+(Figs. 2 and S3). Overnight, the percentage of 
+time that the glucose level was less than 70 mg 
+per  deciliter  was  2.2%  in  the  AID  group  and 
+1.9%  in  the  control  group.  In  both  adults  and 
+children, the increases in the percentage of time 
+in range was attributed mainly to overnight im-
+provement with the AID system (Fig. S4). At the 
+end of the trial, the mean glycated hemoglobin 
+level was 6.8% (50.7 mmol per mole) in the AID 
+group  and  7.5%  (58.5  mmol  per  mole)  in  the 
+control group.
+
+Safety Outcomes
+Neither severe hypoglycemia nor diabetic keto-
+acidosis  occurred  in  either  trial  group,  and  no 
+adverse events were related to the algorithm or 
+automation of insulin delivery. Prespecified ad-
+verse events are provided in Table 3.
+
+Ten adverse events that were related to a de-
+vice (nonserious adverse device effects) were re-
+ported among 8 patients in the AID group, and 
+8 events were reported among 8 patients in the 
+control group. These events included 6 hypergly-
+cemia  events  in  the  AID  group  and  5  in  the 
+control group and were mainly due to infusion-
+set  failures.  One  adult  in  the  AID  group  had 
+superficial  skin  burns  on  separate  occasions 
+from two different preproduction DANA-i insu-
+lin pumps.
+
+Two  serious  adverse  events  occurred  in  the 
+AID  group  (hospitalizations  for  hyperglycemia 
+in one child due to infusion-set failure and the 
+other  unrelated  to  diabetes),  and  5  serious  ad-
+verse  events  (all  in  children)  occurred  in  the 
+control group: 1 hyperglycemia event owing to 
+insulin-pump failure and 4 events unrelated to 
+diabetes. The rate of severe hyperglycemia and 
+ketosis  (capillary  glucose  level,  >300  mg  per 
+deciliter; ketones, >1.5 mmol per liter and symp-
+tomatic) per 100 user-days was 0.10 in the AID 
+group and 0.07 in the control group.
+
+System Performance
+In the AID group, the median percentage of time 
+that the system was automating insulin delivery 
+was 94.2% (IQR, 87.3 to 95.7) (Table S9). Device 
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+873
+
+
+T h e  ne w   e ngl a nd   jou r na l   o f  m e dicine
+
+Table 1. Characteristics of the Patients at Baseline.*
+
+Characteristic
+Children
+
+No. of patients
+
+Median age (IQR) — yr
+
+Female sex — no. (%)
+
+Ethnic group — no. (%)†
+
+Maori
+
+Asian
+
+European or other
+
+New Zealand Deprivation Index — no. (%)‡
+
+Quintile 1
+
+Quintile 2
+
+Quintile 3
+
+Quintile 4
+
+Quintile 5
+
+Diabetes history
+
+Glycated hemoglobin§
+
+Value — mmol/mol
+
+Mean percent§
+
+Previous use of CGM — no. (%)¶
+
+Previous use of automated insulin delivery 
+
+ — no. (%)‖
+
+Automated Insulin 
+
+Delivery
+
+21
+
+Control
+
+27
+
+Total
+
+48
+
+14.0 (11.0–15.0)
+
+11.0 (9.0–14.5)
+
+13.0 (9.0–15.0)
+
+11 (52)
+
+4 (19)
+
+1 (5)
+
+16 (76)
+
+9 (43)
+
+6 (29)
+
+4 (19)
+
+2 (10)
+
+0
+
+58.3±6.6
+
+7.5
+
+20 (95)
+
+1 (5)
+
+13 (48)
+
+4 (15)
+
+0
+
+23 (85)
+
+10 (37)
+
+10 (37)
+
+3 (11)
+
+2 (7)
+
+2 (7)
+
+58.4±9.9
+
+7.5
+
+26 (96)
+
+2 (7)
+
+24 (50)
+
+8 (17)
+
+1 (2)
+
+39 (81)
+
+19 (40)
+
+16 (33)
+
+7 (15)
+
+4 (8)
+
+2 (4)
+
+58.4±8.5
+
+7.5
+
+46 (96)
+
+3 (6)
+
+Time in glucose range — (%)**
+
+57.4±10.6
+
+55.1±12.6
+
+56.1±11.7
+
+Adults
+
+No. of patients
+
+Median age (IQR) — yr
+
+Sex — no. (%)
+
+Female
+
+Male
+
+Nonbinary
+
+Ethnic group — no. (%)†
+
+Maori
+
+Asian
+
+Middle Eastern, Latin American, or African
+
+European or other
+
+New Zealand Deprivation Index — no. (%)‡
+
+Quintile 1
+
+Quintile 2
+
+Quintile 3
+
+Quintile 4
+
+Quintile 5
+
+Diabetes history
+
+23
+
+26
+
+49
+
+40.0 (33.0–43.5)
+
+38.0 (23.2–45.8)
+
+40.0 (29.0–45.0)
+
+15 (65)
+
+7 (30)
+
+1 (4)
+
+2 (9)
+
+0
+
+1 (4)
+
+20 (87)
+
+9 (39)
+
+3 (13)
+
+5 (22)
+
+3 (13)
+
+3 (13)
+
+15 (58)
+
+11 (42)
+
+0
+
+5 (19)
+
+1 (4)
+
+0
+
+20 (77)
+
+4 (15)
+
+7 (27)
+
+7 (27)
+
+6 (23)
+
+2 (8)
+
+30 (61)
+
+18 (37)
+
+1 (2)
+
+7 (14)
+
+1 (2)
+
+1 (2)
+
+40 (82)
+
+13 (27)
+
+10 (20)
+
+12 (24)
+
+9 (18)
+
+5 (10)
+
+874
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+
+Automated Insulin Delivery in Type 1 Diabetes
+
+Table 1. (Continued.)
+
+Characteristic
+
+Glycated hemoglobin§
+
+Value — mmol/mol
+
+Mean percent
+
+Previous use of CGM — no. (%)¶
+
+Previous use of automated insulin delivery  
+
+— no. (%)‖
+
+Automated Insulin 
+
+Delivery
+
+Control
+
+Total
+
+60.0±13.7
+
+7.6
+
+15 (65)
+
+4 (17)
+
+62.1±9.1
+
+7.8
+
+17 (65)
+
+5 (19)
+
+61.1±11.5
+
+7.7
+
+32 (65)
+
+9 (18)
+
+Time in target glucose range — %**
+
+64.7±12.9
+
+60.3±15.6
+
+62.4±14.4
+
+* 
+
+† 
+
+‡ 
+
+§ 
+¶ 
+
+ Plus–minus values are means ±SD. Children were defined as patients under the age of 16 years. A full list of patient 
+characteristics at baseline is shown in Table S5 in the Supplementary Appendix. IQR denotes interquartile range.
+ The patients (or their parents or guardians) could select more than one ethnic group. However, they were assigned 
+to a single ethnic group for statistical evaluation with the list prioritized in the order of Maori; Pacific Islander; Asian; 
+Middle Eastern, Latin American, or African; and European or other. No patients selected the Pacific Islander category, 
+and no children selected the Middle Eastern, Latin American, or African category.
+ The New Zealand Deprivation Index is an area­based measure of socioeconomic deprivation in which the fifth quintile 
+represents the 20% most deprived areas in the country.
+ Glycated hemoglobin was measured with the use of the DCA Vantage Analyzer.
+ Previous use of continuous glucose monitoring (CGM) was defined as use of a CGM system more than 75% of the 
+time before the baseline visit.
+ Automated insulin delivery refers to a hybrid closed­loop system.
+
+‖ 
+**   The time in the target glucose range is the percentage of time that the patient had a glucose level of 70 to 180 mg per 
+
+deciliter (3.9 to 10.0 mmol per liter) during the run­in period.
+
+deficiencies are shown in Table S10. Fewer de-
+vice  deficiencies  were  reported  during  the  ran-
+domized trial than during the run-in period (0.8 
+per 100 user-days vs. 5.1 per 100 user-days). This 
+difference reflects action taken to address the 
+battery problem that has been described previ-
+ously.
+
+Most device deficiencies were related to hard-
+ware (46 in the AID group and 39 in the control 
+group) followed by connectivity issues (20 in the 
+AID group and 7 in the control group); one de-
+vice deficiency was attributed to the application 
+display.  The  insulin  pump  produced  the  most 
+device  deficiencies  (47  events  affecting  34  pa-
+tients), followed by the pump Auto Setter device 
+(16 events).
+
+Discussion
+
+In  the  CREATE  trial,  we  found  that  patients 
+who were using the open-source AID system had 
+3  hours  21  minutes  more  time  in  the  target 
+glucose range per day than those who were us-
+ing sensor-augmented insulin-pump therapy, a 
+between-group  difference  of  14  percentage 
+points. Patients in the AID group had improved 
+
+glycemic  control  while  maintaining  a  low  per-
+centage of time during which the glucose level 
+was less than 70 mg per deciliter. The improved 
+glycemic  control  during  AID  therapy  is  consis-
+tent  with  findings  in  observational  studies,14,15 
+which  are  limited  by  a  self-selected  cohort  of 
+patients who have chosen to use an open-source 
+AID system. The positive effect of AID therapy 
+on glycemia in our trial was greatest overnight, 
+a finding that was consistent with the results of 
+evaluations of commercial AID systems.16 In the 
+AID  group,  adults  had  a  higher  percentage  of 
+time in the target range than children,13,17 pos-
+sibly because of differences in glycemic variabil-
+ity,18 likelihood of administration of an insulin 
+bolus  before  a  meal,  activity  level,  and  dietary 
+factors. Even so, children still had the greatest 
+improvement  in  the  percentage  of  time  in  the 
+target range between baseline and the end of the 
+trial.  Other  studies  have  also  shown  that  pa-
+tients with the lowest baseline time in the target 
+range gain the most from the use of AID.16,19
+
+The absolute differences in the percentage of 
+time in range between the trial groups are simi-
+lar  to  between-group  differences  for  commer-
+cially available AID systems.13,16,17 Such between-
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+875
+
+
+T h e  ne w   e ngl a nd   jou r na l   o f  m e dicine
+
+ 
+
+n
+e
+e
+w
+t
+e
+b
+
+ 
+e
+c
+n
+e
+r
+e
+f
+f
+i
+
+ 
+
+ 
+
+n
+a
+e
+M
+d
+e
+t
+s
+u
+d
+A
+
+j
+
+ 
+s
+p
+u
+o
+r
+G
+
+ 
+
+‡
+)
+I
+C
+%
+5
+9
+(
+
+D
+
+ 
+e
+g
+n
+a
+h
+C
+n
+a
+e
+M
+
+ 
+
+ 
+
+)
+I
+C
+%
+5
+9
+(
+
+l
+
+o
+r
+t
+n
+o
+C
+
+†
+8
+6
+1
+–
+5
+5
+1
+ 
+s
+y
+a
+D
+
+ 
+
+d
+o
+i
+r
+e
+P
+n
+i
+­
+n
+u
+R
+
+ 
+e
+g
+n
+a
+h
+C
+n
+a
+e
+M
+
+ 
+
+ 
+
+)
+I
+C
+%
+5
+9
+(
+
+†
+8
+6
+1
+–
+5
+5
+1
+ 
+s
+y
+a
+D
+
+ 
+
+d
+o
+i
+r
+e
+P
+n
+i
+­
+n
+u
+R
+
+n
+e
+r
+d
+
+l
+i
+
+h
+C
+
+y
+r
+e
+v
+i
+l
+e
+D
+n
+
+ 
+
+i
+l
+
+u
+s
+n
+I
+ 
+
+d
+e
+t
+a
+m
+o
+t
+u
+A
+
+c
+i
+r
+t
+e
+M
+ 
+c
+i
+m
+e
+c
+y
+l
+G
+d
+n
+a
+ 
+
+ 
+
+p
+u
+o
+r
+G
+ 
+e
+g
+A
+
+*
+.
+d
+o
+i
+r
+e
+P
+
+ 
+
+ 
+l
+a
+i
+r
+T
+o
+t
+ 
+g
+n
+d
+r
+o
+c
+c
+A
+
+i
+
+ 
+
+ 
+,
+s
+t
+l
+u
+d
+A
+d
+n
+a
+ 
+n
+e
+r
+d
+
+l
+i
+
+h
+C
+n
+
+ 
+
+i
+ 
+s
+c
+i
+r
+t
+e
+M
+ 
+c
+i
+m
+e
+c
+y
+l
+G
+ 
+y
+l
+i
+a
+D
+
+ 
+.
+2
+ 
+e
+l
+b
+a
+T
+
+)
+5
+.
+9
+1
+ 
+o
+t
+ 
+7
+.
+5
+(
+ 
+6
+.
+2
+1
+
+ 
+
+)
+8
+.
+2
+o
+t
+ 
+1
+.
+8
+−
+(
+ 
+6
+.
+2
+−
+
+5
+.
+7
+1
+±
+5
+.
+2
+5
+
+6
+.
+2
+1
+±
+1
+.
+5
+5
+
+)
+9
+.
+6
+1
+ 
+o
+t
+ 
+9
+.
+2
+(
+ 
+9
+.
+9
+
+5
+.
+1
+1
+±
+5
+.
+7
+6
+
+6
+.
+0
+1
+±
+4
+.
+7
+5
+
+ 
+
+n
+
+7
+2
+
+7
+2
+
+7
+2
+
+0
+2
+
+0
+2
+
+1
+2
+
+e
+g
+n
+a
+r
+ 
+l
+
+ 
+
+d
+/
+g
+m
+0
+8
+1
+–
+0
+7
+
+i
+ 
+e
+s
+o
+c
+u
+g
+h
+t
+i
+
+ 
+
+l
+
+w
+ 
+e
+m
+
+i
+t
+ 
+f
+o
+ 
+e
+g
+a
+t
+n
+e
+c
+r
+e
+P
+
+s
+t
+n
+e
+i
+t
+a
+p
+ 
+f
+o
+
+ 
+.
+
+o
+N
+
+ 
+
+)
+5
+.
+0
+o
+t
+ 
+6
+.
+1
+−
+(
+ 
+5
+.
+0
+−
+
+)
+2
+.
+0
+−
+ 
+o
+t
+ 
+9
+.
+1
+−
+(
+ 
+0
+.
+1
+−
+
+8
+.
+2
+±
+7
+.
+2
+
+0
+.
+3
+±
+7
+.
+3
+
+)
+4
+.
+0
+−
+ 
+o
+t
+ 
+5
+.
+2
+−
+(
+ 
+5
+.
+1
+−
+
+5
+.
+1
+±
+1
+.
+2
+
+6
+.
+2
+±
+5
+.
+3
+
+)
+0
+.
+1
+−
+ 
+o
+t
+ 
+7
+.
+8
+−
+(
+ 
+8
+.
+4
+−
+
+ 
+
+)
+8
+.
+2
+o
+t
+ 
+7
+.
+0
+−
+(
+ 
+0
+.
+1
+
+5
+.
+7
+±
+0
+.
+6
+2
+
+0
+.
+8
+±
+0
+.
+5
+2
+
+)
+0
+.
+0
+−
+ 
+o
+t
+ 
+2
+.
+8
+−
+(
+ 
+1
+.
+4
+−
+
+8
+.
+6
+±
+1
+.
+1
+2
+
+3
+.
+5
+±
+3
+.
+5
+2
+
+)
+4
+.
+2
+−
+ 
+o
+t
+ 
+0
+.
+2
+1
+−
+(
+ 
+2
+.
+7
+−
+
+ 
+
+)
+4
+.
+7
+o
+t
+ 
+2
+.
+2
+−
+(
+ 
+6
+.
+2
+
+7
+.
+4
+1
+±
+8
+.
+8
+1
+
+5
+.
+7
+±
+1
+.
+6
+1
+
+)
+7
+.
+0
+−
+ 
+o
+t
+ 
+0
+.
+8
+−
+(
+ 
+4
+.
+4
+−
+
+0
+.
+6
+±
+3
+.
+9
+
+3
+.
+7
+±
+8
+.
+3
+1
+
+ 
+
+­
+o
+p
+y
+h
+2
+ 
+r
+o
+ 
+1
+ 
+l
+e
+v
+e
+l
+ 
+:
+l
+
+d
+/
+g
+m
+ 
+0
+7
+<
+
+ 
+l
+e
+v
+e
+l
+ 
+e
+s
+o
+c
+u
+g
+h
+t
+i
+
+ 
+
+l
+
+w
+ 
+e
+m
+
+i
+t
+ 
+f
+o
+ 
+e
+g
+a
+t
+n
+e
+c
+r
+e
+P
+
+a
+i
+m
+e
+c
+y
+l
+g
+
+ 
+1
+ 
+l
+e
+v
+e
+l
+ 
+:
+e
+g
+n
+a
+r
+ 
+l
+
+ 
+
+d
+/
+g
+m
+0
+5
+2
+–
+0
+8
+1
+
+ 
+
+n
+
+i
+ 
+e
+s
+o
+c
+u
+g
+h
+t
+i
+
+ 
+
+l
+
+w
+ 
+e
+m
+
+i
+t
+ 
+f
+o
+ 
+e
+g
+a
+t
+n
+e
+c
+r
+e
+P
+
+a
+i
+m
+e
+c
+y
+l
+g
+r
+e
+p
+y
+h
+
+­
+r
+e
+p
+y
+h
+2
+
+ 
+
+ 
+l
+e
+v
+e
+l
+ 
+:
+l
+
+d
+/
+g
+m
+0
+5
+2
+>
+
+ 
+
+ 
+l
+e
+v
+e
+l
+
+ 
+e
+s
+o
+c
+u
+g
+h
+t
+i
+
+ 
+
+l
+
+w
+ 
+e
+m
+
+i
+t
+ 
+f
+o
+ 
+e
+g
+a
+t
+n
+e
+c
+r
+e
+P
+
+a
+i
+m
+e
+c
+y
+l
+g
+
+)
+4
+.
+8
+−
+ 
+o
+t
+ 
+4
+.
+4
+3
+−
+(
+ 
+4
+.
+1
+2
+−
+
+ 
+
+)
+0
+.
+0
+2
+o
+t
+ 
+4
+.
+3
+−
+(
+ 
+3
+.
+8
+
+4
+.
+6
+3
+±
+4
+.
+2
+8
+1
+
+ 
+
+4
+.
+2
+2
+±
+1
+.
+4
+7
+1
+
+)
+1
+.
+2
+−
+ 
+o
+t
+ 
+2
+.
+5
+2
+−
+(
+ 
+6
+.
+3
+1
+−
+
+8
+.
+8
+1
+±
+8
+.
+6
+5
+1
+
+6
+.
+9
+1
+±
+0
+.
+1
+7
+1
+
+l
+
+d
+/
+g
+m
+—
+
+ 
+
+ 
+l
+e
+v
+e
+l
+ 
+e
+s
+o
+c
+u
+g
+n
+a
+e
+M
+
+ 
+
+l
+
+)
+0
+.
+1
+ 
+o
+t
+ 
+1
+.
+0
+1
+−
+(
+ 
+5
+.
+4
+−
+
+ 
+
+)
+9
+.
+0
+o
+t
+ 
+4
+.
+7
+−
+(
+ 
+2
+.
+3
+−
+
+ 
+
+)
+6
+.
+4
+o
+t
+ 
+4
+.
+0
+−
+(
+ 
+1
+.
+2
+
+)
+4
+.
+1
+−
+ 
+o
+t
+ 
+4
+.
+5
+−
+(
+ 
+4
+.
+3
+−
+
+)
+4
+.
+0
+−
+ 
+o
+t
+ 
+0
+.
+0
+1
+−
+(
+ 
+2
+.
+5
+−
+
+ 
+
+)
+1
+.
+3
+o
+t
+ 
+2
+.
+3
+−
+(
+ 
+0
+.
+0
+
+)
+0
+.
+0
+−
+ 
+o
+t
+ 
+9
+.
+0
+−
+(
+ 
+5
+.
+0
+−
+
+ 
+
+)
+3
+.
+0
+o
+t
+ 
+3
+.
+0
+−
+(
+ 
+0
+.
+0
+
+6
+.
+3
+1
+±
+6
+.
+7
+6
+
+9
+.
+5
+±
+4
+.
+7
+3
+
+7
+.
+0
+1
+±
+2
+.
+9
+5
+
+0
+.
+1
+±
+6
+.
+7
+
+2
+.
+2
+1
+±
+8
+.
+0
+7
+
+1
+.
+6
+±
+8
+.
+0
+4
+
+)
+3
+.
+1
+−
+ 
+o
+t
+ 
+2
+.
+3
+1
+−
+(
+ 
+3
+.
+7
+−
+
+)
+7
+.
+1
+ 
+o
+t
+ 
+6
+.
+3
+−
+(
+ 
+9
+.
+0
+−
+
+6
+.
+0
+1
+±
+2
+.
+2
+6
+
+2
+.
+5
+±
+7
+.
+9
+3
+
+4
+.
+2
+1
+±
+6
+.
+9
+6
+
+7
+.
+4
+±
+6
+.
+0
+4
+
+l
+
+ 
+
+ 
+
+d
+/
+g
+m
+—
+n
+o
+i
+t
+a
+i
+v
+e
+d
+d
+r
+a
+d
+n
+a
+t
+s
+ 
+e
+s
+o
+c
+u
+G
+
+ 
+
+l
+
+ 
+
+ 
+
+%
+—
+n
+o
+i
+t
+a
+i
+r
+a
+v
+ 
+f
+o
+ 
+t
+n
+e
+i
+c
+i
+f
+f
+e
+o
+C
+
+9
+.
+9
+±
+4
+.
+8
+5
+
+9
+.
+0
+±
+5
+.
+7
+
+)
+4
+.
+0
+−
+ 
+o
+t
+ 
+4
+.
+1
+1
+−
+(
+ 
+9
+.
+5
+−
+
+ 
+
+)
+0
+.
+0
+o
+t
+ 
+0
+.
+1
+−
+(
+ 
+5
+.
+0
+−
+
+8
+.
+9
+±
+6
+.
+2
+5
+
+9
+.
+0
+±
+0
+.
+7
+
+6
+.
+6
+±
+3
+.
+8
+5
+
+6
+.
+0
+±
+5
+.
+7
+
+l
+
+o
+m
+
+/
+l
+o
+m
+m
+—
+
+ 
+
+ 
+e
+u
+l
+a
+V
+
+t
+n
+e
+c
+r
+e
+P
+
+s
+t
+l
+u
+d
+A
+
+l
+
+i
+
+§
+n
+b
+o
+g
+o
+m
+e
+h
+d
+e
+t
+a
+c
+y
+l
+G
+
+ 
+
+ 
+
+)
+1
+.
+2
+2
+o
+t
+ 
+6
+.
+8
+(
+ 
+4
+.
+5
+1
+
+ 
+
+)
+1
+.
+0
+o
+t
+ 
+7
+.
+7
+−
+(
+ 
+8
+.
+3
+−
+
+2
+.
+4
+1
+±
+5
+.
+6
+5
+
+6
+.
+5
+1
+±
+3
+.
+0
+6
+
+)
+8
+.
+4
+1
+ 
+o
+t
+ 
+4
+.
+4
+(
+ 
+6
+.
+9
+
+9
+.
+1
+1
+±
+5
+.
+4
+7
+
+9
+.
+2
+1
+±
+7
+.
+4
+6
+
+ 
+
+n
+
+6
+2
+
+6
+2
+
+6
+2
+
+2
+2
+
+2
+2
+
+3
+2
+
+e
+g
+n
+a
+r
+ 
+l
+
+ 
+
+d
+/
+g
+m
+0
+8
+1
+–
+0
+7
+
+i
+ 
+e
+s
+o
+c
+u
+g
+h
+t
+i
+
+ 
+
+l
+
+w
+ 
+e
+m
+
+i
+t
+ 
+f
+o
+ 
+e
+g
+a
+t
+n
+e
+c
+r
+e
+P
+
+s
+t
+n
+e
+i
+t
+a
+p
+ 
+f
+o
+
+ 
+.
+
+o
+N
+
+ 
+
+ 
+
+n
+a
+e
+M
+d
+e
+t
+s
+u
+d
+A
+
+j
+
+ 
+
+)
+6
+.
+0
+o
+t
+ 
+4
+.
+1
+−
+(
+ 
+4
+.
+0
+−
+
+ 
+
+)
+5
+.
+0
+o
+t
+ 
+3
+.
+0
+−
+(
+ 
+1
+.
+0
+
+5
+.
+2
+±
+8
+.
+1
+
+2
+.
+2
+±
+7
+.
+1
+
+ 
+
+)
+4
+.
+0
+o
+t
+ 
+2
+.
+1
+−
+(
+ 
+4
+.
+0
+−
+
+1
+.
+2
+±
+6
+.
+1
+
+2
+.
+2
+±
+3
+.
+2
+
+ 
+
+­
+o
+p
+y
+h
+2
+ 
+r
+o
+ 
+1
+ 
+l
+e
+v
+e
+l
+ 
+:
+l
+
+d
+/
+g
+m
+ 
+0
+7
+<
+
+ 
+l
+e
+v
+e
+l
+ 
+e
+s
+o
+c
+u
+g
+h
+t
+i
+
+ 
+
+l
+
+w
+ 
+e
+m
+
+i
+t
+ 
+f
+o
+ 
+e
+g
+a
+t
+n
+e
+c
+r
+e
+P
+
+a
+i
+m
+e
+c
+y
+l
+g
+
+876
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+
+Automated Insulin Delivery in Type 1 Diabetes
+
+ 
+
+n
+e
+e
+w
+t
+e
+b
+
+ 
+e
+c
+n
+e
+r
+e
+f
+f
+i
+
+ 
+
+ 
+
+n
+a
+e
+M
+d
+e
+t
+s
+u
+d
+A
+
+j
+
+ 
+s
+p
+u
+o
+r
+G
+
+ 
+
+‡
+)
+I
+C
+%
+5
+9
+(
+
+D
+
+ 
+e
+g
+n
+a
+h
+C
+n
+a
+e
+M
+
+ 
+
+ 
+
+)
+I
+C
+%
+5
+9
+(
+
+l
+
+o
+r
+t
+n
+o
+C
+
+†
+8
+6
+1
+–
+5
+5
+1
+ 
+s
+y
+a
+D
+
+ 
+
+d
+o
+i
+r
+e
+P
+n
+i
+­
+n
+u
+R
+
+ 
+e
+g
+n
+a
+h
+C
+n
+a
+e
+M
+
+ 
+
+ 
+
+)
+I
+C
+%
+5
+9
+(
+
+†
+8
+6
+1
+–
+5
+5
+1
+ 
+s
+y
+a
+D
+
+ 
+
+d
+o
+i
+r
+e
+P
+n
+i
+­
+n
+u
+R
+
+y
+r
+e
+v
+i
+l
+e
+D
+n
+
+ 
+
+i
+l
+
+u
+s
+n
+I
+ 
+
+d
+e
+t
+a
+m
+o
+t
+u
+A
+
+c
+i
+r
+t
+e
+M
+ 
+c
+i
+m
+e
+c
+y
+l
+G
+d
+n
+a
+ 
+
+ 
+
+p
+u
+o
+r
+G
+ 
+e
+g
+A
+
+)
+1
+.
+5
+−
+ 
+o
+t
+ 
+6
+.
+2
+1
+−
+(
+ 
+8
+.
+8
+−
+
+ 
+
+)
+5
+.
+3
+o
+t
+ 
+3
+.
+0
+−
+(
+ 
+6
+.
+1
+
+1
+.
+8
+±
+9
+.
+7
+2
+
+4
+.
+7
+±
+3
+.
+6
+2
+
+)
+1
+.
+2
+−
+ 
+o
+t
+ 
+2
+.
+1
+1
+−
+(
+ 
+6
+.
+6
+−
+
+4
+.
+8
+±
+2
+.
+8
+1
+
+5
+.
+9
+±
+7
+.
+4
+2
+
+)
+5
+.
+1
+−
+ 
+o
+t
+ 
+0
+.
+1
+1
+−
+(
+ 
+2
+.
+6
+−
+
+ 
+
+)
+4
+.
+5
+o
+t
+ 
+2
+.
+1
+−
+(
+ 
+1
+.
+2
+
+3
+.
+9
+±
+8
+.
+3
+1
+
+1
+.
+2
+1
+±
+7
+.
+1
+1
+
+)
+1
+.
+0
+−
+ 
+o
+t
+ 
+1
+.
+5
+−
+(
+ 
+6
+.
+2
+−
+
+9
+.
+4
+±
+6
+.
+5
+
+0
+.
+7
+±
+2
+.
+8
+
+ 
+1
+ 
+l
+e
+v
+e
+l
+ 
+:
+e
+g
+n
+a
+r
+ 
+l
+
+ 
+
+d
+/
+g
+m
+0
+5
+2
+–
+0
+8
+1
+
+ 
+
+n
+
+i
+ 
+e
+s
+o
+c
+u
+g
+h
+t
+i
+
+ 
+
+l
+
+w
+ 
+e
+m
+
+i
+t
+ 
+f
+o
+ 
+e
+g
+a
+t
+n
+e
+c
+r
+e
+P
+
+a
+i
+m
+e
+c
+y
+l
+g
+r
+e
+p
+y
+h
+
+­
+r
+e
+p
+y
+h
+2
+
+ 
+
+ 
+l
+e
+v
+e
+l
+ 
+:
+l
+
+d
+/
+g
+m
+0
+5
+2
+>
+
+ 
+
+ 
+l
+e
+v
+e
+l
+
+ 
+e
+s
+o
+c
+u
+g
+h
+t
+i
+
+ 
+
+l
+
+w
+ 
+e
+m
+
+i
+t
+ 
+f
+o
+ 
+e
+g
+a
+t
+n
+e
+c
+r
+e
+P
+
+a
+i
+m
+e
+c
+y
+l
+g
+
+)
+6
+.
+8
+−
+ 
+o
+t
+ 
+3
+.
+4
+3
+−
+(
+ 
+4
+.
+1
+2
+−
+
+)
+7
+.
+2
+1
+ 
+o
+t
+ 
+5
+.
+2
+−
+(
+ 
+1
+.
+5
+
+5
+.
+4
+2
+±
+4
+.
+5
+7
+1
+
+3
+.
+8
+2
+±
+3
+.
+0
+7
+1
+
+)
+8
+.
+3
+−
+ 
+o
+t
+ 
+2
+.
+0
+2
+−
+(
+ 
+0
+.
+2
+1
+−
+
+3
+.
+1
+2
+±
+4
+.
+8
+4
+1
+
+6
+.
+1
+2
+±
+7
+.
+9
+5
+1
+
+l
+
+d
+/
+g
+m
+—
+
+ 
+
+ 
+l
+e
+v
+e
+l
+ 
+e
+s
+o
+c
+u
+g
+n
+a
+e
+M
+
+ 
+
+l
+
+)
+5
+.
+3
+−
+ 
+o
+t
+ 
+3
+.
+4
+1
+−
+(
+ 
+9
+.
+8
+−
+
+ 
+
+)
+1
+.
+6
+o
+t
+ 
+0
+.
+2
+−
+(
+ 
+0
+.
+2
+
+)
+2
+.
+1
+ 
+o
+t
+ 
+7
+.
+3
+−
+(
+ 
+2
+.
+1
+−
+
+)
+9
+.
+1
+ 
+o
+t
+ 
+3
+.
+1
+−
+(
+ 
+3
+.
+0
+
+)
+2
+.
+3
+−
+ 
+o
+t
+ 
+3
+.
+2
+1
+−
+(
+ 
+7
+.
+7
+−
+
+)
+7
+.
+0
+−
+ 
+o
+t
+ 
+2
+.
+6
+−
+(
+ 
+4
+.
+3
+−
+
+)
+3
+.
+0
+−
+ 
+o
+t
+ 
+1
+.
+1
+−
+(
+ 
+7
+.
+0
+−
+
+)
+1
+.
+0
+−
+ 
+o
+t
+ 
+6
+.
+0
+−
+(
+ 
+3
+.
+0
+−
+
+5
+.
+9
+±
+4
+.
+1
+6
+
+3
+.
+5
+±
+3
+.
+5
+3
+
+3
+.
+8
+±
+0
+.
+9
+5
+
+8
+.
+0
+±
+5
+.
+7
+
+9
+.
+1
+1
+±
+3
+.
+9
+5
+
+9
+.
+5
+±
+0
+.
+5
+3
+
+)
+1
+.
+1
+−
+ 
+o
+t
+ 
+1
+.
+0
+1
+−
+(
+ 
+6
+.
+5
+−
+
+)
+3
+.
+1
+ 
+o
+t
+ 
+2
+.
+3
+−
+(
+ 
+9
+.
+0
+−
+
+7
+.
+0
+1
+±
+0
+.
+1
+5
+
+8
+.
+3
+±
+1
+.
+4
+3
+
+1
+.
+9
+±
+1
+.
+2
+6
+
+8
+.
+0
+±
+8
+.
+7
+
+)
+5
+.
+4
+−
+ 
+o
+t
+ 
+0
+.
+5
+1
+−
+(
+ 
+8
+.
+9
+−
+
+)
+4
+.
+0
+−
+ 
+o
+t
+ 
+4
+.
+1
+−
+(
+ 
+9
+.
+0
+−
+
+8
+.
+8
+±
+7
+.
+0
+5
+
+8
+.
+0
+±
+8
+.
+6
+
+9
+.
+2
+1
+±
+0
+.
+7
+5
+
+0
+.
+5
+±
+5
+.
+5
+3
+
+7
+.
+3
+1
+±
+0
+.
+0
+6
+
+3
+.
+1
+±
+6
+.
+7
+
+l
+
+ 
+
+ 
+
+d
+/
+g
+m
+—
+n
+o
+i
+t
+a
+i
+v
+e
+d
+d
+r
+a
+d
+n
+a
+t
+s
+ 
+e
+s
+o
+c
+u
+G
+
+ 
+
+l
+
+ 
+
+ 
+
+%
+—
+n
+o
+i
+t
+a
+i
+r
+a
+v
+ 
+f
+o
+ 
+t
+n
+e
+i
+c
+i
+f
+f
+e
+o
+C
+
+l
+
+o
+m
+
+/
+l
+o
+m
+m
+—
+
+ 
+
+ 
+e
+u
+l
+a
+V
+
+t
+n
+e
+c
+r
+e
+P
+
+l
+
+i
+
+¶
+n
+b
+o
+g
+o
+m
+e
+h
+d
+e
+t
+a
+c
+y
+l
+G
+
+ 
+
+l
+
+­
+o
+g
+o
+m
+e
+h
+
+ 
+
+d
+e
+t
+a
+c
+y
+l
+g
+
+ 
+e
+n
+
+i
+l
+e
+s
+a
+b
+
+ 
+
+d
+n
+a
+ 
+,
+e
+t
+i
+s
+ 
+l
+a
+i
+r
+t
+ 
+,
+e
+g
+a
+(
+ 
+s
+e
+l
+b
+a
+i
+r
+a
+v
+ 
+
+j
+
+n
+o
+i
+t
+a
+c
+i
+f
+i
+t
+a
+r
+t
+s
+ 
+r
+o
+f
+ 
+t
+n
+e
+m
+t
+s
+u
+d
+a
+ 
+r
+e
+t
+f
+a
+ 
+s
+l
+e
+d
+o
+m
+n
+o
+i
+s
+s
+e
+r
+g
+e
+r
+ 
+
+ 
+
+n
+a
+e
+m
+­
+s
+e
+r
+a
+u
+q
+s
+­
+t
+s
+a
+e
+l
+ 
+y
+r
+a
+n
+d
+r
+o
+
+i
+
+ 
+f
+o
+
+ 
+e
+s
+u
+
+ 
+e
+h
+t
+ 
+
+h
+t
+i
+
+w
+ 
+)
+s
+I
+C
+(
+ 
+s
+l
+a
+v
+r
+e
+t
+n
+
+i
+ 
+e
+c
+n
+e
+d
+i
+f
+n
+o
+c
+ 
+%
+5
+9
+
+­
+t
+s
+e
+t
+ 
+s
+i
+s
+e
+h
+t
+o
+p
+y
+h
+
+ 
+f
+o
+
+ 
+e
+c
+a
+l
+p
+
+ 
+
+n
+
+i
+ 
+
+d
+e
+s
+u
+
+ 
+e
+b
+
+ 
+t
+o
+n
+
+ 
+
+l
+
+d
+u
+o
+h
+s
+ 
+
+d
+n
+a
+ 
+y
+t
+i
+c
+i
+l
+
+p
+i
+t
+l
+u
+m
+
+ 
+r
+o
+f
+ 
+
+d
+e
+t
+s
+u
+d
+a
+ 
+
+j
+
+n
+e
+e
+b
+
+ 
+t
+o
+n
+
+ 
+e
+v
+a
+h
+
+ 
+s
+l
+a
+v
+r
+e
+t
+n
+
+i
+ 
+e
+c
+n
+e
+d
+i
+f
+n
+o
+c
+ 
+e
+h
+t
+ 
+f
+o
+
+i
+
+ 
+s
+h
+t
+d
+w
+ 
+e
+h
+T
+
+ 
+.
+s
+e
+l
+b
+a
+i
+r
+a
+v
+ 
+t
+n
+e
+d
+n
+e
+p
+e
+d
+
+ 
+
+d
+n
+a
+ 
+)
+]
+
+%
+0
+.
+8
+>
+
+ 
+
+ 
+r
+o
+%
+0
+.
+8
+≤
+
+[
+ 
+l
+e
+v
+e
+l
+ 
+
+n
+b
+
+i
+
+­
+e
+s
+a
+b
+
+ 
+e
+h
+T
+
+ 
+.
+s
+t
+n
+e
+i
+t
+a
+p
+
+ 
+1
+1
+ 
+r
+o
+f
+ 
+
+g
+n
+i
+s
+s
+i
+m
+ 
+e
+r
+a
+ 
+
+d
+n
+a
+ 
+t
+n
+e
+m
+s
+s
+e
+s
+s
+a
+ 
+
+4
+2
+
+ 
+k
+e
+e
+w
+ 
+e
+h
+t
+ 
+r
+e
+t
+f
+a
+ 
+r
+o
+
+ 
+r
+a
+e
+n
+
+ 
+e
+d
+a
+m
+ 
+s
+n
+o
+i
+t
+a
+v
+r
+e
+s
+b
+o
+m
+o
+r
+f
+ 
+
+ 
+
+n
+e
+k
+a
+t
+ 
+e
+r
+a
+ 
+s
+n
+o
+i
+t
+a
+i
+v
+e
+d
+
+ 
+
+d
+r
+a
+d
+n
+a
+t
+s
+ 
+
+d
+n
+a
+ 
+s
+n
+a
+e
+M
+
+ 
+.
+
+D
+S
+±
+
+ 
+s
+n
+a
+e
+m
+ 
+e
+r
+a
+ 
+s
+e
+u
+l
+a
+v
+ 
+s
+u
+n
+m
+–
+s
+u
+ P
+ 
+*
+
+i
+
+l
+
+ 
+
+h
+t
+i
+
+ 
+
+w
+d
+e
+t
+a
+m
+
+i
+t
+s
+e
+ 
+e
+r
+e
+w
+ 
+s
+l
+e
+v
+e
+l
+ 
+
+l
+
+i
+
+n
+b
+o
+g
+o
+m
+e
+h
+
+ 
+
+d
+e
+t
+a
+c
+y
+l
+g
+
+ 
+
+ 
+
+d
+n
+a
+ 
+s
+c
+i
+r
+t
+e
+m
+g
+n
+i
+r
+o
+t
+i
+n
+o
+m
+ 
+e
+s
+o
+c
+u
+g
+
+l
+
+ 
+s
+u
+o
+u
+n
+i
+t
+n
+o
+C
+
+ 
+
+ 
+.
+s
+l
+e
+d
+o
+m
+n
+o
+i
+s
+s
+e
+r
+g
+e
+r
+ 
+
+n
+a
+e
+m
+ 
+s
+e
+r
+a
+u
+q
+s
+­
+t
+s
+a
+e
+l
+ 
+y
+r
+a
+n
+d
+r
+o
+m
+o
+r
+f
+ 
+
+ 
+
+i
+
+n
+e
+k
+a
+t
+ 
+e
+r
+a
+ 
+s
+e
+c
+n
+e
+r
+e
+f
+f
+i
+d
+
+ 
+
+d
+e
+t
+s
+u
+d
+a
+ 
+e
+n
+
+j
+
+i
+l
+
+.
+1
+5
+5
+5
+0
+.
+0
+
+ 
+y
+b
+
+ 
+e
+l
+p
+i
+t
+l
+u
+m
+
+ 
+,
+r
+e
+t
+i
+l
+ 
+r
+e
+p
+
+ 
+s
+e
+l
+o
+m
+
+i
+l
+l
+i
+
+ 
+
+m
+o
+t
+ 
+e
+s
+o
+c
+u
+g
+
+l
+
+ 
+r
+o
+f
+ 
+s
+e
+u
+l
+a
+v
+ 
+e
+h
+t
+ 
+t
+r
+e
+v
+n
+o
+c
+ 
+
+o
+T
+
+ 
+.
+
+g
+n
+
+i
+
+.
+l
+a
+i
+r
+t
+ 
+e
+h
+t
+ 
+f
+o
+
+ 
+s
+k
+e
+e
+w
+2
+
+ 
+
+ 
+l
+a
+n
+i
+f
+ 
+e
+h
+t
+ 
+e
+r
+a
+ 
+
+8
+6
+1
+ 
+
+h
+g
+u
+o
+r
+h
+t
+ 
+5
+5
+1
+ 
+s
+y
+a
+ D
+†
+
+ 
+
+ 
+t
+n
+e
+d
+n
+e
+p
+e
+d
+
+ 
+
+d
+n
+a
+ 
+
+n
+o
+i
+t
+a
+c
+i
+f
+i
+t
+a
+r
+t
+s
+ 
+r
+o
+f
+ 
+t
+n
+e
+m
+t
+s
+u
+d
+a
+ 
+r
+e
+t
+f
+a
+ 
+
+j
+
+p
+u
+o
+r
+g
+
+ 
+l
+
+o
+r
+t
+n
+o
+c
+ 
+e
+h
+t
+ 
+
+n
+
+i
+ 
+e
+u
+l
+a
+v
+ 
+e
+h
+t
+ 
+s
+u
+n
+m
+p
+u
+o
+r
+g
+
+ 
+
+i
+
+ 
+y
+r
+e
+v
+i
+l
+e
+d
+
+ 
+
+n
+
+i
+l
+
+u
+s
+n
+
+i
+ 
+
+d
+e
+t
+a
+m
+o
+t
+u
+a
+ 
+e
+h
+t
+ 
+
+n
+
+i
+ 
+e
+u
+l
+a
+v
+ 
+e
+h
+t
+ 
+s
+a
+ 
+
+d
+e
+t
+a
+l
+u
+c
+l
+a
+c
+ 
+s
+a
+w
+ 
+e
+c
+n
+e
+r
+e
+f
+f
+i
+d
+
+ 
+
+p
+u
+o
+r
+g
+­
+n
+e
+e
+w
+t
+e
+b
+
+ 
+e
+h
+ T
+‡
+
+ 
+
+.
+
+p
+u
+o
+r
+g
+
+ 
+l
+
+o
+r
+t
+n
+o
+c
+ 
+e
+h
+t
+ 
+
+n
+
+i
+ 
+s
+t
+n
+e
+i
+t
+a
+p
+
+ 
+
+2
+
+ 
+
+d
+n
+a
+ 
+
+p
+u
+o
+r
+g
+
+ 
+y
+r
+e
+v
+i
+l
+e
+d
+
+ 
+
+n
+
+i
+l
+
+u
+s
+n
+
+i
+ 
+
+d
+e
+t
+a
+m
+o
+t
+u
+a
+ 
+e
+h
+t
+ 
+
+n
+
+i
+ 
+t
+n
+e
+i
+t
+a
+p
+
+ 
+1
+ 
+
+n
+
+i
+ 
+
+8
+6
+1
+ 
+
+o
+t
+ 
+
+5
+5
+1
+ 
+s
+y
+a
+d
+
+ 
+r
+o
+f
+ 
+
+g
+n
+i
+s
+s
+i
+m
+ 
+e
+r
+e
+w
+ 
+s
+l
+e
+v
+e
+l
+ 
+
+l
+
+i
+
+n
+b
+o
+g
+o
+m
+e
+h
+
+ 
+
+d
+e
+t
+a
+c
+y
+l
+g
+
+ 
+
+i
+
+g
+n
+d
+r
+a
+g
+e
+r
+ 
+a
+t
+a
+d
+
+ 
+,
+s
+t
+l
+u
+d
+a
+ 
+e
+h
+t
+ 
+
+g
+n
+o
+m
+  A
+¶
+
+ 
+l
+
+o
+r
+t
+n
+o
+c
+ 
+e
+h
+t
+ 
+
+n
+
+i
+ 
+s
+t
+n
+e
+i
+t
+a
+p
+
+ 
+
+4
+
+ 
+
+d
+n
+a
+ 
+
+p
+u
+o
+r
+g
+
+ 
+y
+r
+e
+v
+i
+l
+e
+d
+
+ 
+
+n
+
+i
+l
+
+u
+s
+n
+
+i
+ 
+
+d
+e
+t
+a
+m
+o
+t
+u
+a
+ 
+e
+h
+t
+ 
+
+n
+
+i
+ 
+s
+t
+n
+e
+i
+t
+a
+p
+
+ 
+
+2
+
+ 
+
+n
+
+i
+ 
+
+8
+6
+1
+ 
+
+o
+t
+ 
+
+5
+5
+1
+ 
+s
+y
+a
+d
+
+ 
+r
+o
+f
+ 
+
+g
+n
+i
+s
+s
+i
+m
+ 
+e
+r
+e
+w
+ 
+s
+l
+e
+v
+e
+l
+ 
+
+l
+
+i
+
+n
+b
+o
+g
+o
+m
+e
+h
+
+ 
+
+d
+e
+t
+a
+c
+y
+l
+g
+
+ 
+
+i
+
+g
+n
+d
+r
+a
+g
+e
+r
+ 
+a
+t
+a
+d
+
+ 
+,
+
+n
+e
+r
+d
+
+l
+i
+
+h
+c
+ 
+e
+h
+t
+ 
+
+g
+n
+o
+m
+ A
+
+ 
+§
+
+.
+s
+e
+l
+b
+a
+i
+r
+a
+v
+
+.
+
+p
+u
+o
+r
+g
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+877
+
+
+T h e  ne w   e ngl a nd   jou r na l   o f  m e dicine
+
+A
+
+Children
+
+B
+
+Adults
+
+Sensor-augmented pump therapy
+
+Open-source automated insulin delivery
+
+
+e
+g
+n
+a
+R
+
+e
+s
+o
+c
+u
+G
+
+l
+
+
+t
+e
+g
+r
+a
+T
+n
+
+
+
+i
+
+i
+
+e
+m
+T
+
+f
+o
+
+e
+g
+a
+t
+n
+e
+c
+r
+e
+P
+
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+
+24-HourMeasure
+
+Run-in
+
+0–3
+
+4–7
+
+8–11
+
+12–15
+
+16–19
+
+20–23
+
+DaytimeMeasure
+
+Run-in
+
+0–3
+
+4–7
+
+8–11
+
+12–15
+
+16–19
+
+20–23
+
+NighttimeMeasure
+
+Run-in
+
+0–3
+
+4–7
+
+8–11
+
+12–15
+
+16–19
+
+20–23
+
+
+e
+g
+n
+a
+R
+
+e
+s
+o
+c
+u
+G
+
+l
+
+
+t
+e
+g
+r
+a
+T
+n
+
+
+
+i
+
+i
+
+e
+m
+T
+
+f
+o
+
+e
+g
+a
+t
+n
+e
+c
+r
+e
+P
+
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+
+24-HourMeasure
+
+Run-in
+
+0–3
+
+4–7
+
+8–11
+
+12–15
+
+16–19
+
+20–23
+
+DaytimeMeasure
+
+Run-in
+
+0–3
+
+4–7
+
+8–11
+
+12–15
+
+16–19
+
+20–23
+
+NighttimeMeasure
+
+Run-in
+
+0–3
+
+4–7
+
+8–11
+
+12–15
+
+16–19
+
+20–23
+
+WeekssinceRandomization
+
+WeekssinceRandomization
+
+Figure 1. Percentage of Time in Target Glucose Range, According to Age Group and Trial Period.
+Box plots show the percentage of time that patients were in the target glucose range (70 to 180 mg per deciliter [3.9 to 10.0 mmol per 
+ liter]) among those who were assigned to use open­source automated insulin delivery (AID group) or sensor­augmented insulin­pump 
+therapy (control group). Values were measured by continuous glucose monitoring during contiguous 4­week periods from 4 weeks be­
+fore randomization to 24 weeks after randomization in children (7 to 15 years of age) and adults (16 to 70 years of age). Data are pre­
+sented according to the time period of measurement, with daytime defined as 6 a.m. to midnight and nighttime as midnight to 6 a.m. 
+Black dots indicate group means, and horizontal bars group medians; the bottom and top of each box represent the 25th and 75th per­
+centiles, respectively.
+
+group  differences  are  partly  attributable  to  the 
+decrease in the percentage of time in range in 
+the control group after the run-in period, which 
+
+we hypothesize was due to a waning awareness 
+of being observed (Hawthorne effect) over time.
+Hardware malfunction rather than algorithm 
+
+878
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+
+Automated Insulin Delivery in Type 1 Diabetes
+
+Sensor-augmented pump therapy
+
+Open-source automated insulin delivery
+
+A
+
+Children
+
+t
+e
+g
+r
+a
+T
+n
+
+i
+
+i
+
+e
+m
+T
+
+f
+o
+
+e
+g
+a
+t
+n
+e
+c
+r
+e
+P
+
+e
+g
+n
+a
+R
+
+e
+s
+o
+c
+u
+G
+
+l
+
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+Midnight 2 a.m.
+
+B
+
+Adults
+
+t
+e
+g
+r
+a
+T
+n
+
+i
+
+i
+
+e
+m
+T
+
+f
+o
+
+e
+g
+a
+t
+n
+e
+c
+r
+e
+P
+
+
+e
+g
+n
+a
+R
+
+e
+s
+o
+c
+u
+G
+
+l
+
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+Midnight 2 a.m.
+
+4 a.m.
+
+6 a.m.
+
+8 a.m.
+
+10 a.m.
+
+Noon
+
+2 p.m.
+
+4 p.m.
+
+6 p.m.
+
+8 p.m. 10 p.m.
+
+Midnight
+
+TimeofDay
+
+4 a.m.
+
+6 a.m.
+
+8 a.m.
+
+10 a.m.
+
+Noon
+
+2 p.m.
+
+4 p.m.
+
+6 p.m.
+
+8 p.m. 10 p.m.
+
+Midnight
+
+TimeofDay
+
+Figure 2. Percentage of Time in Target Glucose Range, According to Time of Day.
+Envelope plots show the percentage of time that children and adults in the two trial groups were in the target glu­
+cose range, as measured by continuous glucose monitoring during weeks 22 and 23 after randomization. Symbols 
+represent hourly group median values, and shaded regions indicate the 25th and 75th percentiles.
+
+performance was the main burden on patients 
+in  the  AID  group.  Occlusions  in  the  insulin-
+infusion set were the main cause of hyperglyce-
+mia.  The  absence  of  diabetic  ketoacidosis  and 
+severe hypoglycemia in the two groups was re-
+assuring.
+
+One strength of our trial is that the patients 
+were  more  representative  of  those  with  type  1 
+diabetes  than  the  patients  in  many  real-world 
+studies.20  In  addition,  in  our  trial,  the  patients 
+did not have experience with open-source AID, 
+which  suggests  that  a  range  of  patients  with 
+type  1  diabetes  can  benefit  from  this  system. 
+The majority of patients’ contacts with trial staff 
+members were for troubleshooting hardware is-
+sues, and the deficiencies of the devices in the 
+
+two groups were similar. We observed that with 
+appropriate  training,  health  care  professionals 
+can  provide  technical  and  clinical  support  for 
+open-source AID users. The trial also had a high 
+level of patient retention (98%), a lack of remote 
+monitoring (which resembled real-world clinical 
+practice),  and  broad  inclusion  criteria,  which 
+resulted in a population of diverse ages and eth-
+nic  backgrounds.  Furthermore,  the  6-month 
+trial duration was suitably long to capture rare 
+adverse events.
+
+Our  trial  also  has  certain  limitations.  Real-
+world support may differ from that provided in 
+a trial. The control group did not have an auto-
+mated  system  for  predicting  low-glucose  levels 
+or  suspending  insulin  administration,  features 
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+879
+
+
+T h e  ne w   e ngl a nd   jou r na l   o f  m e dicine
+
+Table 3. Adverse Events, According to Age Group.*
+
+Adverse Event and Age Group
+
+Automated Insulin Delivery
+
+Control
+
+Total
+
+Events
+
+Patients
+
+Events
+
+Patients
+
+Events
+
+Patients
+
+Children
+
+Nonserious adverse device effect†
+
+Any
+
+Hyperglycemia
+
+Skin infection
+
+Localized skin reaction
+
+Urticaria
+
+Serious adverse event or serious 
+
+ adverse device effect‡
+
+Any
+
+Anaphylactic reaction to food
+
+Croup
+
+Hyperglycemia
+
+Pilonidal cyst with abscess
+
+Adults§
+
+Nonserious adverse device effect
+
+Any
+
+Burn
+
+Hyperglycemia
+
+Infection at medical device site
+
+5
+
+3
+
+1
+
+1
+
+0
+
+2
+
+0
+
+1
+
+1
+
+0
+
+5
+
+2
+
+3
+
+0
+
+5
+
+3
+
+1
+
+1
+
+0
+
+2
+
+0
+
+1
+
+1
+
+0
+
+3
+
+1
+
+2
+
+0
+
+4
+
+3
+
+0
+
+0
+
+1
+
+5
+
+2
+
+1
+
+1
+
+1
+
+4
+
+0
+
+2
+
+2
+
+4
+
+3
+
+0
+
+0
+
+1
+
+5
+
+2
+
+1
+
+1
+
+1
+
+4
+
+0
+
+2
+
+2
+
+9
+
+6
+
+1
+
+1
+
+1
+
+7
+
+2
+
+2
+
+2
+
+1
+
+9
+
+2
+
+5
+
+2
+
+9
+
+6
+
+1
+
+1
+
+1
+
+7
+
+2
+
+2
+
+2
+
+1
+
+7
+
+1
+
+4
+
+2
+
+*  No cases of severe hypoglycemia (defined as a low blood glucose level causing altered mental consciousness and in­
+
+ability to assist in care) or diabetic ketoacidosis (defined as a blood glucose level of >250 mg per deciliter [>13.9 mmol 
+per liter], an arterial pH of <7.3 or a venous pH of <15 mEq per liter, or moderate ketonuria or ketonemia leading to 
+hospitalization) were reported in either group.
+
+†  A nonserious adverse device effect was defined as any untoward medical occurrence related to the use of an investiga­
+
+tional device.
+
+‡  A serious adverse event was defined as an adverse event that was unrelated to the use of a device and that was life­
+
+threatening, caused permanent impairment to a body structure or function, required hospitalization, or led to a medi­
+cal or surgical intervention to curb serious sequelae. A serious adverse device effect was defined as a serious adverse 
+event that was related to the use of an investigational device.
+
+§  There were no serious adverse events or serious adverse device effects in the adult cohort.
+
+that have been shown to reduce the incidence of 
+hypoglycemia.21 The generalizability of our find-
+ings  may  be  limited  by  the  enrollment  of  pa-
+tients with a relatively low glycated hemoglobin 
+level at baseline, by the underrepresentation of 
+patients with reduced economic resources, and 
+by  the  increased  familiarity  with  insulin-pump 
+therapy and continuous glucose monitoring among 
+the  patients  at  baseline.  However,  the  trial  pa-
+tients were more diverse than those enrolled in 
+previous  studies  that  had  been  biased  by  pa-
+tients’ selection of open-source AID. The effect size 
+is  partially  due  to  a  small  decline  in  the  per-
+
+centage of time in the target range in the con-
+trol group, which has not been observed in other 
+studies.  Unscheduled  contacts  with  trial  staff 
+members  by  telephone,  email,  or  text  message 
+were not recorded. Measurement of glycated hemo-
+globin was not centralized and was performed on 
+a point-of-care basis. Patients in the two groups 
+used  different  insulin  pumps,  although  other 
+studies have compared AID with “usual care.”22,23 
+In addition, a variety of insulin pumps were used 
+in the control group, although the stable time in 
+the  target  range  throughout  the  trial  suggests 
+that this factor had a minimal effect.
+
+880
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+
+Automated Insulin Delivery in Type 1 Diabetes
+
+In children and adults with type 1 diabetes, 
+the use of an open-source AID system resulted 
+in a significantly higher percentage of time in the 
+target  glucose  range  than  the  use  of  a  sensor-
+augmented insulin pump at 24 weeks.
+
+Supported by the Health Research Council of New Zealand. 
+Hardware support was provided by SOOIL Development, Dex-
+com, and Vodafone New Zealand.
+
+Disclosure forms provided by the authors are available with 
+
+the full text of this article at NEJM.org.
+
+A data sharing statement provided by the authors is available 
+
+with the full text of this article at NEJM.org.
+
+References
+1.  Weisman  A,  Bai  J-W,  Cardinez  M, 
+Kramer CK, Perkins BA. Effect of arti-
+ficial  pancreas  systems  on  glycaemic 
+control in patients with type 1 diabetes: 
+a systematic review and meta-analysis of 
+outpatient  randomised  controlled  trials. 
+Lancet  Diabetes  Endocrinol  2017; 5: 501-
+12.
+2.  Lewis  D,  Leibrand  S;   #OpenAPS 
+Community.  Real-world  use  of  open 
+source artificial pancreas systems. J Dia-
+betes Sci Technol 2016; 10: 1411.
+3.  OpenAPS.  About  the  OpenAPS  data 
+commons on open humans. 2022 (https://
+openaps . org/  data - commons).
+4.  Lum JW, Bailey RJ, Barnes-Lomen V, 
+et al. A real-world prospective study of the 
+safety and effectiveness of the loop open 
+source  automated  insulin  delivery  sys-
+tem. Diabetes Technol Ther 2021; 23: 367-
+75.
+5.  Marshall DC, Holloway M, Korer M, 
+Woodman J, Brackenridge A, Hussain S. 
+Do-it-yourself artificial pancreas systems 
+in  type  1  diabetes:  perspectives  of  two 
+adult users, a caregiver and three physi-
+cians. Diabetes Ther 2019; 10: 1553-64.
+6.  Braune K, Lal RA, Petruželková L, et al. 
+Open-source  automated  insulin  delivery: 
+international  consensus  statement  and 
+practical guidance for health-care profes-
+sionals. Lancet Diabetes Endocrinol 2022; 
+10: 58-74.
+7.  Lewis  DM.  Do-it-yourself  artificial 
+pancreas system and the OpenAPS move-
+ment.  Endocrinol  Metab  Clin  North  Am 
+2020; 49: 203-13.
+8.  Burnside M, Lewis D, Crocket H, et al. 
+CREATE  (Community  deRivEd  Auto-
+maTEd  insulin  delivery)  trial.  Random-
+ised parallel arm open label clinical trial 
+
+comparing automated insulin delivery us-
+ing  a  mobile  controller  (AnyDANA-loop) 
+with an open-source algorithm with sen-
+sor  augmented  pump  therapy  in  type  1 
+diabetes.  J  Diabetes  Metab  Disord  2020; 
+19: 1615-29.
+9.  Crocket H, Lewis DM, Burnside M, et al. 
+Learning challenges of healthcare profes-
+sionals supporting open-source automated 
+insulin  delivery.  Diabet  Med  2022; 39(5): 
+e14750.
+10.  AndroidAPS. Welcome to the Android-
+APS  documentation  (https://androidaps 
+. readthedocs . io/  en/  latest/  ).
+11.  OpenAPS.  OpenAPS  reference  de-
+sign.  2021  (https://openaps . org/  reference 
+- design/  ).
+12.  Danne T, Nimri R, Battelino T, et al. 
+International  consensus  on  use  of  con-
+tinuous  glucose  monitoring.  Diabetes 
+Care 2017; 40: 1631-40.
+13.  Brown  SA,  Kovatchev  BP,  Raghinaru 
+D,  et  al.  Six-month  randomized,  multi-
+center trial of closed-loop control in type 1 
+diabetes. N Engl J Med 2019; 381: 1707-17.
+14.  Asarani NAM, Reynolds AN, Elbalshy 
+M, et al. Efficacy, safety, and user experi-
+ence of DIY or open-source artificial pan-
+creas  systems:  a  systematic  review.  Acta 
+Diabetol 2021; 58: 539-47.
+15.  Knoll C, Peacock S, Wäldchen M, et al. 
+Real-world evidence on clinical outcomes 
+of  people  with  type  1  diabetes  using 
+open-source  and  commercial  automated 
+insulin  dosing  systems:  a  systematic  re-
+view. Diabet Med 2022; 39(5): e14741.
+16.  Collyns OJ, Meier RA, Betts ZL, et al. 
+Improved  glycemic  outcomes  with  Med-
+tronic MiniMed advanced hybrid closed-
+loop delivery: results from a randomized 
+crossover trial comparing automated in-
+
+sulin delivery with predictive low glucose 
+suspend in people with type 1 diabetes. 
+Diabetes Care 2021; 44: 969-75.
+17.  Breton  MD,  Kanapka  LG,  Beck  RW,  
+et  al.  A  randomized  trial  of  closed-loop 
+control in children with type 1 diabetes. 
+N Engl J Med 2020; 383: 836-45.
+18.  Dovc K, Boughton C, Tauschmann M, 
+et al. Young children have higher variabil-
+ity of insulin requirements: observations 
+during  hybrid  closed-loop  insulin  deliv-
+ery. Diabetes Care 2019; 42: 1344-7.
+19.  Schoelwer  MJ,  Kanapka  LG,  Wadwa 
+RP,  et  al.  Predictors  of  time-in-range 
+(70–180 mg/dL)  achieved  using  a  closed-
+loop  control  system.  Diabetes  Technol 
+Ther 2021; 23: 475-81.
+20.  Jeyaventhan R, Gallen G, Choudhary 
+P, Hussain S. A real-world study of user 
+characteristics, safety and efficacy of open-
+source closed-loop systems and Medtronic 
+670G.  Diabetes  Obes  Metab  2021; 23: 
+1989-94.
+21.  Abraham MB, Nicholas JA, Smith GJ, 
+et al. Reduction in hypoglycemia with the 
+predictive  low-glucose  management  sys-
+tem: a long-term randomized controlled 
+trial in adolescents with type 1 diabetes. 
+Diabetes Care 2018; 41: 303-10.
+22.  Brown SA, Forlenza GP, Bode BW, et al. 
+Multicenter  trial  of  a  tubeless,  on-body 
+automated  insulin  delivery  system  with 
+customizable glycemic targets in pediat-
+ric and adult participants with type 1 dia-
+betes. Diabetes Care 2021; 44: 1630-40.
+23.  DeBoer MD, Breton MD, Wakeman C, 
+et al. Performance of an artificial pancreas 
+system  for  young  children  with  type  1 
+diabetes. Diabetes Technol Ther 2017; 19: 
+293-8.
+Copyright © 2022 Massachusetts Medical Society.
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+881
+
+

@@ -1,0 +1,316 @@
+Title-Abstract. Section intro
+verse events.
+
+Our  trial  also  has  certain  limitations.  Real-
+world support may differ from that provided in 
+a trial. The control group did not have an auto-
+mated  system  for  predicting  low-glucose  levels 
+or  suspending  insulin  administration,  features 
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+879
+
+
+T h e  ne w   e ngl a nd   jou r na l   o f  m e dicine
+
+Table 3. Adverse Events, According to Age Group.*
+
+Adverse Event and Age Group
+
+Automated Insulin Delivery
+
+Control
+
+Total
+
+Events
+
+Patients
+
+Events
+
+Patients
+
+Events
+
+Patients
+
+Children
+
+Nonserious adverse device effect†
+
+Any
+
+Hyperglycemia
+
+Skin infection
+
+Localized skin reaction
+
+Urticaria
+
+Serious adverse event or serious 
+
+ adverse device effect‡
+
+Any
+
+Anaphylactic reaction to food
+
+Croup
+
+Hyperglycemia
+
+Pilonidal cyst with abscess
+
+Adults§
+
+Nonserious adverse device effect
+
+Any
+
+Burn
+
+Hyperglycemia
+
+Infection at medical device site
+
+5
+
+3
+
+1
+
+1
+
+0
+
+2
+
+0
+
+1
+
+1
+
+0
+
+5
+
+2
+
+3
+
+0
+
+5
+
+3
+
+1
+
+1
+
+0
+
+2
+
+0
+
+1
+
+1
+
+0
+
+3
+
+1
+
+2
+
+0
+
+4
+
+
+0
+
+0
+
+1
+
+5
+
+2
+
+1
+
+1
+
+1
+
+4
+
+0
+
+2
+
+2
+
+4
+
+3
+
+0
+
+0
+
+1
+
+5
+
+2
+
+1
+
+1
+
+1
+
+4
+
+0
+
+2
+
+2
+
+9
+
+6
+
+1
+
+1
+
+1
+
+7
+
+2
+
+2
+
+2
+
+1
+
+9
+
+2
+
+5
+
+2
+
+9
+
+6
+
+1
+
+1
+
+1
+
+7
+
+2
+
+2
+
+2
+
+1
+
+7
+
+1
+
+4
+
+2
+
+*  No cases of severe hypoglycemia (defined as a low blood glucose level causing altered mental consciousness and in­
+
+ability to assist in care) or diabetic ketoacidosis (defined as a blood glucose level of >250 mg per deciliter [>13.9 mmol 
+per liter], an arterial pH of <7.3 or a venous pH of <15 mEq per liter, or moderate ketonuria or ketonemia leading to 
+hospitalization) were reported in either group.
+
+†  A nonserious adverse device effect was defined as any untoward medical occurrence related to the use of an investiga­
+
+tional device.
+
+‡  A serious adverse event was defined as an adverse event that was unrelated to the use of a device and that was life­
+
+threatening, caused permanent impairment to a body structure or function, required hospitalization, or led to a medi­
+cal or surgical intervention to curb serious sequelae. A serious adverse device effect was defined as a serious adverse 
+event that was related to the use of an investigational device.
+
+§  There were no serious adverse events or serious adverse device effects in the adult cohort.
+
+that have been shown to reduce the incidence of 
+hypoglycemia.21 The generalizability of our find-
+ings  may  be  limited  by  the  enrollment  of  pa-
+tients with a relatively low glycated hemoglobin 
+level at baseline, by the underrepresentation of 
+patients with reduced economic resources, and 
+by  the  increased  familiarity  with  insulin-pump 
+therapy and continuous glucose monitoring among 
+the  patients  at  baseline.  However,  the  trial  pa-
+tients were more diverse than those enrolled in 
+previous  studies  that  had  been  biased  by  pa-
+tients’ selection of open-source AID. The effect size 
+is  partially  due  to  a  small  decline  in  the  per-
+
+centage of time in the target range in the con-
+trol group, which has not been observed in other 
+studies.  Unscheduled  contacts  with  trial  staff 
+members  by  telephone,  email,  or  text  message 
+were not recorded. Measurement of glycated hemo-
+globin was not centralized and was performed on 
+a point-of-care basis. Patients in the two groups 
+used  different  insulin  pumps,  although  other 
+studies have compared AID with “usual care.”22,23 
+In addition, a variety of insulin pumps were used 
+in the control group, although the stable time in 
+the  target  range  throughout  the  trial  suggests 
+that this factor had a minimal effect.
+
+880
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+
+ Insulin Delivery in Type 1 Diabetes
+
+In children and adults with type 1 diabetes, 
+the use of an open-source AID system resulted 
+in a significantly higher percentage of time in the 
+target  glucose  range  than  the  use  of  a  sensor-
+augmented insulin pump at 24 weeks.
+
+Supported by the Health Research Council of New Zealand. 
+Hardware support was provided by SOOIL Development, Dex-
+com, and Vodafone New Zealand.
+
+Disclosure forms provided by the authors are available with 
+
+the full text of this article at NEJM.org.
+
+A data sharing statement provided by the authors is available 
+
+with the full text of this article at NEJM.org.
+

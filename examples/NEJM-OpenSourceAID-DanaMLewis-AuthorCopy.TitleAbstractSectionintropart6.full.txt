@@ -1,0 +1,218 @@
+Title-Abstract. Section intro
+vation Index — no. (%)‡
+
+Quintile 1
+
+Quintile 2
+
+Quintile 3
+
+Quintile 4
+
+Quintile 5
+
+Diabetes history
+
+23
+
+26
+
+49
+
+40.0 (33.0–43.5)
+
+38.0 (23.2–45.8)
+
+40.0 (29.0–45.0)
+
+15 (65)
+
+7 (30)
+
+1 (4)
+
+2 (9)
+
+0
+
+1 (4)
+
+20 (87)
+
+9 (39)
+
+3 (13)
+
+5 (22)
+
+3 (13)
+
+3 (13)
+
+15 (58)
+
+11 (42)
+
+0
+
+5 (19)
+
+1 (4)
+
+0
+
+20 (77)
+
+4 (15)
+
+7 (27)
+
+7 (27)
+
+6 (23)
+
+2 (8)
+
+30 (61)
+
+18 (37)
+
+1 (2)
+
+7 (14)
+
+1 (2)
+
+1 (2)
+
+40 (82)
+
+13 (27)
+
+10 (20)
+
+12 (24)
+
+9 (18)
+
+5 (10)
+
+874
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+
+Automated Insulin Delivery in Type 1 Diabetes
+
+Table 1. (Continued.)
+
+Characteristic
+
+Glycated hemoglobin§
+
+Value — mmol/mol
+
+Mean percent
+
+Previous use of CGM — no. (%)¶
+
+Previous use of automated insulin delivery  
+
+— no. (%)‖
+
+Automated Insulin 
+
+Delivery
+
+Control
+
+Total
+
+60.0±13.7
+
+7.6
+
+15 (65)
+
+4 (17)
+
+62.1±9.1
+
+7.8
+
+17 (65)
+
+5 (19)
+
+61.1±11.5
+
+7.7
+
+32 (65)
+
+9 (18)
+
+Time in target glucose range — %**
+
+64.7±12.9
+
+60.3±15.6
+
+62.4±14.4
+
+* 
+
+† 
+
+‡ 
+
+§ 
+¶ 
+
+ Plus–minus values areSD. Children were defined as patients under the age of 16 years. A full list of patient 
+characteristics at baseline is shown in Table S5 in the Supplementary Appendix. IQR denotes interquartile range.
+ The patients (or their parents or guardians) could select more than one ethnic group. However, they were assigned 
+to a single ethnic group for statistical evaluation with the list prioritized in the order of Maori; Pacific Islander; Asian; 
+Middle Eastern, Latin American, or African; and European or other. No patients selected the Pacific Islander category, 
+and no children selected the Middle Eastern, Latin American, or African category.
+ The New Zealand Deprivation Index is an area­based measure of socioeconomic deprivation in which the fifth quintile 
+represents the 20% most deprived areas in the country.
+ Glycated hemoglobin was measured with the use of the DCA Vantage Analyzer.
+ Previous use of continuous glucose monitoring (CGM) was defined as use of a CGM system more than 75% of the 
+time before the baseline visit.
+ Automated insulin delivery refers to a hybrid closed­loop system.
+
+‖ 
+**   The time in the target glucose range is the percentage of time that the patient had a glucose level of 70 to 180 mg per 
+
+deciliter (3.9 to 10.0 mmol per liter) during the run­in period.
+
+deficiencies are shown in Table S10. Fewer de-
+vice  deficiencies  were  reported  during  the  ran-
+domized trial than during the run-in period (0.8 
+per 100 user-days vs. 5.1 per 100 user-days). This 
+difference reflects action taken to address
+battery problem that has been described previ-
+ously.
+
+Most device deficiencies were related to hard-
+ware (46 in the AID group and 39 in the control 
+group) followed by connectivity issues (20 in the 
+AID group and 7 in the control group); one de-
+vice deficiency was attributed to the application 
+display.  The  insulin  pump  produced  the  most 
+device  deficiencies  (47  events  affecting  34  pa-
+tients), followed by the pump Auto Setter device 
+(16 events).
+
+Discussion
+
+In  the  CREATE  trial,  we  found  that 
+who the open-source AID system had 
+3  hours  21  minutes  more  time  in  the  target 
+glucose range per day than those who were us-
+ing sensor-augmentedpump therapy, a 
+between-group  difference  of  14  percentage 
+points. Patients in the AID group had improved 
+
+glycemic  control  while  maintaining  a  low 

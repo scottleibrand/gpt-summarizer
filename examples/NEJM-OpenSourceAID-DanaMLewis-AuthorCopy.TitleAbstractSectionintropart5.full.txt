@@ -1,0 +1,259 @@
+Title-Abstract. Section intro
+
+from  60.3±15.6%  to  56.5±14.2%  in  the  control 
+group  (mean  adjusted  difference,  15.4  percent-
+age  points;  95%  CI,  8.6  to  22.1);  the  between-
+group  difference  per  day  was  3  hours  41  min-
+utes. The mean percentage of patients who had 
+a time in range of more than 70% and a time 
+below range of less than 4% was 64% in the AID 
+group  and  15%  in  the  control  group  (adjusted 
+difference, 41.6 percentage points; 95% CI, 27.0 
+to 57.5).
+
+During a 24-hour period, the mean percent-
+age of time that the glucose value was less than 
+70 mg per deciliter was 1.6% (23 minutes) in the 
+AID group and 1.8% (26 minutes) in the control 
+group. The percentage of time that the glucose 
+value  was  more  than  180  mg  per  deciliter  was 
+23.9%  (5  hours  42  minutes)  in  the  AID  group 
+and 41.6% (10.0 hours) in the control group. As 
+
+with  the  children,  the  use  AID  was  most 
+effective in the adults at night, when the time 
+in  range  was  85.2±12.7%,  as  compared  with 
+70.9±12.7% during the day. In the control group, 
+the  mean  time  in  range  at  night  (53.5±20.1%) 
+was similar to that during the day (57.5±14.4%) 
+(Figs. 2 and S3). Overnight, the percentage of 
+time that the glucose level was less than 70 mg 
+per  deciliter  was  2.2%  in  the  AID  group  and 
+1.9%  in  the  control  group.  In  both  adults  and 
+children, the increases in the percentage of time 
+in range was attributed mainly to overnight im-
+provement with the AID system (Fig. S4). At the 
+end of the trial, the mean glycated hemoglobin 
+level was 6.8% (50.7 mmol per mole) in the AID 
+group  and  7.5%  (58.5  mmol  per  mole)  in  the 
+control group.
+
+Safety Outcomes
+Neither severe hypoglycemia nor diabetic keto-
+acidosis  occurred  in  either  trial  group,  and  no 
+adverse events were related to the algorithm or 
+automation of insulin delivery. Prespecified ad-
+verse events are provided in Table 3.
+
+Ten adverse events that were related to a de-
+vice (nonserious adverse device effects) were re-
+ported among 8 patients in the AID group, and 
+8 events were reported among 8 patients in the 
+control group. These events included 6 hypergly-
+cemia  events  in  the  AID  group  and  5  in  the 
+control group and were mainly due to infusion-
+set  failures.  One  adult  in  the  AID  group  had 
+superficial  skin  burns  on  separate  occasions 
+from two different preproduction DANA-i insu- pumps.
+
+Two  serious  adverse  events  occurred  in  the 
+AID  group  (hospitalizations  for  hyperglycemia 
+in one child due to infusion-set failure and the 
+other  unrelated  to  diabetes),  and  5  serious  ad-
+verse  events  (all  in  children)  occurred  in  the 
+control group: 1 hyperglycemia event owing to 
+insulin-pump failure and 4 events unrelated to 
+diabetes. The rate of severe hyperglycemia and 
+ketosis  (capillary  glucose  level,  >300  mg  per 
+deciliter; ketones, >1.5 mmol per liter and symp-
+tomatic) per 100 user-days was 0.10 in the AID 
+group and 0.07 in the control group.
+
+System Performance
+In the AID group, the median percentage of time 
+that the system was automating insulin delivery 
+was 94.2% (IQR, 87.3 to 95.7) (Table S9). Device 
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+873
+
+
+T h e  ne w   e ngl a nd   jou r na l   o f  m e dicine
+
+Table 1. Characteristics of the Patients at Baseline.*
+
+Characteristic
+Children
+
+No. of patients
+
+Median age (IQR) — yr
+
+Female sex — no. (%)
+
+Ethnic group — no. (%)†
+
+Maori
+
+Asian
+
+European or other
+
+New Zealand Deprivation Index — no. (%)‡
+
+Quintile 1
+
+Quintile 2
+
+Quintile 3
+
+Quintile 4
+
+Quintile 5
+
+Diabetes history
+
+Glycated hemoglobin§
+
+Value — mmol/mol
+
+Mean percent§
+
+Previous use of CGM — no. (%)¶
+
+Previous use of automated insulin delivery 
+
+ — no. (%)‖
+
+Automated Insulin 
+
+Delivery
+
+21
+
+Control
+
+27
+
+Total
+
+48
+
+14.0 (11.0–15.0)
+
+11.0 (9.0–14.5)
+
+13.0 (9.0–15.0)
+
+52)
+
+4 (19)
+
+1 (5)
+
+16 (76)
+
+9 (43)
+
+6 (29)
+
+4 (19)
+
+2 (10)
+
+0
+
+58.3±6.6
+
+7.5
+
+20 (95)
+
+1 (5)
+
+13 (48)
+
+4 (15)
+
+0
+
+23 (85)
+
+10 (37)
+
+10 (37)
+
+3 (11)
+
+2 (7)
+
+2 (7)
+
+58.4±9.9
+
+7.5
+
+26 (96)
+
+2 (7)
+
+24 (50)
+
+8 (17)
+
+1 (2)
+
+39 (81)
+
+19 (40)
+
+16 (33)
+
+7 (15)
+
+4 (8)
+
+2 (4)
+
+58.4±8.5
+
+7.5
+
+46 (96)
+
+3 (6)
+
+Time in glucose range — (%)**
+
+57.4±10.6
+
+55.1±12.6
+
+56.1±11.7
+
+Adults
+
+No. of patients
+
+Median age (IQR) — yr
+
+Sex — no. (%)
+
+Female
+
+Male
+
+Nonbinary
+
+Ethnic group — no. (%)†
+
+Maori
+
+Asian
+
+Middle Eastern, Latin American, or African
+
+European or other
+
+New Zealand

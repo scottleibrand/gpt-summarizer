@@ -1,0 +1,96 @@
+Title-Abstract. Section intro
+ary 2015.2 Since that time, multiple open-source 
+AID systems have evolved, and despite a lack of 
+regulatory  approval,  such  systems  have  been 
+adopted  by  approximately  2500  patients  with 
+diabetes  globally.  Data  now  include  the  results 
+of  more  than  55  million  hours  of  real-world 
+open-source AID experience.3
+
+Two widely used open-source AID systems are 
+AndroidAPS (OpenAPS algorithm on an Android 
+device)  and  Loop  (a  different  algorithm  on  an 
+iOS  device).  In  a  single-group  study,  investiga-
+tors  found  that  patients  who  used  the  Loop 
+system had a higher percentage of time in range 
+for  target  glucose  control  (70  to  180  mg  per 
+deciliter [3.9 to 10.0 mmol per liter]), with an 
+increase in control from 67% at baseline to 73% 
+at 6 months.4 However, this study was limited by 
+a lack of comparative effectiveness and the en-
+rollment of patients who had a high percentage 
+of time in the target range at baseline.
+
+The uptake of open-source AID systems has a 
+number of barriers beyond a lack of regulatory 
+approval, including a lack of trial data regarding 
+safety  and  efficacy,  limited  expertise  with  the 
+system among health care professionals, and a 
+perception that the use of AID systems is techni-
+cally  challenging.5-7  In  the  randomized,  con-
+trolled trial called CREATE (Community Derived 
+Automated  Insulin  Delivery),  we  evaluated  the 
+efficacy and safety of an open-source AID system 
+as  compared  with  sensor-augmented  insulin-
+pump therapy in children and adults with type 1 
+diabetes.
+
+Methods
+
+Trial Conduct and Oversight
+The  trial  was  conducted  at  four  sites  in  New 
+Zealand in compliance with Good Clinical Prac-
+tice guidelines and was approved by the South-
+ern  Health  and  Disability  Ethics  Committee  of 
+New Zealand. The trial was funded by the Health 
+Research  Council  of  New  Zealand.  Hardware 
+
+support  was  provided  by  SOOIL  Development, 
+Dexcom, and Vodafone New Zealand. The trial 
+protocol (available with the full text of this article 
+at NEJM.org) has been published previously.8 An 
+independent  data  and  safety  monitoring  com-
+mittee and medical monitor provided trial over-
+sight. Written informed consent was provided by 
+all adult patients (16 to 70 years of age) or by the 
+parents or guardians of children (7 to 15 years); 
+assent was also sought from all the children.
+
+The trial was designed by representatives of 
+the sponsor, the University of Otago. Data were 
+collected by the investigators and site personnel, 
+analyzed by a statistician employed by the spon-
+sor, and interpreted by the authors. Experts on 
+open-source AID systems trial team 
+provided  training  to  clinical  staff  members.  A 
+Slack workspace (Slack Technologies) facilitated 
+ongoing learning by allowing clinical staff mem-
+bers to communicate with each other and with 
+experts in open-source AID on the trial team.9
+
+The authors were responsible for writing the 
+first draft of the manuscript or for contributing 
+to the review and editing of the manuscript. All 
+the  authors  made  the  decision  to  submit  the 
+manuscript  for  publication  and  vouch  for  the 
+completeness and accuracy of the data and for 
+the fidelity of the trial to the protocol.
+
+Patients and Trial Design
+Eligible patients were between the ages of 7 and 
+70 years, had received a diagnosis of type 1 dia-
+betes at least 1 year earlier, had at least 6 months 
+of  experience  with  insulin-pump  therapy,  and 
+had  a  mean  glycated  hemoglobin  level  of  less 
+than 10.5% (91 mmol per mole). Details regard-
+ing the inclusion and exclusion criteria are pro-
+vided in Table S1 in the Supplementary Appen-
+dix,  available  at  NEJM.org.  The  ages  of  the 
+patients reflected the age range in general clini-
+cal practice in New Zealand.
+
+Patients in the two trial groups (or their par-
+ents or guardians) were invited to join separate 
+closed online communities (Tribe Technologies) 
+that provided ongoing peer support to simulate 
+community  support  for  the  use  of  open

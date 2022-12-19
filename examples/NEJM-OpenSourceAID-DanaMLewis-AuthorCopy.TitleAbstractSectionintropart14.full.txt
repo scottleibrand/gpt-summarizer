@@ -1,0 +1,424 @@
+Title-Abstract. Section intro
+
+80
+70
+60
+50
+40
+30
+20
+10
+0
+
+24-HourMeasure
+
+Run-in
+
+0–3
+
+4–7
+
+8–11
+
+12–15
+
+16–19
+
+20–23
+
+DaytimeMeasure
+
+Run-in
+
+0–3
+
+4–7
+
+8–11
+
+12–15
+
+16–19
+
+20–23
+
+NighttimeMeasure
+
+Run-in
+
+0–3
+
+4–7
+
+8–11
+
+12–15
+
+16–19
+
+20–23
+
+
+e
+g
+n
+a
+R
+
+e
+s
+o
+c
+u
+G
+
+l
+
+
+t
+e
+g
+r
+a
+T
+n
+
+
+
+i
+
+i
+
+e
+m
+T
+
+f
+o
+
+e
+g
+a
+t
+n
+e
+c
+r
+e
+P
+
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+
+24-HourMeasure
+
+Run-in
+
+0–3
+
+4–7
+
+8–11
+
+12–15
+
+16–19
+
+20–23
+
+DaytimeMeasure
+
+Run-in
+
+0–3
+
+4–7
+
+8–11
+
+12–15
+
+16–19
+
+20–23
+
+NighttimeMeasure
+
+Run-in
+
+0–3
+
+4–7
+
+8–11
+
+12–15
+
+16–1920–23
+
+WeekssinceRandomization
+
+WeekssinceRandomization
+
+Figure 1. Percentage of Time in Target Glucose Range, According to Age Group and Trial Period.
+Box plots show the percentage of time that patients were in the target glucose range (70 to 180 mg per deciliter [3.9 to 10.0 mmol per 
+ liter]) among those who were assigned to use open­source automated insulin delivery (AID group) or sensor­augmented insulin­pump 
+therapy (control group). Values were measured by continuous glucose monitoring during contiguous 4­week periods from 4 weeks be­
+fore randomization to 24 weeks after randomization in children (7 to 15 years of age) and adults (16 to 70 years of age). Data are pre­
+sented according to the time period of measurement, with daytime defined as 6 a.m. to midnight and nighttime as midnight to 6 a.m. 
+Black dots indicate group means, and horizontal bars group medians; the bottom and top of each box represent the 25th and 75th per­
+centiles, respectively.
+
+group  differences  are  partly  attributable  to  the 
+decrease in the percentage of time in range in 
+the control group after the run-in period, which 
+
+we hypothesize was due to a waning awareness 
+of being observed (Hawthorne effect) over time.
+Hardware malfunction rather than algorithm 
+
+878
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+
+Automated Insulin Delivery in Type 1 Diabetes
+
+Sensor-augmented pump therapy
+
+Open-source automated insulin delivery
+
+A
+
+Children
+
+t
+e
+g
+r
+a
+T
+n
+
+i
+
+i
+
+e
+m
+T
+
+f
+o
+
+e
+g
+a
+t
+n
+e
+c
+r
+e
+P
+
+e
+g
+n
+a
+R
+
+e
+s
+o
+c
+u
+G
+
+l
+
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+Midnight 2 a.m.
+
+B
+
+Adults
+
+t
+e
+g
+r
+a
+T
+n
+
+i
+
+i
+
+e
+m
+T
+
+f
+o
+
+e
+g
+a
+t
+n
+e
+c
+r
+e
+P
+
+
+e
+g
+n
+a
+R
+
+e
+s
+o
+c
+u
+G
+
+l
+
+100
+90
+80
+70
+60
+50
+40
+30
+10
+0
+Midnight 2 a.m.
+
+4 a.m.
+
+6 a.m.
+
+8 a.m.
+
+10 a.m.
+
+Noon
+
+2 p.m.
+
+4 p.m.
+
+6 p.m.
+
+8 p.m. 10 p.m.
+
+Midnight
+
+TimeofDay
+
+4 a.m.
+
+6 a.m.
+
+8 a.m.
+
+10 a.m.
+
+Noon
+
+2 p.m.
+
+4 p.m.
+
+6 p.m.
+
+8 p.m. 10 p.m.
+
+Midnight
+
+TimeofDay
+
+Figure 2. Percentage of Time in Target Glucose Range, According to Time of Day.
+Envelope plots show the percentage of time that children and adults in the two trial groups were in the target glu­
+cose range, as measured by continuous glucose monitoring during weeks 22 and 23 after randomization. Symbols 
+represent hourly group median values, and shaded regions indicate the 25th and 75th percentiles.
+
+performance was the main burden on patients 
+in  the  AID  group.  Occlusions  in  the  insulin-
+infusion set were the main cause of hyperglyce-
+mia.  The  absence  of  diabetic  ketoacidosis  and 
+severe hypoglycemia in the two groups was re-
+assuring.
+
+One strength of our trial is that the patients 
+were  more  representative  of  those  with  type  1 
+diabetes  than  the  patients  in  many  real-world 
+studies.20  In  addition,  in  our  trial,  the  patients 
+did not have experience with open-source AID, 
+which  suggests  that  a  range  of  patients  with 
+type  1  diabetes  can  benefit  from  this  system. 
+The majority of patients’ contacts with trial staff 
+members were for troubleshooting hardware is-
+sues, and the deficiencies of the devices in the 
+
+two groups were similar. We observed that with 
+appropriate  training,  health  care  professionals 
+can  provide  technical  and  clinical  support  for 
+open-source AID users. The trial also had a high 
+level of patient retention (98%), a lack of remote 
+monitoring (which resembled real-world clinical 
+practice),  and  broad  inclusion  criteria,  which 
+resulted in a population of diverse ages and eth-
+nic  backgrounds.  Furthermore,  the  6-month 
+trial duration was suitably long to capture rare 

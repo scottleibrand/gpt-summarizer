@@ -1,0 +1,107 @@
+Title-Abstract. Section intro
+established in 1812 
+
+September 8, 2022 
+
+vol. 387  no.
+Open-Source Automated Insulin Delivery in Type 1 Diabetes
+Mercedes J., M.B., Ch.B., Dana M. Lewis, B. Hamish R. Crocket, Ph.D., Renee A. Meier, Ph.D., 
+
+Jonathan A. Williman, Ph.D., Olivia J. Sanders, R.N., Craig A. Jefferies, M.D., Ann M. Faherty, R.N., 
+
+Ryan G. Paul, Ph.D., Claire S. Lever, M.N., Sarah K.J. Price, M.N., Carla M. Frewen, R.N., Shirley D. Jones, 
+Tim C. Gunn, B.I.T., Christina Lampey, B.Sc., Benjamin J. Wheeler, Ph.D., and Martin I. de Bock, Ph.D.  
+
+abs tr actBACKGROUND
+Open-source automated insulin delivery (AID) systems are used by many patients 
+with type 1 diabetes. Data are needed on the efficacy and safety of an open-source 
+AID system.
+
+METHODS
+In this multicenter, open-label, randomized, controlled trial, we assigned patients 
+with type 1 diabetes in a 1:1 ratio to use an open-source AID system or a sensor-
+augmented insulin pump (control). The both children (defined 
+as 7 to 15 years of age) and adults (defined as 16 to 70 years of age). The AID 
+system was a modified version of AndroidAPS 2.8 (with a standard OpenAPS 0.7.0 
+algorithm)  paired  with  a  preproduction  DANA-i  insulin  pump  and  Dexcom  G6 
+CGM, which has an Android smartphone application as the user interface. The 
+primary outcome was the percentage of time in the target glucose range of 70 to 
+180 mg per deciliter (3.9 to 10.0 mmol per liter) between days 155 and 168 (the 
+final 2 weeks of the trial).
+
+RESULTS
+A total of 97 patients (48 children and 49 adults) underwent randomization (44 to 
+open-source AID and 53 to the control group). At 24 weeks, the mean (±SD) time 
+in the target range increased from 61.2±12% to 71.2±12.1% AID group 
+and decreased from 57.7±14.3% to 54.5±16.0% in the control group (adjusted dif-
+ference, 14 percentage points; 95% confidence interval, 9.2 to 18.8; P<0.001), with 
+no treatment effect according to age (P = 0.56). Patients in the AID group spent 
+3 hours 21 minutes more in the target range per day than those in the control group. 
+No  severe  hypoglycemia  or  diabetic  ketoacidosis  occurred  in  either  group.  Two 
+patients in the AID group withdrew from the trial owing to connectivity issues.
+
+CONCLUSIONS
+In children and adults with type 1 diabetes, the use of an open-source AID system 
+resulted in a significantly higher percentage of time target glucose range 
+than the use of a sensor-augmented insulin pump at 24 weeks. (Supported by the 
+Health Research Council of New Zealand; Australian New Zealand Clinical Trials 
+Registry number, ACTRN12620000034932.)
+
+From  the  Departments  of  Pediatrics 
+(M.J.B., R.A.M., O.J.S., M.I.B.) and Pop­
+ulation  Health  (J.A.W.),  University  of 
+Otago, and the Department of Pediatrics, 
+Canterbury District Health Board (M.J.B., 
+O.J.S., M.I.B.), Christchurch, Te Huataki 
+Waiora School of Health, Sport and Hu­
+man Performance, University of Waikato 
+(H.R.C.), and Waikato Regional Diabetes 
+Service,  Waikato  District  Health  Board 
+(R.G.P.,  C.S.L.,  S.K.J.P.),  Hamilton,  the 
+Department  of  Pediatric  Endocrinology, 
+Starship  Children’s  Health,  Auckland 
+District  Health  Board  (C.A.J.,  A.M.F., 
+C.L.), and the Liggins Institute, University 
+of  Auckland  (C.A.J.),  Auckland,  the  De­
+partment  of  Women’s  and  Children’s 
+Health,  Dunedin  School  of  Medicine, 
+University  of  Otago  (C.M.F.,  S.D.J., 
+B.J.W.),  and  the  Pediatric  Department, 
+Southern District Health Board (B.J.W.), 
+Dunedin, and Nightscout New Zealand, 
+Hamilton (T.C.G.) — all in New Zealand; 
+and OpenAPS, Seattle (D.M.L.). Dr. de Bock 
+can  be  contacted  at   martin . debock@ 
+ otago . ac . nz  or  at  the  Department  of 
+ Pediatrics, University of Otago, 4 Oxford 
+Terrace, Christchurch 8011, New Zealand.
+
+N Engl J Med 2022;387:869-81.
+DOI: 10.1056/NEJMoa2203913
+Copyright © 2022 Massachusetts Medical Society.
+
+CME
+
+at NEJM.org
+
+n engl j med 387;10  nejm.org  September 8, 2022
+
+869
+
+The new england  journal of medicine
+A Quick Take 
+is available at 
+NEJM.org
+
+T h e  ne w   e ngl a nd   jou r na l   o f  m e dicine
+
+The  use  of  automated  insulin  de-
+
+livery (AID) systems that encompass an 
+insulin-delivery algorithm, insulin pump, 
+and  continuous  glucose  monitoring  has  been 
+shown to improve glycemic control and reduce 
+the care burden for patients with type 1 diabetes.1 
+A  do-it-yourself  AID  system,  called  OpenAPS, 
+was developed by patients with diabetes and was 
+shared freely as an open-source system in Febru
