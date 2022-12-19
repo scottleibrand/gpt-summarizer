@@ -86,7 +86,7 @@ Overall summary written to /tmp/ai-impact.overall_summary.txt
 
 https://github.com/scottleibrand/gpt-summarizer/blob/main/examples/ai-impact.overall_summary.txt
 
-#### Overall Summary
+#### OWID Overall Summary
 
 This article discusses the potential implications of artificial intelligence (AI) becoming a reality. It explains why it is difficult to take the prospect of a world transformed by AI seriously, and how to develop an idea of what the future of AI might look like. It compares the potential of transformative AI to the agricultural and industrial revolutions, and suggests that it could represent the introduction of a similarly significant general-purpose technology. The article also looks at the advantages and disadvantages of comparing machine and human intelligence, and introduces the concept of transformative AI, which is defined by the impact this technology would have on the world. It is noted that transformative AI could be developed before human-level AI, and that the timeline for when either of these levels of AI might be achieved is difficult to predict.
 
@@ -94,7 +94,7 @@ The article also looks at the potential risks and benefits of AI becoming more p
 
 The article also looks at the difference between human-level AI and transformative AI, and the potential timeline for when either of these levels of AI might be achieved. It is noted that transformative AI could be developed before human-level AI, and that the timeline for when either of these levels of AI might be achieved is difficult to predict. Additionally, the article provides information about the licenses and permissions associated with Our World in Data's visualizations, data, code, and articles. Finally, the article looks at the concept of human-level AI, which is defined as a software system that can carry out at least 90% or 99% of all economically relevant tasks that humans carry out. It also looks at the closely related terms Artificial General Intelligence, High-Level Machine Intelligence, Strong AI, or Full AI, which are sometimes defined in similar, yet different ways. The section also looks at the difficulty of comparing machine and human intelligence, and the potential risks of AI systems, such as AI-enabled disinformation campaigns and mass surveillance by governments. It also looks at the incentives for developing powerful AI, and the potential for it to lead to positive developments. Finally, the section looks at the early warnings of Alan Turing and Norbert Wiener about the alignment problem, and Toby Ord's projection that AI could be developed by 2040.
 
-#### Section Summaries
+#### OWID Section Summaries
 
 `ls -rt *summary.txt | while read file; do echo -n $file; cat $file; echo; echo; done`
 
@@ -166,11 +166,11 @@ Concatenated subsection summaries have less than 500 tokens, reading in all summ
 Overall summary written to examples/NEJM-OpenSourceAID-DanaMLewis-AuthorCopy.overall_summary.txt
 ```
 
-#### Overall Summary
+#### NEJM AID Overall Summary
 
 This paper describes the results of a clinical trial that tested the efficacy of an automated insulin delivery (AID) system in patients with type 1 diabetes. A total of 100 patients were enrolled, 97 of whom (48 children and 49 adults) underwent randomization to either the AID group (44 patients) or the control group (53 patients). The characteristics of the patients at baseline were similar in the two trial groups. The primary analysis showed that the mean time in range increased from 61.2% at baseline to 71.2% in the AID group and decreased from 57.7% to 54.5% in the control group. Among the children, the mean time in range increased from 57.4% at baseline to 67.5% in the AID group and decreased from 55.1% to 52.5% in the control group. During a 24-hour period, the percentage of time that patients had a glucose reading of less than 70 mg per deciliter was 2.1% in the AID group and 2.7% in the control group. The use of AID was most effective at night, when the mean time in range was 76.8% in the AID group and 57.2% in the control group. Among the adults, the mean time in range increased from 64.7% at baseline to 74.5% in the AID group and decreased from 61.2% to 58.2% in the control group. The trial also found that the AID system was safe and had a high level of patient retention. The results indicate that the AID group had a higher percentage of time in the target glucose range than the control group, and that the group differences are partly attributable to a decrease in the percentage of time in range in the control group after the run-in period.
 
-#### Section Summaries
+#### NEJM AID Section Summaries
 `ls -rt examples/NEJM*summary.txt | while read file; do echo -n $file; cat $file; echo; echo; done`
 
 examples/NEJM-OpenSourceAID-DanaMLewis-AuthorCopy.TitleAbstractSectionintro.summary.txt
