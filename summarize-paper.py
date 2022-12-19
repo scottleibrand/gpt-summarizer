@@ -403,7 +403,9 @@ if __name__ == '__main__':
             
             summary_pattern = f"{base_name}.*{section_number}.summary.txt"
             print(f"Reading summary from {summary_pattern}")
-            for summary_path in glob.glob(summary_pattern):
+            summary_paths = glob.glob(summary_pattern)
+            summary_paths.sort(key=os.path.getmtime)  # sort file names by modification time, oldest first
+            for summary_path in summary_paths:
                 print(f"Reading summary from {summary_path}")
                 with open(summary_path, 'r') as f:
                     summaries.append(f.read())
@@ -415,15 +417,25 @@ if __name__ == '__main__':
             if len(subcontent_tokens) == 0:
                 summary_pattern = f"{base_name}.*.summary.txt"
                 print(f"Reading summary from {summary_pattern}")
-                for summary_path in glob.glob(summary_pattern):
+                summary_paths = glob.glob(summary_pattern)
+                summary_paths.sort(key=os.path.getmtime)  # sort file names by modification time, oldest first
+
+                summaries = []
+                subcontent_tokens = []
+                for summary_path in summary_paths:
                     print(f"Reading summary from {summary_path}")
                     with open(summary_path, 'r') as f:
-                        summaries.append(f.read())
+                        summary = f.read()
+                    summary_tokens = enc.encode(summary)
+                    if len(subcontent_tokens) + len(summary_tokens) > 3000:
+                        break
+                    summaries.append(summary)
+                    subcontent_tokens += summary_tokens
                 # Concatenate the summaries into a single string
                 subcontent = "\n\n".join(summaries)
                 # Tokenize the concatenated summaries
                 subcontent_tokens = enc.encode(subcontent)
-                print(f"Concatenated {len(summaries)} summaries into a single summary with {len(subcontent)} characters and {len(subcontent_tokens)} tokens")
+                print(f"Concatenated {len(summaries)} out of {len(summary_paths)} section summaries into a single summary with {len(subcontent)} characters and {len(subcontent_tokens)} tokens")
 
             # Set the prompt for the overall section summary
             prompt = f"Please provide a detailed summary of the following sections:\n{subcontent}\nPlease provide a detailed summary of the sections above."
@@ -460,6 +472,17 @@ if __name__ == '__main__':
                 summaries.append(f.read())
         # Concatenate the abstract and summaries into a single string
         subcontent = abstract + "\n\n" + "\n\n".join(summaries)
+        # Tokenize the concatenated abstract and summaries
+        subcontent_tokens = enc.encode(subcontent)
+        for summary in summaries:
+            summary_tokens = enc.encode(summary)
+            if len(subcontent_tokens) + len(summary_tokens) > 3000:
+                print(f"Exceeded 3000 tokens, stopping concatenation of summaries")
+                break
+            subcontent += summary + "\n\n"
+            subcontent_tokens += summary_tokens
+        print(f"Concatenated {len(summaries)} summaries into a single summary with {len(subcontent)} characters and {len(subcontent_tokens)} tokens")
+
         # Set the prompt for the overall summary
         prompt = f"Please provide a detailed summary of the following paper, based on its abstract and summaries of each section:\n{subcontent}\nPlease provide a detailed summary of the paper described above, based on the provided abstract and summaries of each section."
         # Generate the overall summary
