@@ -383,7 +383,12 @@ if __name__ == '__main__':
         with open(text_path, "r") as text_file:
             text = text_file.read()
 
-        
+    # Checking if output language is set, if not set to english as default
+    try:
+        arg = sys.argv[2]
+        output_language = "Please use "+sys.argv[2]+" language for the output."
+    except IndexError:
+        output_language = ""
 
     # Split the text into sections
     sections = split_into_sections(text)
@@ -448,7 +453,7 @@ if __name__ == '__main__':
                     print(f"Summary already exists at {summary_path}")
                 else:
                     # Set the prompt for the summary
-                    prompt = f"Please provide a detailed summary of the following section, but if the section content is mostly website context/description, just return 'Section has no content':\n{subcontent}\nPlease provide a detailed summary of the section above. If the section content is mostly website context/description, just return 'Section has no content'."
+                    prompt = f"Please provide a detailed summary of the following section, but if the section content is mostly website context/description, just return 'Section has no content':\n{subcontent}\nPlease provide a detailed summary of the section above. If the section content is mostly website context/description, just return 'Section has no content'.{output_language}"
                     # Generate a summary for the subsection
                     summary = generate_summary(subcontent, prompt, model_engine, max_tokens)
                     # Write the summary to a summary file
@@ -517,7 +522,7 @@ if __name__ == '__main__':
                 print(f"Concatenated {len(summaries)} out of {len(summary_paths)} section summaries into a single summary with {len(subcontent)} characters and {len(subcontent_tokens)} tokens")
 
             # Set the prompt for the overall section summary
-            prompt = f"Please provide a detailed summary of the following sections:\n{subcontent}\nPlease provide a detailed summary of the sections above."
+            prompt = f"Please provide a detailed summary of the following sections:\n{subcontent}\nPlease provide a detailed summary of the sections above.{output_language}"
             # Get the path of the overall section summary file
             section_summary_path = f"{base_name}.{section_number}.section_summary.txt"
             # If the overall section summary file does not exist, generate a summary
@@ -581,7 +586,8 @@ if __name__ == '__main__':
 
 
         # Set the prompt for the overall summary
-        prompt = f"Please provide a detailed summary of the following {doctype}, based on its abstract and summaries of each section:\n{subcontent}\nPlease provide a detailed summary of the {doctype} described above, based on the provided abstract/introduction and summaries of each section."
+        prompt = f"Please provide a detailed summary of the following {doctype}, based on its abstract and summaries of each section:\n{subcontent}\nPlease provide a detailed summary of the {doctype} described above, based on the provided abstract/introduction and summaries of each section.{output_language}"
+                #
         # Generate the overall summary
         overall_summary = generate_summary(subcontent, prompt, model_engine, max_tokens)
         # Append a newline to the overall summary
