@@ -386,7 +386,7 @@ if __name__ == '__main__':
     # Checking if output language is set, if not set to english as default
     try:
         arg = sys.argv[2]
-        output_language_prompt = "Please use "+sys.argv[2]+" language for the output."
+        output_language_prompt = " Please use "+sys.argv[2]+" language for the output."
     except IndexError:
         output_language_prompt = ""
 
