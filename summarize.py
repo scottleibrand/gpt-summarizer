@@ -587,7 +587,6 @@ if __name__ == '__main__':
 
         # Set the prompt for the overall summary
         prompt = f"Please provide a detailed summary of the following {doctype}, based on its abstract and summaries of each section:\n{subcontent}\nPlease provide a detailed summary of the {doctype} described above, based on the provided abstract/introduction and summaries of each section.{output_language_prompt}"
-                #
         # Generate the overall summary
         overall_summary = generate_summary(subcontent, prompt, model_engine, max_tokens)
         # Append a newline to the overall summary
