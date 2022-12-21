@@ -388,7 +388,7 @@ if __name__ == '__main__':
         arg = sys.argv[2]
         output_language = "Please use "+sys.argv[2]+" language for the output."
     except IndexError:
-        output_language = ""
+        output_language_prompt = ""
 
     # Split the text into sections
     sections = split_into_sections(text)
@@ -453,7 +453,7 @@ if __name__ == '__main__':
                     print(f"Summary already exists at {summary_path}")
                 else:
                     # Set the prompt for the summary
-                    prompt = f"Please provide a detailed summary of the following section, but if the section content is mostly website context/description, just return 'Section has no content':\n{subcontent}\nPlease provide a detailed summary of the section above. If the section content is mostly website context/description, just return 'Section has no content'.{output_language}"
+                    prompt = f"Please provide a detailed summary of the following section, but if the section content is mostly website context/description, just return 'Section has no content':\n{subcontent}\nPlease provide a detailed summary of the section above. If the section content is mostly website context/description, just return 'Section has no content'.{output_language_prompt}"
                     # Generate a summary for the subsection
                     summary = generate_summary(subcontent, prompt, model_engine, max_tokens)
                     # Write the summary to a summary file
