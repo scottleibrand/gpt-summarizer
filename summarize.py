@@ -82,7 +82,7 @@ def split_into_sections(text):
     list: A list of tuples, where each tuple contains a section header and the corresponding text.
     """
     # Use a regular expression to match the "References" section
-    pattern = r'(References[^\n]*)\n'
+    pattern = r'(\n\nReferences[^\n]*)\n'
     match = re.search(pattern, text)
     if match:
         # Remove the "References" section and everything that follows
@@ -94,6 +94,7 @@ def split_into_sections(text):
     # or markdown-style headers that start with one to six hash marks followed by a space
     pattern = r'\n\n(#+\s+[^\n]+|\d+[\.:]\s+[^\n]+)\n\n'
     sections = re.split(pattern, text)
+    print("Found", len(sections), "sections.")
 
     # Extract the section headers and their corresponding text
     headers = ["Title-Abstract"]
@@ -105,6 +106,7 @@ def split_into_sections(text):
         else:
             # This is a section header
             headers.append(section)
+            #print(section)
 
     # Zip the section headers and content together
     sections = list(zip(headers, content))
