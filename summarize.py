@@ -383,7 +383,7 @@ if __name__ == '__main__':
         with open(text_path, "r") as text_file:
             text = text_file.read()
 
-    # Checking if output language is set, if not set to english as default
+    # Checking if output language is set: if not, leave off any language instructions from the prompt
     try:
         arg = sys.argv[2]
         output_language_prompt = " Please use "+sys.argv[2]+" language for the output."
