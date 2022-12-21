@@ -11,6 +11,8 @@ It then performs one final round of summarization across all the lower-level sum
 
 The intended use is that both the overall summary and the subsection summaries (in order) are worth reading to determine whether to spend the time reading the entire article/paper, or specific sections of it.
 
+You can also specify an optional second positional argument to have the summaries generated in the specified language: to do so it adds `" Please use "+sys.argv[2]+" language for the output."` to the prompt if the argument is present.
+
 ## Usage
 
 tl;dr:
@@ -22,6 +24,7 @@ pip install openai
 export OPENAI_API_KEY=<your OpenAI API key>
 python summarize.py paper.pdf
 python summarize.py https://path/to/article
+python summarize.py https://path/to/article Spanish
 ```
 
 ### Usage details:
