@@ -314,6 +314,47 @@ def extract_text_from_html(html_path):
     
     return text
 
+def create_html_file(basename, url):
+    # Create the HTML file
+    html_file = open(basename + ".html", "w")
+    
+    # Strip the path from the basename to get the filename
+    filename = os.path.basename(basename)
+
+    # Write the HTML header
+    html_file.write("<html>\n")
+    html_file.write("<head>\n")
+    html_file.write("<title>" + filename + "</title>\n")
+    html_file.write("</head>\n")
+    html_file.write("<body>\n")
+    #html_file.write("<h1>" + filename + "</h1>\n")
+    html_file.write("<h1>" + "<a href='" + url + "'>" + filename + "</h1></a>\n")
+    
+    # Write the overall summary section
+    html_file.write("<h2>Overall Summary</h2>\n")
+    overall_summary_file = open(basename + ".overall_summary.txt", "r")
+    overall_summary_content = overall_summary_file.read()
+    html_file.write("<p>" + overall_summary_content + "</p>\n")
+    overall_summary_file.close()
+    
+    # Write the subsection summary section
+    html_file.write("<h2>Subsection Summary</h2>\n")
+    subsection_summary_files = glob.glob(basename + ".*.summary.txt")
+    subsection_summary_files.sort()
+    for subsection_summary_file in subsection_summary_files:
+        subsection_summary_file_handle = open(subsection_summary_file, "r")
+        subsection_summary_content = subsection_summary_file_handle.read()
+        html_file.write("<p>" + subsection_summary_content + "</p>\n")
+        subsection_summary_file_handle.close()
+    
+    # Write the HTML footer
+    html_file.write("<a href='" + url + "'>Original URL</a>\n")
+    html_file.write("</body>\n")
+    html_file.write("</html>\n")
+    
+    # Close the HTML file
+    html_file.close()
+
 def download_html(url):
     # Strip any trailing /'s from the end of the URL
     stripped_url = url.rstrip("/")
@@ -599,3 +640,6 @@ if __name__ == '__main__':
         with open(overall_summary_path, 'w') as f:
             f.write(overall_summary)
         print(f"Overall summary written to {overall_summary_path}")
+
+    # Call create_html_file() to create an HTML file with the overall summary
+    create_html_file(base_name, url)
