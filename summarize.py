@@ -330,7 +330,10 @@ def download_html(url):
     base_name = stripped_url.split("/")[-1]
 
     # Download the HTML file
-    html_path = "/tmp/" + base_name + ".html"
+    if base_name.endswith(".pdf"):
+        html_path = "/tmp/" + base_name
+    else:
+        html_path = "/tmp/" + base_name + ".html"
     print("HTML path: " + html_path)
     print("URL: " + url)
     os.system("curl -s -o " + html_path + " " + url)
@@ -361,8 +364,11 @@ if __name__ == '__main__':
         base_name = "/tmp/" + url.split("/")[-1]
         print(base_name)
 
-        # Extract the text from the HTML file
-        text = extract_text_from_html(html_path)
+        if sys.argv[1].endswith(".pdf"):
+            text = extract_text_from_pdf(html_path)
+        else:
+            # Extract the text from the HTML file
+            text = extract_text_from_html(html_path)
     # If the command line argument references a pdf file
     elif sys.argv[1].endswith(".pdf"):
         # Get the PDF file path from the command line arguments
