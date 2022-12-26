@@ -26,7 +26,9 @@ import os
 import openai
 import glob
 
-import tiktoken
+#import tiktoken
+from transformers import GPT2TokenizerFast
+
 from io import StringIO
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.converter import TextConverter
@@ -395,8 +397,10 @@ if __name__ == '__main__':
     # Split the text into sections
     sections = split_into_sections(text)
 
-    # Use tiktoken to encode the text as a sequence of tokens
-    enc = tiktoken.get_encoding("gpt2")
+    # encode the text as a sequence of tokens
+    #enc = tiktoken.get_encoding("gpt2")
+    enc = GPT2TokenizerFast.from_pretrained("gpt2")
+
     tokens = enc.encode(text)
 
     # Get the base name of the output file
