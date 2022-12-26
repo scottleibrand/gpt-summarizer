@@ -35,6 +35,8 @@ from pdfminer.converter import TextConverter
 from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
 
+import html2text
+
 def extract_text_from_pdf(pdf_path):
     """Extracts the text from a PDF file and returns it as a string.
 
@@ -72,7 +74,6 @@ def extract_text_from_pdf(pdf_path):
     text = text.replace('\x0c', '\n')
 
     return text
-
 
 def split_into_sections(text):
     """Splits a string of text into a list of tuples, where each tuple contains a section header and the corresponding text.
@@ -163,8 +164,6 @@ def split_section_into_subsections(section_header, section_content, enc, max_tok
         result.extend(parts)
 
     return result
-
-    #return subsections
 
 def split_subsection_into_parts_broken(subsection_header, subsection_content, enc, max_tokens=3000):
     # Encode the subsection content as a sequence of tokens
@@ -274,9 +273,6 @@ def combine_subsections(subsections):
 
     return combined_subsections
 
-import openai
-import os
-
 def generate_summary(content, prompt, model_engine="text-davinci-003", max_tokens=3000):
     # Get the API key from the environment variable
     api_key = os.environ["OPENAI_API_KEY"]
@@ -307,10 +303,6 @@ def generate_summary(content, prompt, model_engine="text-davinci-003", max_token
     summary = completions.choices[0].text
 
     return summary
-
-import html2text
-
-
 
 def extract_text_from_html(html_path):
     # Read the HTML file
