@@ -352,6 +352,8 @@ def create_html_file(basename, url):
     html_file.write("</body>\n")
     html_file.write("</html>\n")
     
+    # Print a message indicating that the HTML file was created
+    print("Created HTML file: " + basename + ".html")
     # Close the HTML file
     html_file.close()
 
