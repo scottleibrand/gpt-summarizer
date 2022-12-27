@@ -325,8 +325,10 @@ def create_html_file(basename, url):
     html_file.write("<html>\n")
     html_file.write("<head>\n")
     html_file.write("<title>" + filename + "</title>\n")
+    html_file.write("<link rel='stylesheet' type='text/css' href='style.css'>\n")
     html_file.write("</head>\n")
     html_file.write("<body>\n")
+    html_file.write("<article id='" + filename + "'>\n")
     #html_file.write("<h1>" + filename + "</h1>\n")
     html_file.write("<h1>" + "<a href='" + url + "'>" + filename + "</h1></a>\n")
     
@@ -349,6 +351,7 @@ def create_html_file(basename, url):
     
     # Write the HTML footer
     html_file.write("<a href='" + url + "'>Original URL</a>\n")
+    html_file.write("</article>\n")
     html_file.write("</body>\n")
     html_file.write("</html>\n")
     
@@ -388,6 +391,9 @@ if __name__ == '__main__':
         # Get the URL from the command line arguments
         url = sys.argv[1]
         doctype="article"
+
+        # Strip any query parameters from the URL
+        url = url.split("?")[0]
 
         # Download the HTML file
         html_path = download_html(url)
