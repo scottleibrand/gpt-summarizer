@@ -316,7 +316,7 @@ def extract_text_from_html(html_path):
 
 def create_html_file(basename, url):
     # Create the HTML file
-    html_file = open(basename + ".html", "w")
+    html_file = open(basename + ".summary.html", "w")
     
     # Strip the path from the basename to get the filename
     filename = os.path.basename(basename)
@@ -356,7 +356,7 @@ def create_html_file(basename, url):
     html_file.write("</html>\n")
     
     # Print a message indicating that the HTML file was created
-    print("Created HTML file: " + basename + ".html")
+    print("Created HTML file: " + basename + ".summary.html")
     # Close the HTML file
     html_file.close()
 
