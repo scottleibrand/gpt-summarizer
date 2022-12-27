@@ -325,7 +325,7 @@ def create_html_file(basename, url):
     html_file.write("<html>\n")
     html_file.write("<head>\n")
     html_file.write("<title>" + filename + "</title>\n")
-    html_file.write("<link rel='stylesheet' type='text/css' href='style.css'>\n")
+    #html_file.write("<link rel='stylesheet' type='text/css' href='style.css'>\n")
     html_file.write("</head>\n")
     html_file.write("<body>\n")
     html_file.write("<article id='" + filename + "'>\n")
