@@ -85,7 +85,9 @@ def split_into_sections(text):
     list: A list of tuples, where each tuple contains a section header and the corresponding text.
     """
     # Use a regular expression to match the "References" section
-    pattern = r'(\n\nReferences[^\n]*)\n'
+    #pattern = r'(\n\nReferences[^\n]*)\n'
+    # Also match the "References" section if it is preceded by # or ## (markdown-style headers)
+    pattern = r'(\n\n(#+\s+)?References[^\n]*)\n'
     match = re.search(pattern, text)
     if match:
         # Remove the "References" section and everything that follows
