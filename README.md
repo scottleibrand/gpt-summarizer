@@ -38,14 +38,14 @@ Requires an OpenAI API key:
 This OPENAI_API_KEY should be set as an environment variable:
 `export OPENAI_API_KEY=<your OpenAI API key>`
 
-For now, you also have to manually pip install pdfminer, html2text, tiktoken, and openai. (I'd welcome a PR to get this repo set up to use setup requirements to support `pip install -e .`)
+For now, you also have to manually pip install pdfminer, html2text, tiktoken, and openai. ~~(I'd welcome a PR to get this repo set up to use setup requirements to support `pip install -e .`)~~
 
 
 ## Examples
 
 https://github.com/scottleibrand/gpt-summarizer/tree/main/examples
 
-### Summary of OurWorldInData AI Impact article
+### Summary of OurWorldInData AI Impact article  
 https://ourworldindata.org/ai-impact
 
 ```
