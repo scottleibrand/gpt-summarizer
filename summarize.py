@@ -38,7 +38,7 @@ from pdfminer.pdfpage import PDFPage
 # import tiktoken
 from transformers import GPT2TokenizerFast
 
-API_KEY = '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'
+API_KEY = ''
 model_engine = "text-davinci-003"
 max_tokens = 3000
 
