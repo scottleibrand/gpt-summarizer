@@ -20,27 +20,23 @@ This script was written by ChatGPT with direction by Scott Leibrand,
 then edited by Scott Leibrand w/ CoPilot and ChatGPT.
 """
 
-import sys
-import re
-import os
-
-import magic
-import openai
-import glob
 import argparse
-import requests
-
-# import tiktoken
-from transformers import GPT2TokenizerFast
-
+import glob
+import os
+import pathlib
+import re
 from io import StringIO
-from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
-from pdfminer.converter import TextConverter
-from pdfminer.layout import LAParams
-from pdfminer.pdfpage import PDFPage
 
 import html2text
-import pathlib
+import magic
+import openai
+import requests
+from pdfminer.converter import TextConverter
+from pdfminer.layout import LAParams
+from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
+from pdfminer.pdfpage import PDFPage
+# import tiktoken
+from transformers import GPT2TokenizerFast
 
 API_KEY = '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'
 model_engine = "text-davinci-003"
@@ -123,7 +119,7 @@ def main():
 
     # Call create_html_file() to create an HTML file with the overall summary
     create_html_file(saved_content)
-    sleep(10)
+
 
 
 def extract_text_from_pdf(pdf_path):
@@ -526,7 +522,7 @@ def download_html(url, base):
     cleaned_url = url_pattern.search(url)
     base_from_url = cleaned_url.group(1)
 
-    if not (base_from_url):
+    if not base_from_url:
         raise Exception("Improperly Formatted URL")
 
     # Get the base name from the URL, or use what the user specified (NB: this is janky, should do it correctly later
