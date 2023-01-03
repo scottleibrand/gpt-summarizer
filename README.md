@@ -17,10 +17,8 @@ You can also specify an optional second positional argument to have the summarie
 
 tl;dr:
 ```
-pip install pdfminer
-pip install html2text
-pip install tiktoken
-pip install openai
+brew install libmagic 
+pip -r requirements.txt
 export OPENAI_API_KEY=<your OpenAI API key>
 python summarize.py paper.pdf
 python summarize.py https://path/to/article
@@ -38,14 +36,14 @@ Requires an OpenAI API key:
 This OPENAI_API_KEY should be set as an environment variable:
 `export OPENAI_API_KEY=<your OpenAI API key>`
 
-For now, you also have to manually pip install pdfminer, html2text, tiktoken, and openai. (I'd welcome a PR to get this repo set up to use setup requirements to support `pip install -e .`)
+For now, you also have to manually pip install pdfminer, html2text, tiktoken, and openai. ~~(I'd welcome a PR to get this repo set up to use setup requirements to support `pip install -e .`)~~
 
 
 ## Examples
 
 https://github.com/scottleibrand/gpt-summarizer/tree/main/examples
 
-### Summary of OurWorldInData AI Impact article
+### Summary of OurWorldInData AI Impact article  
 https://ourworldindata.org/ai-impact
 
 ```
