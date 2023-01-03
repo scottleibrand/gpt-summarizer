@@ -17,10 +17,8 @@ You can also specify an optional second positional argument to have the summarie
 
 tl;dr:
 ```
-pip install pdfminer
-pip install html2text
-pip install tiktoken
-pip install openai
+brew install libmagic 
+pip -r requirements.txt
 export OPENAI_API_KEY=<your OpenAI API key>
 python summarize.py paper.pdf
 python summarize.py https://path/to/article
