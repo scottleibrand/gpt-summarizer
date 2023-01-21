@@ -93,6 +93,9 @@ def split_into_sections(text):
         # Remove the "References" section and everything that follows
         text = text[:match.start()]
 
+    # Use a regular expression to match and remove any base64 encoded data
+    text = re.sub(r'data:.+;base64[^)]+', '', text)
+
     # Use a regular expression to split the text into sections
     #pattern = r'\n\n(\d+[\.:]\s+[^\n]+)\n\n'
     # Match section headers that start with a number followed by a period or colon,
@@ -166,38 +169,6 @@ def split_section_into_subsections(section_header, section_content, enc, max_tok
         result.extend(parts)
 
     return result
-
-def split_subsection_into_parts_broken(subsection_header, subsection_content, enc, max_tokens=3000):
-    # Encode the subsection content as a sequence of tokens
-    tokens = enc.encode(subsection_content)
-
-    if len(tokens) <= max_tokens:
-        # The subsection does not need to be split into parts
-        return [(subsection_header, subsection_content)]
-
-    # Split the subsection into parts
-    start = 0
-    parts = []
-    while start < len(tokens):
-        # Calculate the size of the next part
-        end = start + max_tokens
-
-        # Find the nearest newline boundary within the part
-        print(enc)
-        while end < len(tokens) and tokens[end] != enc.encoder['\n']:
-            end += 1
-
-        # Extract the part
-        part_tokens = tokens[start:end]
-        part_content = enc.decode(part_tokens)
-
-        # Add the part to the list of parts
-        parts.append((subsection_header, part_content))
-
-        # Update the start index
-        start = end + 1
-
-    return parts
 
 def split_subsection_into_paragraphs(subsection_header, subsection_content, enc, max_tokens=3000):
     # Encode the subsection content as a sequence of tokens
@@ -456,7 +427,7 @@ if __name__ == '__main__':
     #base_name, _ = os.path.splitext(pdf_path)
 
     # Write the extracted text to the output file
-    with open(base_name + ".full.txt", 'w') as f:
+    with open(base_name + ".full.txt", 'w', encoding='utf-8') as f:
         f.write(text)
 
     print(f"Text extracted from {sys.argv[1]} and written to {base_name}.full.txt")
@@ -498,7 +469,7 @@ if __name__ == '__main__':
                 subheader_count = subheader_count - 1            
             else:
                 # Write the content to the output file
-                with open(output_path, 'w') as f:
+                with open(output_path, 'w', encoding='utf-8') as f:
                     f.write(subcontent)
                 print(f"{subheader} ({len(subcontent)} characters, {len(subcontent_tokens)} tokens) written to {output_path}")
                 # Get the name of the summary file
@@ -512,7 +483,7 @@ if __name__ == '__main__':
                     # Generate a summary for the subsection
                     summary = generate_summary(subcontent, prompt, model_engine, max_tokens)
                     # Write the summary to a summary file
-                    with open(summary_path, 'w') as f:
+                    with open(summary_path, 'w', encoding='utf-8') as f:
                         f.write(summary)
                     print(f"Summary written to {summary_path}")
         
@@ -529,9 +500,9 @@ if __name__ == '__main__':
             # Get the path of the section summary file
             section_summary_path = f"{base_name}.{section_name}.section_summary.txt"
             # Read the summary file and write it to the section summary file
-            with open(summary_path, 'r') as f:
+            with open(summary_path, 'r', encoding='utf-8') as f:
                 summary = f.read()
-            with open(section_summary_path, 'w') as f:
+            with open(section_summary_path, 'w', encoding='utf-8') as f:
                 f.write(summary)
 
             print(f"Summary promoted to section summary at {section_summary_path}")
@@ -546,7 +517,7 @@ if __name__ == '__main__':
             summary_paths.sort(key=os.path.getmtime)  # sort file names by modification time, oldest first
             for summary_path in summary_paths:
                 print(f"Reading summary from {summary_path}")
-                with open(summary_path, 'r') as f:
+                with open(summary_path, 'r', encoding='utf-8') as f:
                     summaries.append(f.read())
             # Concatenate the summaries into a single string
             subcontent = "\n\n".join(summaries)
@@ -563,7 +534,7 @@ if __name__ == '__main__':
                 subcontent_tokens = []
                 for summary_path in summary_paths:
                     print(f"Reading summary from {summary_path}")
-                    with open(summary_path, 'r') as f:
+                    with open(summary_path, 'r', encoding='utf-8') as f:
                         summary = f.read()
                     summary_tokens = enc.encode(summary)
                     if len(subcontent_tokens) + len(summary_tokens) > max_tokens:
@@ -587,7 +558,7 @@ if __name__ == '__main__':
                 # Generate the overall section summary
                 section_summary = generate_summary(content, prompt, model_engine, max_tokens)
                 # Write the overall section summary to a file
-                with open(section_summary_path, 'w') as f:
+                with open(section_summary_path, 'w', encoding='utf-8') as f:
                     f.write(section_summary)
                 print(f"Overall section summary written to {section_summary_path}")
 
@@ -602,7 +573,7 @@ if __name__ == '__main__':
         # Read in the abstract, if it exists
         try:
             abstract_filename=glob.glob(f"{base_name}.Title-Abstract*.full.txt")[0]
-            with open(f"{abstract_filename}", 'r') as f:
+            with open(f"{abstract_filename}", 'r', encoding='utf-8') as f:
                 abstract = f.read()
         except IndexError:
             print(f"No abstract found for {base_name}")
@@ -611,7 +582,7 @@ if __name__ == '__main__':
         summaries = []
         summary_pattern = f"{base_name}.*.section_summary.txt"
         for summary_path in glob.glob(summary_pattern):
-            with open(summary_path, 'r') as f:
+            with open(summary_path, 'r', encoding='utf-8') as f:
                 summaries.append(f.read())
         # Concatenate the abstract and summaries into a single string
         subcontent = abstract + "\n\n" + "\n\n".join(summaries)
@@ -629,7 +600,7 @@ if __name__ == '__main__':
             print(f"Concatenated subsection summaries have less than 500 tokens, reading in all summaries")
             summary_pattern = f"{base_name}.*.summary.txt"
             for summary_path in glob.glob(summary_pattern):
-                with open(summary_path, 'r') as f:
+                with open(summary_path, 'r', encoding='utf-8') as f:
                     summaries.append(f.read())
             for summary in summaries:
                 summary_tokens = enc.encode(summary)
@@ -647,7 +618,7 @@ if __name__ == '__main__':
         # Append a newline to the overall summary
         overall_summary += "\n"
         # Write the overall summary to a file
-        with open(overall_summary_path, 'w') as f:
+        with open(overall_summary_path, 'w', encoding='utf-8') as f:
             f.write(overall_summary)
         print(f"Overall summary written to {overall_summary_path}")
 
